@@ -1,0 +1,28 @@
+/* --------- Global style */
+body {
+    background-color: #b7cad1;
+    font-family: "Raleway", sans-serif;
+    text-align: center;
+}
+
+/* --------- Heading */
+#heading {
+    background-color: bisque;
+    text-align: center;
+    font-size: 2.5rem;
+}
+
+/* ---------- Quiz Area */
+#quiz-area {
+    background-color: #E6ECF0;
+    box-sizing: border-box;
+    border: rgb(199, 100, 43) solid 5px;
+    border-radius: 10vmin;
+    width: 85%;
+    height: 65vh;
+    max-height: 450px;
+    max-width: 830px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 1%;
+}
