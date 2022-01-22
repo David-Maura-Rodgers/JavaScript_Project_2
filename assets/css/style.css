@@ -8,12 +8,16 @@ body {
 /* --------- Heading */
 #heading {
     background-color: bisque;
+    border: rgba(123, 140, 23, 0.9) dotted 3px;
     text-align: center;
-    font-size: 2.5rem;
+    font-size: 1.5rem;
+    padding: 1.5rem;
+    margin-bottom: 20px;
 }
 
 /* ---------- Quiz Area */
 #quiz-area {
+    margin-top: 20px;
     background-color: #E6ECF0;
     box-sizing: border-box;
     border: rgb(199, 100, 43) solid 5px;
@@ -26,3 +30,15 @@ body {
     margin-right: auto;
     padding: 1%;
 }
+
+button {
+    margin: 0 auto;
+    border-radius: 2px;
+    padding: 15px 32px 15px 32px;
+    font-size: 100%;
+    background-color: rgb(199, 100, 43);
+    font-size: large;
+    font-weight: bold;
+    
+}
+
