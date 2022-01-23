@@ -1,3 +1,8 @@
+
+
+
+
+/*
 var questions = [{
     question: "What is the capital of Ireland",
     choices: ["Cork", "Sligo", "Dublin", "Galway"],
@@ -11,3 +16,4 @@ var questions = [{
     choices: [4, 12, 19, 8],
     correctAnswer: 3
   }]
+  */

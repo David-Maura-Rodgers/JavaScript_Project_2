@@ -10,9 +10,20 @@ body {
     background-color: bisque;
     border: rgba(123, 140, 23, 0.9) dotted 3px;
     text-align: center;
-    font-size: 1.5rem;
-    padding: 1.5rem;
+    font-size: 1.0rem;
+    padding: 1.0rem;
     margin-bottom: 20px;
+}
+
+/* --------- Play Button */
+button {
+    margin: 0 auto;
+    border-radius: 2px;
+    padding: 15px 32px 15px 32px;
+    font-size: 100%;
+    background-color: rgb(199, 100, 43);
+    font-size: large;
+    font-weight: bold;
 }
 
 /* ---------- Quiz Area */
@@ -23,7 +34,7 @@ body {
     border: rgb(199, 100, 43) solid 5px;
     border-radius: 10vmin;
     width: 85%;
-    height: 65vh;
+    height: 45vh;
     max-height: 450px;
     max-width: 830px;
     margin-left: auto;
@@ -31,14 +42,20 @@ body {
     padding: 1%;
 }
 
-button {
-    margin: 0 auto;
-    border-radius: 2px;
-    padding: 15px 32px 15px 32px;
-    font-size: 100%;
-    background-color: rgb(199, 100, 43);
-    font-size: large;
-    font-weight: bold;
-    
+/* ---------- Quiz Area */
+#results-area {
+    margin-top: 20px;
+    background-color: #E6ECF0;
+    box-sizing: border-box;
+    border: rgb(199, 100, 43) solid 5px;
+    border-radius: 10vmin;
+    width: 85%;
+    height: 15vh;
+    max-height: 450px;
+    max-width: 830px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 1%;
 }
+
 
