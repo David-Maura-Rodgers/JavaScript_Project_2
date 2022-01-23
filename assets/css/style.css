@@ -15,8 +15,8 @@ body {
     margin-bottom: 20px;
 }
 
-/* --------- Play Button */
-button {
+/* --------- Play & Button */
+#play {
     margin: 0 auto;
     border-radius: 2px;
     padding: 15px 32px 15px 32px;
@@ -26,8 +26,18 @@ button {
     font-weight: bold;
 }
 
+#submit {
+    margin-bottom: -40px;
+    border-radius: 2px;
+    padding: 15px 32px 15px 32px;
+    font-size: 100%;
+    background-color: rgb(199, 100, 43);
+    font-size: large;
+    font-weight: bold;
+}
+
 /* ---------- Quiz Area */
-#quiz-area {
+#quiz {
     margin-top: 20px;
     background-color: #E6ECF0;
     box-sizing: border-box;
@@ -43,7 +53,7 @@ button {
 }
 
 /* ---------- Quiz Area */
-#results-area {
+#results {
     margin-top: 20px;
     background-color: #E6ECF0;
     box-sizing: border-box;
@@ -57,5 +67,20 @@ button {
     margin-right: auto;
     padding: 1%;
 }
+
+/* -------- Question and answer display */
+.question{
+	font-weight: 600;
+}
+
+.answers {
+  margin-bottom: 20px;
+}
+
+.answers label{
+  display: block;
+}
+
+
 
 

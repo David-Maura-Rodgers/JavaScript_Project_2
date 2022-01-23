@@ -15,19 +15,24 @@
     <title>General Knowledge Quiz</title>
 </head>
 
-
 <body>
     <div id="heading">
         <h1>General Knowledge Quiz</h1>
     </div>
 
-    <button>Play Quiz</button>
-
-    <div id="quiz-area">
-
+    <div>
+    <button id="play">Play Quiz</button>
     </div>
 
-    <div id="results-area">
+    <div id="quiz">
+        <p id="question"></p>
+        
+        <p id="options"></p> 
+        
+        <button onclick="submitAnswer()" data-type="play" id="play">Submit Answer</button>
+    </div>
+    
+    <div id="results">
 
     </div>
 
