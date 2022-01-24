@@ -26,8 +26,8 @@ body {
     font-weight: bold;
 }
 
-#submit {
-    margin-bottom: -40px;
+#next {
+    margin-bottom: 2%;
     border-radius: 2px;
     padding: 15px 32px 15px 32px;
     font-size: 100%;
@@ -53,7 +53,7 @@ body {
 }
 
 /* ---------- Quiz Area */
-#results {
+#result {
     margin-top: 20px;
     background-color: #E6ECF0;
     box-sizing: border-box;
