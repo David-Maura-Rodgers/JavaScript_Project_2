@@ -1,38 +1,32 @@
 var questions = [
   {
     question: "What is the capital of Ireland?",
-    option: "Cork",
-    option: "Dublin",
-    option: "Galway",
-    option: "Sligo",
-    answer: "b"
-
+    options: ["Cork", "Dublin", "Galway", "Sligo"],
+    answer: 1,
   },
   {
     question: "How many sides does an octagon have?",
-    option: "12",
-    option: "9",
-    option: "6",
-    option: "8",
-    answer: "d"
-  },
-  {
-    question: "What is the smallest planet in our solar system?",
-    option: "Pluto",
-    option: "Venus",
-    option: "Mars",
-    option: "Saturn",
-    answer: "a"
+    options: ["Four", "Nine", "Twelve", "Eight"],
+    answer: 3,
   }
 ];
 
-var score = 0;
+//Dont forget the tracker for which round you are on, and to increase it each time
+function displayQuestion(round=0) {
+  document.getElementById("question").innerHTML = (questions[round].question);
+  const options = document.querySelectorAll(".opt");
+  
+  options.forEach((option, index) => {
+    option.innerText = questions[round].options[index];
+  });
+};
+document.getElementById("play").addEventListener("click", displayQuestion);
 
-function displayQuestion() {
-  document.getElementById("question").innerHTML = (questions[0]);
-  console.log(questions[0]);
-  console.log(questions);
-}
+
+const options = document.querySelectorAll(".opt");
+options.forEach(option => option.addEventListener("click", (event) => {
+console.log(event.target)
+﻿}))
 
 
 
@@ -65,19 +59,6 @@ for(var i = 0; i < questions.length; i++){
 }
 document.getElementById("score").innerHTML
 //alert("you got " + score + "/" + questions.length);
-*/
-
-
-
-/*
-document.getElementById("play").addEventListener("click", displayQuestion);
-
-let questions = [ 
-"What is the capital of Ireland?", 
-"How many sides does an octagon have?",
-"What is the smallest planet in our solar system?"
-];
-
 
 function displayQuestion() {
 let numberOfQuestions = questions.length;
@@ -85,10 +66,5 @@ let numberOfQuestions = questions.length;
 for (let i = 0; i < numberOfQuestions; i++) {
   document.getElementById("question").innerHTML = (questions)[0];
   }
-}
-
-function displayOptions(questions) {
-    if (questions === questions[0])
-    document.getElementById("opt1").innerHTML ="Dublin"
 }
 */
