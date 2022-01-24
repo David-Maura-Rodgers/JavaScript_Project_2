@@ -8,11 +8,19 @@ var questions = [
     question: "How many sides does an octagon have?",
     options: ["Four", "Nine", "Twelve", "Eight"],
     answer: 3,
+  },
+  {
+    question: "What year did World War I end?",
+    options: ["1914", "1916", "1918", "1912"],
+    answer: 2,
   }
 ];
 
+document.getElementById("play").addEventListener("click", displayQuestion);
+
 //Dont forget the tracker for which round you are on, and to increase it each time
 function displayQuestion(round=0) {
+  
   document.getElementById("question").innerHTML = (questions[round].question);
   const options = document.querySelectorAll(".opt");
   
@@ -20,13 +28,14 @@ function displayQuestion(round=0) {
     option.innerText = questions[round].options[index];
   });
 };
-document.getElementById("play").addEventListener("click", displayQuestion);
 
 
+/*
 const options = document.querySelectorAll(".opt");
 options.forEach(option => option.addEventListener("click", (event) => {
 console.log(event.target)
 ﻿}))
+*/
 
 
 
