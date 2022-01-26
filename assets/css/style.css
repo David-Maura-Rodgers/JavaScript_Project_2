@@ -26,7 +26,7 @@ body {
     font-weight: bold;
 }
 
-#next {
+#next-button {
     margin: 0 auto;
     border-radius: 2px;
     padding: 15px 32px 15px 32px;
@@ -37,7 +37,7 @@ body {
 }
 
 /* ---------- Quiz Area */
-#quiz {
+#quiz-area {
     margin-top: 20px;
     background-color: #E6ECF0;
     box-sizing: border-box;
@@ -53,7 +53,7 @@ body {
 }
 
 /* ---------- Quiz Area */
-#result {
+#quiz-navigation {
     margin-top: 20px;
     background-color: #E6ECF0;
     box-sizing: border-box;
@@ -69,18 +69,24 @@ body {
 }
 
 /* -------- Question and answer display */
-.question{
+#question{
 	font-weight: 600;
 }
 
-.answers {
-  margin-bottom: 20px;
+#answer-box {
+    height: 200px;
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
 }
 
-.answers label{
-  display: block;
+.answer-button {
+    font-family: Kanit, sans-serif;
+    font-size: 125%;
+    font-weight: 400;
+    height: 30%;
+    width: 40%;
+    margin: 1%;
+    border: 0.5px solid gray;
+    border-radius: 10px 10px;
 }
-
-
-
-

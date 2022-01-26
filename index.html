@@ -20,25 +20,27 @@
         <h1>General Knowledge Quiz</h1>
     </div>
 
+    <!--
     <div>
-    <button id="play">Play Quiz</button>
+    <button onclick = "displayQuestion()" id="play">Play Quiz</button>
     </div>
+    -->
 
-    <div id="quiz">
+    <div id="quiz-area">
         <p id="question"></p>
     
-    <div class="opt"></div>
-    <div class="opt"></div>
-    <div class="opt"></div>
-    <div class="opt"></div>
-    </div>
+        <div id="answer-box"> <!--answers/alternatives-->
+            <button class="answer-button"></button>
+            <button class="answer-button"></button>
+            <button class="answer-button"></button>
+            <button class="answer-button"></button>
+        </div>
 
-    <div>
-    <button id="next">Submit Answer</button>
-    </div>
-
-    <div id="result">
-        <p id="score"></p>
+        <div id="quiz-navigation"> <!--bottom navigation and score-tracker
+            <button id="restart-button">Restart Quiz</button>-->
+            <button id="next-button">Next question</button>
+            <p id="score">Score:</p>
+        </div>
     </div>
     
     <script src="assets/js/script.js"></script>
