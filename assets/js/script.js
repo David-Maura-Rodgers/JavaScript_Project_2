@@ -1,18 +1,20 @@
-var questionArr = [
+let questionArr = [
   {
     question: "What is the capital of Ireland?",
     options: ["Cork", "Dublin", "Galway", "Sligo"],
-    answer: 1,
+    answer: "Dublin" 
   },
+  
   {
     question: "How many sides does an octagon have?",
     options: ["Four", "Nine", "Twelve", "Eight"],
-    answer: 3,
+    answer: "Eight"  
   },
+  
   {
     question: "What year did World War I end?",
     options: ["1914", "1916", "1918", "1912"],
-    answer: 2,
+    answer: "1918"
   }
 ];
 
@@ -49,7 +51,8 @@ function displayQuestion(event) {
       currentQuestion++;
   }
   
-  //scoreTracker.innerHTML = 'Score: ' + correct + '/' + totalQuestions; // Displays a value based on correctly answered questions and the total amount of questions.
+/* scoreTracker.innerHTML = 'Score: ' + correct + '/' + totalQuestions; // Displays a value based on correctly answered 
+questions and the total amount of questions */
 }
 let i;
 for (i = 0; i < answerButton.length; i++){
@@ -58,10 +61,10 @@ answerButton[i].addEventListener("click", displayQuestion);
 
 // Displays all questions/alternatives:
 question.innerHTML = questionArr[q].question;
-answerButton[0].textContent = questionArr[a].options[0]
-answerButton[1].textContent = questionArr[a].options[1]
-answerButton[2].textContent = questionArr[a].options[2]
-answerButton[3].textContent = questionArr[a].options[3]
+answerButton[0].innerHTML = questionArr[a].options[0]
+answerButton[1].innerHTML = questionArr[a].options[1]
+answerButton[2].innerHTML = questionArr[a].options[2]
+answerButton[3].innerHTML = questionArr[a].options[3]
 
 nextButton.addEventListener('click', nextQuestion);
 
@@ -70,11 +73,10 @@ function nextQuestion(){
       q++;
       a++;
       question.innerHTML = questionArr[q].question;
-      answerButton[0].textContent = questionArr[a].options[0]
-      answerButton[1].textContent = questionArr[a].options[1]
-      answerButton[2].textContent = questionArr[a].options[2]
-      answerButton[3].textContent = questionArr[a].options[3]
-      quizBox.style.backgroundColor = 'white';
+      answerButton[0].innerHTML = questionArr[a].options[0]
+      answerButton[1].innerHTML = questionArr[a].options[1]
+      answerButton[2].innerHTML = questionArr[a].options[2]
+      answerButton[3].innerHTML = questionArr[a].options[3]
   }
   else {
       alert('Please select your answer to continue');
