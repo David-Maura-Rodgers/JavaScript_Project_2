@@ -36,6 +36,16 @@ body {
     font-weight: bold;
 }
 
+#restart-button {
+    margin: 0 auto;
+    border-radius: 2px;
+    padding: 15px 32px 15px 32px;
+    font-size: 100%;
+    background-color: rgb(199, 100, 43);
+    font-size: large;
+    font-weight: bold;
+}
+
 /* ---------- Quiz Area */
 #quiz-area {
     margin-top: 20px;
@@ -52,8 +62,8 @@ body {
     padding: 1%;
 }
 
-/* ---------- Quiz Area */
-#quiz-navigation {
+/* ---------- results-area */
+#results-area {
     margin-top: 20px;
     background-color: #E6ECF0;
     box-sizing: border-box;
@@ -80,7 +90,7 @@ body {
     text-align: center;
 }
 
-.answer-button {
+.answer-option{
     font-family: Kanit, sans-serif;
     font-size: 125%;
     font-weight: 400;
@@ -89,4 +99,8 @@ body {
     margin: 1%;
     border: 0.5px solid gray;
     border-radius: 10px 10px;
+}
+
+label {
+    text-align: center;
 }
