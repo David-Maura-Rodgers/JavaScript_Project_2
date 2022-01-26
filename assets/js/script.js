@@ -41,23 +41,23 @@ let totalQuestions = 4;
 let currentQuestion = 0;
 
 function displayQuestion(event) {
-  if (this.innerHTML === questionArr[q].answer && currentQuestion == (totalQuestions - 1)) {
+  if (this.value === questionArr[q].answer && currentQuestion == (totalQuestions - 1)) {
       correct++;  
       currentQuestion++;
       question.innerHTML = 'Correct!' + '</br>' + 'Your total score: ' + correct + '/' + totalQuestions;
   } 
-  else if (this.innerHTML != questionArr[q].answer && currentQuestion == (totalQuestions - 1)) {
+  else if (this.value != questionArr[q].answer && currentQuestion == (totalQuestions - 1)) {
       currentQuestion++;
       correct++;
       question.innerHTML = 'Incorrect!' + '</br>' + 'The correct answer was: ' + '<strong>' + questionArr[q].answer + 
       '</strong>' + '</br>' + 'Your total score: ' + correct + '/' + totalQuestions;
       } 
-  else if (this.innerHTML === questionArr[q].answer && currentQuestion == q) {
+  else if (this.value === questionArr[q].answer && currentQuestion == q) {
       question.innerHTML = 'Correct!';
       correct++;
       currentQuestion++;
   } 
-  else if (this.innerHTML != questionArr[q].answer && currentQuestion == q) {
+  else if (this.value != questionArr[q].answer && currentQuestion == q) {
       question.innerHTML = 'Incorrect!' + '</br>' + 'The correct answer was: ' + '<strong>' + questionArr[q].answer + '</strong>';
       currentQuestion++;
   }

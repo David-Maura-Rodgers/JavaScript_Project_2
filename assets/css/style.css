@@ -56,7 +56,7 @@ body {
     width: 85%;
     height: 45vh;
     max-height: 450px;
-    max-width: 830px;
+    max-width: 1270px;
     margin-left: auto;
     margin-right: auto;
     padding: 1%;
@@ -81,6 +81,7 @@ body {
 /* -------- Question and answer display */
 #question{
 	font-weight: 600;
+    text-align: center;
 }
 
 #answer-box {
@@ -90,17 +91,14 @@ body {
     text-align: center;
 }
 
-.answer-option{
-    font-family: Kanit, sans-serif;
-    font-size: 125%;
-    font-weight: 400;
-    height: 30%;
-    width: 40%;
-    margin: 1%;
-    border: 0.5px solid gray;
+.answer-option {
+    font-family: "Raleway", sans-serif;
+    height: 20%;
+    width: 20%;
+    border: 5px solid rgb(199, 100, 43);
     border-radius: 10px 10px;
 }
 
-label {
-    text-align: center;
+input {
+    border: 5px solid rgb(199, 100, 43);
 }
