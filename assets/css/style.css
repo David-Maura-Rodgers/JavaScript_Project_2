@@ -71,7 +71,7 @@ body {
     border-radius: 10vmin;
     width: 85%;
     height: 15vh;
-    max-height: 450px;
+    max-height: 750px;
     max-width: 830px;
     margin-left: auto;
     margin-right: auto;
@@ -84,6 +84,7 @@ body {
     text-align: center;
 }
 
+/* Where questions will appear */
 #answer-box {
     height: 200px;
     width: 100%;
@@ -91,6 +92,7 @@ body {
     text-align: center;
 }
 
+/* the radio buttons that need to be selected to register an answer */
 .answer-option {
     font-family: "Raleway", sans-serif;
     height: 20%;
@@ -99,6 +101,22 @@ body {
     border-radius: 10px 10px;
 }
 
-input {
-    border: 5px solid rgb(199, 100, 43);
+/* icons to change collor accordingly */
+#correct {
+    margin: 0 auto;
+    padding: 1%;
+    font-size: 70px;
+}
+
+#incorrect {
+    margin: 0 auto;
+    padding: 1%;
+    font-size: 70px;
+}
+
+/* Where score is displayed*/
+#score {
+    font-family: "Raleway", sans-serif;
+    font-weight: bolder;
+    font-size: 30px;
 }
