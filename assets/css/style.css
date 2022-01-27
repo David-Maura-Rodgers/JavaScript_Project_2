@@ -7,8 +7,8 @@ body {
 
 /* Heading */
 #heading {
-    background-color: bisque;
-    border: rgba(123, 140, 23, 0.9) dotted 3px;
+    background-color: rgba(243, 201, 149, 0.993);
+    border: #E6ECF0 dotted 8px;
     text-align: center;
     font-size: 1.0rem;
     padding: 1.0rem;
@@ -64,7 +64,7 @@ body {
 
 /* Area where results are displayed */
 #results-area {
-    margin-top: 40px;
+    margin-top: 10px;
     background-color: #E6ECF0;
     box-sizing: border-box;
     border: rgb(199, 100, 43) solid 5px;
@@ -97,8 +97,11 @@ body {
 #answer-box {
     height: 200px;
     width: 100%;
-    margin: 0 auto;
+    margin-left: 40px;
+    font-family: "Raleway", sans-serif;
     text-align: center;
+    font-weight: 600;
+    padding: 1.25rem;
 }
 
 /* the radio buttons that need to be selected to register an answer */

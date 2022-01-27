@@ -43,16 +43,21 @@ correct or incorrect
 */
 function checkAnswer(event) {
   // Check for running score after each question (both else if below)
-  if (this.value === questionArr[q].answer && currentQuestion == q) {
+  if (this.value === questionArr[q].answer)  {
     feedback.innerHTML = 'Correct!';
     correct++;
-    currentQuestion++;
     correctIcon.style.backgroundColor = "green";
+
+      if (currentQuestion == q)
+          currentQuestion++;
 } 
   else if (this.value != questionArr[q].answer && currentQuestion == q) {
     feedback.innerHTML = 'Incorrect!' + '</br>' + 'The correct answer was: ' + '<strong>' + questionArr[q].answer + '</strong>';
-    currentQuestion++;
     incorrectIcon.style.backgroundColor = "red";
+    
+      if (currentQuestion == q)
+          currentQuestion++;
+    
 }
   // Check for total score after last question in questionArr (both else if below)
   else if (this.value === questionArr[q].answer && currentQuestion == (totalQuestions - 1)) {
