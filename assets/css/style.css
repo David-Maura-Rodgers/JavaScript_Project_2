@@ -62,7 +62,7 @@ body {
     padding: 1%;
 }
 
-/* ---------- results-area */
+/* Area where */
 #results-area {
     margin-top: 20px;
     background-color: #E6ECF0;
@@ -78,7 +78,7 @@ body {
     padding: 1%;
 }
 
-/* -------- Question and answer display */
+/* Question display */
 #question{
 	font-weight: 600;
     text-align: center;
@@ -112,6 +112,11 @@ body {
     margin: 0 auto;
     padding: 1%;
     font-size: 70px;
+}
+
+/* area for buttons, nest and restart */
+#button-div {
+    margin-top: 1%;
 }
 
 /* Where score is displayed*/

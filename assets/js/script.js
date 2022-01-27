@@ -31,27 +31,41 @@ let question = document.getElementById('question');
 let answerOption = document.getElementsByClassName('answer-option');
 let nextButton = document.getElementById('next-button');
 let restartButton = document.getElementById('restart-button');
+let correctIcon = document.getElementById('correct');
+let incorrectIcon = document.getElementById('incorrect');
 let scoreTracker = document.getElementById('score');
 let opt1 = document.getElementById('opt1');
 let opt2 = document.getElementById('opt2');
 let opt3 = document.getElementById('opt3');
 let opt4 = document.getElementById('opt4');
-let counter = 0;
 let q = 0;
 let a = 0;
 let correct = 0;
 let totalQuestions = 4;
 let currentQuestion = 0;
 
+/*
+function displayQuestion(event) {
+  if (this.innerHTML === questionArr[q].answer)  {
+      correct++;
+      question.innerHTML = 'Correct!' + '</br>' + 'Your total score: ' + correct + '/' + totalQuestions;
+  }
+        if (currentQuestion == (totalQuestions - 1)) {
+          currentQuestion++;
+  } 
+*/
+
 function displayQuestion(event) {
   if (this.value === questionArr[q].answer && currentQuestion == (totalQuestions - 1)) {
       correct++;  
       currentQuestion++;
+      correctIcon.style.backgroundColor = "green";
       question.innerHTML = 'Correct!' + '</br>' + 'Your total score: ' + correct + '/' + totalQuestions;
   } 
   else if (this.value != questionArr[q].answer && currentQuestion == (totalQuestions - 1)) {
-      currentQuestion++;
       correct++;
+      currentQuestion++;
+      incorrectIcon.style.backgroundColor = "red";
       question.innerHTML = 'Incorrect!' + '</br>' + 'The correct answer was: ' + '<strong>' + questionArr[q].answer + 
       '</strong>' + '</br>' + 'Your total score: ' + correct + '/' + totalQuestions;
       } 
@@ -59,10 +73,12 @@ function displayQuestion(event) {
       question.innerHTML = 'Correct!';
       correct++;
       currentQuestion++;
+      correctIcon.style.backgroundColor = "green";
   } 
   else if (this.value != questionArr[q].answer && currentQuestion == q) {
       question.innerHTML = 'Incorrect!' + '</br>' + 'The correct answer was: ' + '<strong>' + questionArr[q].answer + '</strong>';
       currentQuestion++;
+      incorrectIcon.style.backgroundColor = "red";
   }
   
 scoreTracker.innerHTML = 'Score: ' + correct + '/' + (totalQuestions -1);
@@ -83,13 +99,6 @@ opt4.previousElementSibling.innerText = questionArr[a].options[3]
 
 nextButton.addEventListener('click', nextQuestion);
 
-
-nextButton.addEventListener("click", () => {
-    if (counter < 2) {
-        counter++;
-    }
-})
-
 function nextQuestion(){
   if (currentQuestion > q){
       q++;
@@ -104,6 +113,11 @@ function nextQuestion(){
       opt2.value = "Nine"
       opt3.value = "Twelve"
       opt4.value = "Eight"
+
+      correctIcon.style.backgroundColor = "transparent";
+      incorrectIcon.style.backgroundColor = "transparent;";
+      opt2.checked = false;
+      opt4.checked = false;
 
       /*
       opt1.value = "1914"
