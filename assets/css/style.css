@@ -114,13 +114,13 @@ body {
 /* icons to change collor accordingly */
 #correct {
     margin: 0 auto;
-    padding: 1%;
+    padding: 1% 8%;
     font-size: 70px;
 }
 
 #incorrect {
     margin: 0 auto;
-    padding: 1%;
+    padding: 1% 8%;
     font-size: 70px;
 }
 
