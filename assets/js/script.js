@@ -29,6 +29,7 @@ let questionArr = [
 let quiz = document.getElementById('quiz-area');
 let question = document.getElementById('question');
 let answerOption = document.getElementsByClassName('answer-option');
+let feedback = document.getElementById('feedback');
 let nextButton = document.getElementById('next-button');
 let restartButton = document.getElementById('restart-button');
 let correctIcon = document.getElementById('correct');
@@ -56,27 +57,29 @@ function displayQuestion(event) {
 */
 
 function displayQuestion(event) {
+  // Check for total score after last question in questionArr (both else if below)
   if (this.value === questionArr[q].answer && currentQuestion == (totalQuestions - 1)) {
       correct++;  
       currentQuestion++;
       correctIcon.style.backgroundColor = "green";
-      question.innerHTML = 'Correct!' + '</br>' + 'Your total score: ' + correct + '/' + totalQuestions;
-  } 
+      feedback.innerHTML = 'Correct!' + '</br>' + 'Your total score: ' + correct + '/' + totalQuestions;
+  }
+  
   else if (this.value != questionArr[q].answer && currentQuestion == (totalQuestions - 1)) {
-      correct++;
       currentQuestion++;
       incorrectIcon.style.backgroundColor = "red";
-      question.innerHTML = 'Incorrect!' + '</br>' + 'The correct answer was: ' + '<strong>' + questionArr[q].answer + 
+      feedback.innerHTML = 'Incorrect!' + '</br>' + 'The correct answer is: ' + '<strong>' + questionArr[q].answer + 
       '</strong>' + '</br>' + 'Your total score: ' + correct + '/' + totalQuestions;
       } 
+  // Check for running score after each question (both else if below)
   else if (this.value === questionArr[q].answer && currentQuestion == q) {
-      question.innerHTML = 'Correct!';
+      feedback.innerHTML = 'Correct!';
       correct++;
       currentQuestion++;
       correctIcon.style.backgroundColor = "green";
   } 
   else if (this.value != questionArr[q].answer && currentQuestion == q) {
-      question.innerHTML = 'Incorrect!' + '</br>' + 'The correct answer was: ' + '<strong>' + questionArr[q].answer + '</strong>';
+      feedback.innerHTML = 'Incorrect!' + '</br>' + 'The correct answer was: ' + '<strong>' + questionArr[q].answer + '</strong>';
       currentQuestion++;
       incorrectIcon.style.backgroundColor = "red";
   }
@@ -116,6 +119,7 @@ function nextQuestion(){
 
       correctIcon.style.backgroundColor = "transparent";
       incorrectIcon.style.backgroundColor = "transparent;";
+      feedback.textContent = "";
       opt2.checked = false;
       opt4.checked = false;
 
