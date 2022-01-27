@@ -37,28 +37,28 @@ let totalQuestions = 4;
 let currentQuestion = 0;
 
 
-/** displayQuestion
+/** checkAnswer
 this refers to the value of the radio button. It will read in the value of each of these and feedback to user if they are
 correct or incorrect
 */
 function checkAnswer(event) {
   // Check for running score after each question (both else if below)
-  if (this.value === questionArr[q].answer)  {
-    feedback.innerHTML = 'Correct!';
-    correct++;
+  if (this.value === questionArr[q].answer) {
     correctIcon.style.backgroundColor = "green";
+    feedback.innerHTML = 'Correct!';
 
       if (currentQuestion == q)
+          correct++;
           currentQuestion++;
 } 
-  else if (this.value != questionArr[q].answer && currentQuestion == q) {
-    feedback.innerHTML = 'Incorrect!' + '</br>' + 'The correct answer was: ' + '<strong>' + questionArr[q].answer + '</strong>';
+  else if (this.value != questionArr[q].answer) {
     incorrectIcon.style.backgroundColor = "red";
-    
+    feedback.innerHTML = 'Incorrect!' + '</br>' + 'The correct answer was: ' + '<strong>' + questionArr[q].answer + '</strong>';
+      
       if (currentQuestion == q)
-          currentQuestion++;
-    
+      currentQuestion++;
 }
+
   // Check for total score after last question in questionArr (both else if below)
   else if (this.value === questionArr[q].answer && currentQuestion == (totalQuestions - 1)) {
     correct++;  
@@ -107,13 +107,16 @@ function nextQuestion() {
       opt4.value = "Eight"
 
       correctIcon.style.backgroundColor = "transparent";
-      incorrectIcon.style.backgroundColor = "transparent;";
+      incorrectIcon.style.backgroundColor = "transparent";
+      
       feedback.textContent = "";
+
       opt1.checked = false;
       opt2.checked = false;
       opt3.checked = false;
       opt4.checked = false;
-
+         
+         /*
          if (opt1.value === "Four") {
              opt1.value == "1914"
          }
@@ -126,6 +129,7 @@ function nextQuestion() {
           if (opt4.value === "Eight") {
               opt4.value =="1912"
         }
+        */
 
         /*
         if (currentQuestion > q) {
