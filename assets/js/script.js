@@ -1,17 +1,20 @@
 let questionArr = [
   {
+    counter: 0,
     question: "What is the capital of Ireland?",
     options: ["Cork", "Dublin", "Galway", "Sligo"],
     answer: "Dublin" 
   },
   
-  {
+  { 
+    counter: 1,
     question: "How many sides does an octagon have?",
     options: ["Four", "Nine", "Twelve", "Eight"],
     answer: "Eight"  
   },
   
   {
+    counter: 2,
     question: "What year did World War I end?",
     options: ["1914", "1916", "1918", "1912"],
     answer: "1918"
@@ -33,7 +36,7 @@ let opt1 = document.getElementById('opt1');
 let opt2 = document.getElementById('opt2');
 let opt3 = document.getElementById('opt3');
 let opt4 = document.getElementById('opt4');
-
+let counter = 0;
 let q = 0;
 let a = 0;
 let correct = 0;
@@ -67,7 +70,7 @@ scoreTracker.innerHTML = 'Score: ' + correct + '/' + (totalQuestions -1);
 }
 
 let i;
-for (i = 0; i < answerOption.length; i++){
+for (i = 0; i < answerOption.length; i++) {
 answerOption[i].addEventListener("click", displayQuestion);
 }
 
@@ -80,6 +83,13 @@ opt4.previousElementSibling.innerText = questionArr[a].options[3]
 
 nextButton.addEventListener('click', nextQuestion);
 
+
+nextButton.addEventListener("click", () => {
+    if (counter < 2) {
+        counter++;
+    }
+})
+
 function nextQuestion(){
   if (currentQuestion > q){
       q++;
@@ -89,6 +99,18 @@ function nextQuestion(){
       opt2.previousElementSibling.innerText = questionArr[a].options[1]
       opt3.previousElementSibling.innerText = questionArr[a].options[2]
       opt4.previousElementSibling.innerText = questionArr[a].options[3]
+
+      opt1.value = "Four"
+      opt2.value = "Nine"
+      opt3.value = "Twelve"
+      opt4.value = "Eight"
+
+      /*
+      opt1.value = "1914"
+      opt2.value = "1916"
+      opt3.value = "1918"
+      opt4.value = "1912"
+      */
   }
   else {
       alert('Please select your answer to continue');
