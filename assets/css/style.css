@@ -87,7 +87,7 @@ body {
 
 /* Feedback display */
 #feedback {
-    margin-left: 10%;
+    margin-left: -10%;
     position: relative;
     font-family: "Raleway", sans-serif;
     font-weight: bolder;
