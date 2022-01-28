@@ -17,7 +17,6 @@ const questionArr = [
 ];
 
 // Gets all the elements needed and stores them in variables:
-let quiz = document.getElementById('quiz-area');
 let question = document.getElementById('question');
 let answerOption = document.getElementsByClassName('answer-option');
 let feedback = document.getElementById('feedback');
