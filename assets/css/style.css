@@ -15,7 +15,7 @@ body {
     margin-bottom: 20px;
 }
 
-/* Play & Button */
+/* Play & Button 
 #play {
     margin: 0 auto;
     border-radius: 2px;
@@ -25,7 +25,9 @@ body {
     font-size: large;
     font-weight: bold;
 }
+*/
 
+/* Next Question and Restart buttons */
 #next-button {
     margin: 0 auto;
     border-radius: 2px;
@@ -46,7 +48,7 @@ body {
     font-weight: bold;
 }
 
-/* Quiz Area */
+/* Quiz Area which contains question display, answer-box div and feedback div  */
 #quiz-area {
     margin-top: 20px;
     background-color: #E6ECF0;
@@ -62,19 +64,22 @@ body {
     padding: 1%;
 }
 
-/* Area where results are displayed */
-#results-area {
-    margin-top: 10px;
-    background-color: #E6ECF0;
-    box-sizing: border-box;
-    border: rgb(199, 100, 43) solid 5px;
-    border-radius: 10vmin;
-    width: 85%;
-    height: 15vh;
-    max-width: 830px;
-    margin-left: auto;
-    margin-right: auto;
-    padding: 1%;
+/* Where questions will appear */
+#options-box {
+    height: 200px;
+    width: 100%;
+    margin-left: 40px;
+    font-family: "Raleway", sans-serif;
+    text-align: center;
+    font-weight: 600;
+    padding: 1.25rem;
+}
+
+/* the radio buttons that need to be selected to register an answer */
+.answer-option {
+    font-family: "Raleway", sans-serif;
+    height: 20%;
+    width: 20%;
 }
 
 /* Question display */
@@ -95,25 +100,22 @@ body {
     font-size: 30px;
 }
 
-/* Where questions will appear */
-#answer-box {
-    height: 200px;
-    width: 100%;
-    margin-left: 40px;
-    font-family: "Raleway", sans-serif;
-    text-align: center;
-    font-weight: 600;
-    padding: 1.25rem;
+/* Area where icons and running score are displayed */
+#results-area {
+    margin-top: 10px;
+    background-color: #E6ECF0;
+    box-sizing: border-box;
+    border: rgb(199, 100, 43) solid 5px;
+    border-radius: 10vmin;
+    width: 85%;
+    height: 15vh;
+    max-width: 830px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 1%;
 }
 
-/* the radio buttons that need to be selected to register an answer */
-.answer-option {
-    font-family: "Raleway", sans-serif;
-    height: 20%;
-    width: 20%;
-}
-
-/* icons to change collor accordingly */
+/* icons to change colour according to suser input matched against answer key in array */
 #correct {
     margin: 0 auto;
     padding: 1% 8%;
@@ -126,12 +128,12 @@ body {
     font-size: 70px;
 }
 
-/* area for buttons, nest and restart */
+/* area for buttons, next and restart */
 #button-div {
     margin-top: 1%;
 }
 
-/* Where score is displayed*/
+/* Where running score is displayed*/
 #score {
     position: absolute;
     font-family: "Raleway", sans-serif;
