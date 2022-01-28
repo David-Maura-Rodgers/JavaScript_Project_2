@@ -70,7 +70,7 @@ body {
     font-size: 30px;
 }
 
-
+/*
 /* -------------- SCORE DISPLAY, ICON DISPLAY AND SCORE TRACKER AREA ----------------- */
 
 /* Area where icons and running score are displayed */
@@ -179,6 +179,7 @@ body {
         width: 100%;
         margin-left: 40px;
         text-align: center;
+        font-weight: 600;
         /* font-size: small; */
         padding: 0.5rem;
     }
@@ -187,7 +188,6 @@ body {
     height: 200px;
     width: 100%;
     margin-left: 40px;
-    font-family: "Raleway", sans-serif;
     text-align: center;
     font-weight: 600;
     padding: 1.25rem;
@@ -209,8 +209,8 @@ body {
 
     /* the radio buttons that need to be selected to register an answer */
     .answer-option {
-        height: 20%;
-        width: 20%;
+        height: 10%;
+        width: 10%;
     }
 
     /*
@@ -222,10 +222,10 @@ body {
     /* Feedback display */
     #feedback {
         margin-left: -10%;
-        padding-bottom: 25px;
+        padding-bottom: 45px;
         position: relative;
         font-weight: bolder;
-        font-size: 20px;
+        font-size: 30px;
     }
 
     /*
@@ -244,11 +244,11 @@ body {
 
     /* Quiz Area which contains question display, answer-box div and feedback div  */
     #quiz-area {
-        margin-top: 5px;
+        margin-top: 20px;
         box-sizing: border-box;
         border-radius: 10vmin;
-        width: 750%;
-        height: 20vh; /* 45vh */
+        width: 75%;
+        height: 35vh;
         margin-left: auto;
         margin-right: auto;
         padding: 0.5%;
@@ -256,9 +256,7 @@ body {
 
     /*
     margin-top: 20px;
-    background-color: #E6ECF0;
     box-sizing: border-box;
-    border: rgb(199, 100, 43) solid 5px;
     border-radius: 10vmin;
     width: 85%;
     height: 45vh;
@@ -271,10 +269,12 @@ body {
     
     /* Where questions will appear */
     #options-box {
-        height: 100px;
-        margin-left: 5px;
+        height: 200px;
+        width: 100%;
+        margin-left: 20px;
         text-align: center;
-        font-size: small;
+        /* font-size: small; */
+        font-weight: 600;
         padding: 0.25rem;
     }
 
@@ -282,7 +282,6 @@ body {
     height: 200px;
     width: 100%;
     margin-left: 40px;
-    font-family: "Raleway", sans-serif;
     text-align: center;
     font-weight: 600;
     padding: 1.25rem;
@@ -291,26 +290,46 @@ body {
     /* Question display */
     #question {
         text-align: center;
-        font-family: "Raleway", sans-serif;
         font-weight: bolder;
-        font-size: 10px;
+        font-size: 30px;
     }
+
+    /*
+    text-align: center;
+    font-family: "Raleway", sans-serif;
+    font-weight: bolder;
+    font-size: 30px;
+    */
     
     /* the radio buttons that need to be selected to register an answer */
     .answer-option {
-        font-family: "Raleway", sans-serif;
-        height: 2.5%;
-        width: 50%;
+        height: 15%;
+        width: 10%;
     }
+
+    /*
+    font-family: "Raleway", sans-serif;
+    height: 20%;
+    width: 20%;
+    */
     
     /* Feedback display */
     #feedback {
-        margin-left: -5%;
-        padding-bottom: 5px;
+        margin-left: -10%;
+        padding-bottom: 35px;
         position: relative;
         font-weight: bolder;
-        font-size: 10px;
+        font-size: 20px;
     }
+
+    /*
+    margin-left: -10%;
+    padding-bottom: 50px;
+    position: relative;
+    font-weight: bolder;
+    font-size: 30px;
+    */
+    
 }
 
 /* For small screen sizes 850px and down */ /* ------------ CHECK IF NEEDS TO BE DELETED ----------- */
@@ -318,11 +337,13 @@ body {
 
     /* Quiz Area which contains question display, answer-box div and feedback div  */
     #quiz-area {
-        margin-top: 5px;
+        margin-top: 10px;
         box-sizing: border-box;
         border-radius: 10vmin;
-        width: 25%;
-        height: 15vh;
+        width: 85%;
+        height: 45vh;
+        max-height: 450px;
+        max-width: 850px;
         margin-left: auto;
         margin-right: auto;
         padding: 0.5%;
@@ -330,9 +351,7 @@ body {
 
     /*
     margin-top: 20px;
-    background-color: #E6ECF0;
     box-sizing: border-box;
-    border: rgb(199, 100, 43) solid 5px;
     border-radius: 10vmin;
     width: 85%;
     height: 45vh;
@@ -345,10 +364,12 @@ body {
     
     /* Where questions will appear */
     #options-box {
-        height: 100px;
-        margin-left: 5px;
+        height: 150px;
+        width: 100%;
+        margin-left: 20px;
         text-align: center;
-        font-size: small;
+        font-weight: 600;
+        /* font-size: small; */
         padding: 0.25rem;
     }
 
@@ -356,7 +377,6 @@ body {
     height: 200px;
     width: 100%;
     margin-left: 40px;
-    font-family: "Raleway", sans-serif;
     text-align: center;
     font-weight: 600;
     padding: 1.25rem;
@@ -365,24 +385,40 @@ body {
     /* Question display */
     #question {
         text-align: center;
-        font-family: "Raleway", sans-serif;
         font-weight: bolder;
-        font-size: 10px;
+        font-size: 30px;
     }
+
+    /*
+    text-align: center;
+    font-weight: bolder;
+    font-size: 30px;
+    */
     
     /* the radio buttons that need to be selected to register an answer */
     .answer-option {
-        font-family: "Raleway", sans-serif;
-        height: 2.5%;
-        width: 25%;
+        height: 10%;
+        width: 7.5%;
     }
+
+    /*;
+    height: 20%;
+    width: 20%;
+    */
     
     /* Feedback display */
     #feedback {
         margin-left: -5%;
-        padding-bottom: 5px;
+        padding-bottom: 25px;
         position: relative;
         font-weight: bolder;
-        font-size: 5px;
+        font-size: 25px;
     }
+    /*
+    margin-left: -10%;
+    padding-bottom: 50px;
+    position: relative;
+    font-weight: bolder;
+    font-size: 30px;
+    */
 }
