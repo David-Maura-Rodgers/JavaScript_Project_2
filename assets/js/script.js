@@ -13,6 +13,16 @@ const questionArr = [
     question: "What year did World War I end?",
     options: ["1914", "1916", "1918", "1912"],
     answer: "1918"
+  },
+  {
+    question: "In which part of your body would you find the cruciate ligament?",
+    options: ["Knee", "Elbow", "Arm", "Nose"],
+    answer: "Knee"
+  },
+  {
+    question: "What is the smallest planet in our solar system?",
+    options: ["Pluto", "Mercury", "Venus", "Mars"],
+    answer: "Mercury"
   }
 ];
 
@@ -36,7 +46,7 @@ let opt4 = document.getElementById('opt4');
 let questionIndex = 0;
 let answerIndex = 0;
 let correct = 0;
-let totalQuestions = 4;
+let totalQuestions = 5;
 let currentQuestion = 0;
 
 /** Function: checkAnswer
@@ -57,31 +67,23 @@ function checkAnswer(event) {
   }
   else if (this.value !== questionArr[questionIndex].answer) {
     incorrectIcon.style.backgroundColor = "red";
-    feedback.innerHTML = 'Incorrect!' + '</br>' + 'The correct answer was: ' + '<strong>' + questionArr[questionIndex].answer + '</strong>';
+    feedback.innerHTML = 'Incorrect!' + '</br>' + 'The correct answer was: ' + '<strong>' + questionArr[questionIndex].answer + 
+    '</strong>';
       
     if (currentQuestion === questionIndex) {
       currentQuestion++;
     }
   }
 
-  // Check for total score after last question in questionArr (both else if below)
-  else if (this.value === questionArr[questionIndex].answer && currentQuestion === (totalQuestions - 1)) {
-    correct++;  // TODO: Double check if there is code duplication in this block
-    currentQuestion++;
-    correctIcon.style.backgroundColor = "green";
-    feedback.innerHTML = 'Correct!' + '</br>' + 'Your total score: ' + correct + '/' + totalQuestions;
+  // checks for last question in array and displays total score in feedback area to user
+  if (currentQuestion === totalQuestions) {
+    feedback.innerHTML =  '</strong>' + '</br>' + 'Quiz complete!' + ' ' + 'Your total score: ' + correct + '/' + totalQuestions;
   }
-  else if (this.value !== questionArr[questionIndex].answer && currentQuestion === (totalQuestions - 1)) {
-    currentQuestion++; // TODO: Double check if there is code duplication in this block
-    incorrectIcon.style.backgroundColor = "red";
-    feedback.innerHTML = 'Incorrect!' + '</br>' + 'The correct answer is: ' + '<strong>' + questionArr[questionIndex].answer +
-    '</strong>' + '</br>' + 'Your total score: ' + correct + '/' + totalQuestions;
-  }
-  
-  scoreTracker.innerHTML = 'Score: ' + correct + '/' + (totalQuestions -1);
+ 
+  scoreTracker.innerHTML = 'Score: ' + correct + '/' + totalQuestions;
 }
 
-// Listener for on click events for check answer
+// Listener for on click events to call check answer function
 let i;
 for (i = 0; i < answerOption.length; i++) {
     answerOption[i].addEventListener("click", checkAnswer);
@@ -129,7 +131,7 @@ function nextQuestion() {
       opt3.checked = false;
       opt4.checked = false;
   }
-  else {
+  else  {
       alert('Please select your answer to continue');
   }
 }
