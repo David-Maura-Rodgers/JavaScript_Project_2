@@ -149,7 +149,7 @@ body {
 
     /* Quiz Area which contains question display, answer-box div and feedback div  */
     #quiz-area {
-        margin-top: 20px;
+        margin-top: 2px;
         border-radius: 10vmin;
         box-sizing: border-box;
         width: 85%;
@@ -236,7 +236,81 @@ body {
     font-weight: bolder;
     font-size: 30px;
     */
-    
+
+
+/* -------------- SCORE DISPLAY, ICON DISPLAY AND SCORE TRACKER AREA ----------------- */
+    #results-area {
+        border-radius: 10vmin;
+        width: 75%;
+        height: 15vh;
+        max-width: 830px;
+        margin: 1.5% 1.5% 1.5% 8%;
+        padding: 1%;
+    }
+    /*
+    margin-top: 10px;
+    background-color: #E6ECF0;
+    box-sizing: border-box;
+    border: rgb(199, 100, 43) solid 5px;
+    border-radius: 10vmin;
+    width: 85%;
+    height: 15vh;
+    max-width: 830px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 1%;
+    */
+
+/* icons to change colour according to suser input matched against answer key in array */ 
+/* NEED TO COME BACK TO THIS!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!*/
+    #correct {
+        margin: 0 auto;
+        padding: 1% 8%;
+        font-size: 70px;
+    }
+
+#incorrect {
+        margin: 0 auto;
+        padding: 1% 8%;
+        font-size: 70px;
+    }
+
+/* area for buttons, next and restart */
+    #button-div {
+        margin: 1%;
+    }
+
+/* Next Question and Restart buttons */
+    #next-button {
+        margin: 0 auto;
+        border-radius: 2px;
+        padding: 15px 32px 15px 32px;
+        font-size: 100%;
+        background-color: rgb(199, 100, 43);
+        font-size: large;
+        font-weight: bold;
+    }
+
+    #restart-button {
+        margin: 0 auto;
+        border-radius: 2px;
+        padding: 15px 32px 15px 32px;
+        font-size: 100%;
+        background-color: rgb(199, 100, 43);
+        font-size: large;
+        font-weight: bold;
+}
+
+/* Where running score is displayed*/
+    #score {
+        position: relative;
+        top: 2rem;
+        clear: both;
+        font-size: 30px;
+        box-sizing: border-box;
+        border-radius: 10vmin;
+        padding: 10px;
+    }
 }
 
 /* Media query to add styles for tablets and screen size of threshold 950px */
@@ -244,7 +318,7 @@ body {
 
     /* Quiz Area which contains question display, answer-box div and feedback div  */
     #quiz-area {
-        margin-top: 20px;
+        margin-top: 2px;
         box-sizing: border-box;
         border-radius: 10vmin;
         width: 75%;
@@ -330,6 +404,79 @@ body {
     font-size: 30px;
     */
     
+
+/* -------------- SCORE DISPLAY, ICON DISPLAY AND SCORE TRACKER AREA ----------------- */
+    #results-area {
+        border-radius: 10vmin;
+        width: 65%;
+        height: 15vh;
+        max-width: 830px;
+        margin: 1.5% 1.5% 1.5% 8%;
+        padding: 1%;
+    }
+        /*
+        margin-top: 10px;
+        background-color: #E6ECF0;
+        box-sizing: border-box;
+        border: rgb(199, 100, 43) solid 5px;
+        border-radius: 10vmin;
+        width: 85%;
+        height: 15vh;
+        max-width: 830px;
+        margin-left: auto;
+        margin-right: auto;
+        padding: 1%;
+        */
+    
+    /* icons to change colour according to suser input matched against answer key in array */
+    #correct {
+        margin: 0 auto;
+        padding: 1% 8%;
+        font-size: 70px;
+    }
+    
+    #incorrect {
+        margin: 0 auto;
+        padding: 1% 8%;
+        font-size: 70px;
+    }
+    
+    /* area for buttons, next and restart */
+    #button-div {
+        margin: 1%;
+    }
+    
+    /* Next Question and Restart buttons */
+    #next-button {
+        margin: 0 auto;
+        border-radius: 2px;
+        padding: 15px 32px 15px 32px;
+        font-size: 100%;
+        background-color: rgb(199, 100, 43);
+        font-size: large;
+        font-weight: bold;
+    }
+    
+    #restart-button {
+        margin: 0 auto;
+        border-radius: 2px;
+        padding: 15px 32px 15px 32px;
+        font-size: 100%;
+        background-color: rgb(199, 100, 43);
+        font-size: large;
+        font-weight: bold;
+    }
+    
+    /* Where running score is displayed*/
+    #score {
+        position: relative;
+        top: 2rem;
+        clear: both;
+        font-size: 30px;
+        box-sizing: border-box;
+        border-radius: 10vmin;
+        padding: 10px;
+    }
 }
 
 /* For small screen sizes 850px and down */ /* ------------ CHECK IF NEEDS TO BE DELETED ----------- */
@@ -337,7 +484,7 @@ body {
 
     /* Quiz Area which contains question display, answer-box div and feedback div  */
     #quiz-area {
-        margin-top: 10px;
+        margin-top: 2px;
         box-sizing: border-box;
         border-radius: 10vmin;
         width: 85%;
@@ -421,4 +568,77 @@ body {
     font-weight: bolder;
     font-size: 30px;
     */
+
+    /* -------------- SCORE DISPLAY, ICON DISPLAY AND SCORE TRACKER AREA ----------------- */
+    #results-area {
+        border-radius: 10vmin;
+        width: 85%;
+        height: 15vh;
+        max-width: 830px;
+        margin: 1.5% 1.5% 1.5% 8%;
+        padding: 1%;
+    }
+        /*
+        margin-top: 10px;
+        background-color: #E6ECF0;
+        box-sizing: border-box;
+        border: rgb(199, 100, 43) solid 5px;
+        border-radius: 10vmin;
+        width: 85%;
+        height: 15vh;
+        max-width: 830px;
+        margin-left: auto;
+        margin-right: auto;
+        padding: 1%;
+        */
+    
+    /* icons to change colour according to suser input matched against answer key in array */
+    #correct {
+        margin: 0 auto;
+        padding: 1% 8%;
+        font-size: 70px;
+    }
+    
+    #incorrect {
+        margin: 0 auto;
+        padding: 1% 8%;
+        font-size: 70px;
+    }
+    
+    /* area for buttons, next and restart */
+    #button-div {
+        margin: 1%;
+    }
+    
+    /* Next Question and Restart buttons */
+    #next-button {
+        margin: 0 auto;
+        border-radius: 2px;
+        padding: 15px 32px 15px 32px;
+        font-size: 100%;
+        background-color: rgb(199, 100, 43);
+        font-size: large;
+        font-weight: bold;
+    }
+    
+    #restart-button {
+        margin: 0 auto;
+        border-radius: 2px;
+        padding: 15px 32px 15px 32px;
+        font-size: 100%;
+        background-color: rgb(199, 100, 43);
+        font-size: large;
+        font-weight: bold;
+    }
+    
+    /* Where running score is displayed*/
+    #score {
+        position: relative;
+        top: 2rem;
+        clear: both;
+        font-size: 30px;
+        box-sizing: border-box;
+        border-radius: 10vmin;
+        padding: 10px;
+    }
 }
