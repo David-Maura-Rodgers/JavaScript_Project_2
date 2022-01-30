@@ -26,7 +26,7 @@ body {
     border: rgb(199, 100, 43) solid 5px;
     border-radius: 10vmin;
     width: 85%;
-    height: 45vh;
+    height: 40vh;
     max-height: 450px;
     max-width: 1270px;
     margin-left: auto;
@@ -37,25 +37,24 @@ body {
 /* Where questions will appear */
 #options-box {
     height: 200px;
-    width: 100%;
-    margin-left: 40px;
-    font-family: "Raleway", sans-serif;
+    width: 95%;
+    margin-left: 5%;
+    padding-top: 2rem;
     text-align: center;
     font-weight: 600;
-    padding: 1.25rem;
+    font-size: 18px;
+    white-space: nowrap;
 }
 
 /* Question display */
 #question {
     text-align: center;
-    font-family: "Raleway", sans-serif;
     font-weight: bolder;
-    font-size: 30px;
+    font-size: 35px;
 }
 
 /* the radio buttons that need to be selected to register an answer */
 .answer-option {
-    font-family: "Raleway", sans-serif;
     height: 20%;
     width: 20%;
 }
@@ -165,16 +164,19 @@ body {
     #options-box {
         height: 180px;
         width: 90%;
-        margin-left: 35px;
+        margin: auto;
+        padding-top: 2rem;
         text-align: center;
         font-weight: 600;
+        font-size: 18px;
+        white-space: nowrap;
     }
     
     /* Question display */
     #question {
         text-align: center;
         font-weight: bolder;
-        font-size: 30px;
+        font-size: 35px;
     }
 
     /* the radio buttons that need to be selected to register an answer */
@@ -257,7 +259,7 @@ body {
         box-sizing: border-box;
         border-radius: 10vmin;
         width: 75%;
-        height: 35vh;
+        height: 30vh;
         margin-left: auto;
         margin-right: auto;
         padding: 0.5%;
@@ -267,10 +269,12 @@ body {
     #options-box {
         height: 180px;
         width: 90%;
-        margin-left: 35px;
+        margin: auto;
+        padding-top: 2rem;
         text-align: center;
         font-weight: 600;
-        padding: 0.25rem;
+        font-size: 18px;
+        white-space: nowrap;
     }
     
     /* Question display */
@@ -279,7 +283,7 @@ body {
         font-weight: bolder;
         font-size: 30px;
     }
-    
+
     /* the radio buttons that need to be selected to register an answer */
     .answer-option {
         height: 15%;
@@ -353,14 +357,6 @@ body {
         padding: 10px;
     }
 }
-        /*
-        position: relative;
-        top: 7rem;
-        clear: both;
-        box-sizing: border-box;
-        border-radius: 10vmin;
-        padding: 10px;
-        */
 
 /* For small screen sizes 850px and down */ /* ------------ CHECK IF NEEDS TO BE DELETED ----------- */
 @media screen and (max-width: 850px) {
@@ -371,7 +367,7 @@ body {
         box-sizing: border-box;
         border-radius: 10vmin;
         width: 85%;
-        height: 45vh;
+        height: 25vh;
         max-height: 450px;
         max-width: 850px;
         margin-left: auto;
@@ -383,17 +379,18 @@ body {
     #options-box {
         height: 180px;
         width: 90%;
-        margin-left: 20px;
-        text-align: center;
+        margin: auto;
         font-weight: 600;
-        padding: 0.10rem;
+        padding-top: 2rem;
+        font-size: 18px;
+        white-space: nowrap;
     }
     
     /* Question display */
     #question {
         text-align: center;
         font-weight: bolder;
-        font-size: 30px;
+        font-size: 25px;
     }
     
     /* the radio buttons that need to be selected to register an answer */
