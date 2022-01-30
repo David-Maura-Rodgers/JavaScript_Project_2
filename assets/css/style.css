@@ -31,7 +31,6 @@ body {
     max-width: 1270px;
     margin-left: auto;
     margin-right: auto;
-    padding: 1%;
 }
 
 /* Where questions will appear */
@@ -62,14 +61,12 @@ body {
 /* Feedback display */
 #feedback {
     margin-left: -10%;
-    padding-bottom: 50px;
     position: relative;
-    font-family: "Raleway", sans-serif;
     font-weight: bolder;
     font-size: 30px;
 }
 
-/*
+
 /* -------------- SCORE DISPLAY, ICON DISPLAY AND SCORE TRACKER AREA ----------------- */
 
 /* Area where icons and running score are displayed */
@@ -152,12 +149,11 @@ body {
         border-radius: 10vmin;
         box-sizing: border-box;
         width: 85%;
-        height: 35vh;
+        height: 45vh;
         max-height: 450px;
         max-width: 1200px;
         margin-left: auto;
         margin-right: auto;
-        padding: 0.5%;
     }
 
     /* Where questions will appear */
@@ -188,7 +184,7 @@ body {
     /* Feedback display : "Correct!" or "Incorrect" */
     #feedback {
         margin: auto;
-        padding-bottom: 45px;
+        padding-bottom: 5px;
         padding-top: 25px;
         position: relative;
     }
@@ -259,10 +255,10 @@ body {
         box-sizing: border-box;
         border-radius: 10vmin;
         width: 75%;
-        height: 30vh;
+        height: 45vh;
         margin-left: auto;
         margin-right: auto;
-        padding: 0.5%;
+        padding-bottom: 4%;
     }
     
     /* Where questions will appear */
@@ -293,7 +289,7 @@ body {
     /* Feedback display */
     #feedback {
         margin:auto;
-        padding-bottom: 25px;
+        padding-bottom: 5px;
         position: relative;
         font-size: 20px;
     } 
@@ -367,12 +363,12 @@ body {
         box-sizing: border-box;
         border-radius: 10vmin;
         width: 85%;
-        height: 25vh;
+        height: 40vh;
         max-height: 450px;
         max-width: 850px;
         margin-left: auto;
         margin-right: auto;
-        padding: 0.5%;
+        padding-bottom: 4%;
     }
     
     /* Where questions will appear */
@@ -381,7 +377,7 @@ body {
         width: 90%;
         margin: auto;
         font-weight: 600;
-        padding-top: 2rem;
+        padding-top: 1.5rem;
         font-size: 18px;
         white-space: nowrap;
     }
@@ -402,7 +398,6 @@ body {
     /* Feedback display */
     #feedback {
         margin-left: -5%;
-        padding-bottom: 25px;
         position: relative;
         font-weight: bolder;
         font-size: 25px;
