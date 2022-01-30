@@ -1,28 +1,43 @@
 const questionArr = [
   {
-    question: "What is the capital of Ireland?",
+    question: "Q.1: What is the capital of Ireland?",
     options: ["Cork", "Dublin", "Galway", "Sligo"],
     answer: "Dublin" 
   },
   { 
-    question: "How many sides does an octagon have?",
+    question: "Q.2: How many sides does an octagon have?",
     options: ["Four", "Nine", "Twelve", "Eight"],
     answer: "Eight"  
   },
   {
-    question: "What year did World War I end?",
+    question: "Q.3: What year did World War I end?",
     options: ["1914", "1916", "1918", "1912"],
     answer: "1918"
   },
   {
-    question: "In which part of your body would you find the cruciate ligament?",
+    question: "Q.4: In which part of your body would you find the cruciate ligament?",
     options: ["Knee", "Elbow", "Arm", "Nose"],
     answer: "Knee"
   },
   {
-    question: "What is the smallest planet in our solar system?",
+    question: "Q.5: What is the smallest planet in our solar system?",
     options: ["Pluto", "Mercury", "Venus", "Mars"],
     answer: "Mercury"
+  },
+  {
+    question: "Q.6: How many films have Al Pacino and Robert De Niro appeared in together?",
+    options: ["Seven", "Nine", "Six", "Four"],
+    answer: "Four"
+  },
+  {
+    question: "Q.7: What was the most popular girls name in the UK in 2019?",
+    options: ["Emily", "Grace", "Fiadh", "Sophie"],
+    answer: "Emily"
+  },
+  {
+    question: "Q.8: In what year was the Battle of Clontarf?",
+    options: ["1014", "1022", "1114", "1016"],
+    answer: "1014"
   }
 ];
 
@@ -46,7 +61,7 @@ let opt4 = document.getElementById('opt4');
 let questionIndex = 0;
 let answerIndex = 0;
 let correct = 0;
-let totalQuestions = 5;
+let totalQuestions = 8;
 let currentQuestion = 0;
 
 /** Function: checkAnswer
