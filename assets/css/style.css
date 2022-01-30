@@ -145,7 +145,7 @@ body {
 /* -------------- MEDIA QUERIES----------------- */
 
 /* Media query to add styles for tablets and screen size of threshold 1200px */
-@media screen and (max-width: 1200px) {
+@media screen and (max-width: 1450px) {
 
     /* Quiz Area which contains question display, answer-box div and feedback div  */
     #quiz-area {
@@ -175,13 +175,11 @@ body {
 
     /* Where questions will appear */
     #options-box {
-        height: 200px;
-        width: 100%;
-        margin-left: 40px;
+        height: 180px;
+        width: 90%;
+        margin-left: 35px;
         text-align: center;
         font-weight: 600;
-        /* font-size: small; */
-        padding: 0.5rem;
     }
 
     /*
@@ -209,8 +207,8 @@ body {
 
     /* the radio buttons that need to be selected to register an answer */
     .answer-option {
-        height: 10%;
-        width: 10%;
+        height: 15%;
+        width: 15%;
     }
 
     /*
@@ -219,13 +217,12 @@ body {
     width: 20%;
     */
     
-    /* Feedback display */
+    /* Feedback display : "Correct!" or "Incorrect" */
     #feedback {
-        margin-left: -10%;
+        margin: auto;
         padding-bottom: 45px;
+        padding-top: 25px;
         position: relative;
-        font-weight: bolder;
-        font-size: 30px;
     }
 
     /*
@@ -244,7 +241,8 @@ body {
         width: 75%;
         height: 15vh;
         max-width: 830px;
-        margin: 1.5% 1.5% 1.5% 8%;
+        margin-left: auto;
+        margin-right: auto;
         padding: 1%;
     }
     /*
@@ -282,24 +280,18 @@ body {
 
 /* Next Question and Restart buttons */
     #next-button {
-        margin: 0 auto;
+        position: relative;
+        top: 2.5rem;
         border-radius: 2px;
         padding: 15px 32px 15px 32px;
-        font-size: 100%;
-        background-color: rgb(199, 100, 43);
-        font-size: large;
-        font-weight: bold;
     }
 
     #restart-button {
-        margin: 0 auto;
+        position: relative;
+        top: 2.5rem;
         border-radius: 2px;
         padding: 15px 32px 15px 32px;
-        font-size: 100%;
-        background-color: rgb(199, 100, 43);
-        font-size: large;
-        font-weight: bold;
-}
+    }
 
 /* Where running score is displayed*/
     #score {
@@ -344,11 +336,10 @@ body {
     
     /* Where questions will appear */
     #options-box {
-        height: 200px;
-        width: 100%;
+        height: 180px;
+        width: 90%;
         margin-left: 20px;
         text-align: center;
-        /* font-size: small; */
         font-weight: 600;
         padding: 0.25rem;
     }
@@ -449,23 +440,19 @@ body {
     
     /* Next Question and Restart buttons */
     #next-button {
-        margin: 0 auto;
+        position: relative;
+        top: 2.5rem;
+        clear: both;
         border-radius: 2px;
         padding: 15px 32px 15px 32px;
-        font-size: 100%;
-        background-color: rgb(199, 100, 43);
-        font-size: large;
-        font-weight: bold;
     }
     
     #restart-button {
-        margin: 0 auto;
+        position: relative;
+        top: 2.5rem;
+        display: block;
         border-radius: 2px;
         padding: 15px 32px 15px 32px;
-        font-size: 100%;
-        background-color: rgb(199, 100, 43);
-        font-size: large;
-        font-weight: bold;
     }
     
     /* Where running score is displayed*/
@@ -513,8 +500,8 @@ body {
     
     /* Where questions will appear */
     #options-box {
-        height: 150px;
-        width: 100%;
+        height: 180px;
+        width: 90%;
         margin-left: 20px;
         text-align: center;
         font-weight: 600;
@@ -614,23 +601,21 @@ body {
     
     /* Next Question and Restart buttons */
     #next-button {
-        margin: 0 auto;
+        position: relative;
+        top: 2.5rem;
+        clear: both;
         border-radius: 2px;
         padding: 15px 32px 15px 32px;
         font-size: 100%;
-        background-color: rgb(199, 100, 43);
-        font-size: large;
-        font-weight: bold;
     }
     
     #restart-button {
-        margin: 0 auto;
+        position: relative;
+        top: 2.5rem;
+        display: block;
         border-radius: 2px;
         padding: 15px 32px 15px 32px;
         font-size: 100%;
-        background-color: rgb(199, 100, 43);
-        font-size: large;
-        font-weight: bold;
     }
     
     /* Where running score is displayed*/
