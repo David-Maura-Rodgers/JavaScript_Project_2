@@ -161,7 +161,6 @@ body {
         padding: 0.5%;
     }
 
-
     /* Where questions will appear */
     #options-box {
         height: 180px;
@@ -225,14 +224,14 @@ body {
 /* Next Question and Restart buttons */
     #next-button {
         position: relative;
-        top: 0.25rem;
+        top: 0.5rem;
         border-radius: 2px;
         padding: 15px 32px 15px 32px;
     }
 
     #restart-button {
         position: relative;
-        top: 0.25rem;
+        top: 0.5rem;
         border-radius: 2px;
         padding: 15px 32px 15px 32px;
     }
@@ -240,10 +239,9 @@ body {
 /* Where running score is displayed*/
     #score {
         position: relative;
-        top: 5rem;
-        bottom: 2.5rem;
+        display: block;
+        top: 5.5rem;
         clear: both;
-        font-size: 30px;
         box-sizing: border-box;
         border-radius: 10vmin;
         padding: 10px;
@@ -337,6 +335,7 @@ body {
     #restart-button {
         position: relative;
         top: 4.5rem;
+        bottom: 2.5rem;
         display: block;
         clear: both;
         border-radius: 2px;
@@ -346,13 +345,22 @@ body {
     /* Where running score is displayed*/
     #score {
         position: relative;
-        margin-top: 15%;
+        display: block;
+        top: 9.25rem;
         clear: both;
         box-sizing: border-box;
         border-radius: 10vmin;
         padding: 10px;
     }
 }
+        /*
+        position: relative;
+        top: 7rem;
+        clear: both;
+        box-sizing: border-box;
+        border-radius: 10vmin;
+        padding: 10px;
+        */
 
 /* For small screen sizes 850px and down */ /* ------------ CHECK IF NEEDS TO BE DELETED ----------- */
 @media screen and (max-width: 850px) {
@@ -412,9 +420,6 @@ body {
         margin: 1.5% 1.5% 1.5% 8%;
         padding: 1%;
     }
-        /*
-        
-        */
     
     /* icons to change colour according to suser input matched against answer key in array */
     #correct {
@@ -445,8 +450,10 @@ body {
     
     #restart-button {
         position: relative;
-        top: 4.25rem;
+        top: 4.5rem;
+        bottom: 2.5rem;
         display: block;
+        clear: both;
         border-radius: 2px;
         padding: 15px 32px 15px 32px;
     }
@@ -454,9 +461,9 @@ body {
     /* Where running score is displayed*/
     #score {
         position: relative;
-        top: 6.5rem;
+        display: block;
+        top: 10.5rem;
         clear: both;
-        font-size: 30px;
         box-sizing: border-box;
         border-radius: 10vmin;
         padding: 10px;
