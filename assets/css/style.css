@@ -304,7 +304,8 @@ body {
 /* Where running score is displayed*/
     #score {
         position: relative;
-        top: 2rem;
+        top: 5rem;
+        bottom: 2.5rem;
         clear: both;
         font-size: 30px;
         box-sizing: border-box;
@@ -470,7 +471,8 @@ body {
     /* Where running score is displayed*/
     #score {
         position: relative;
-        top: 2rem;
+        top: 5rem;
+        bottom: 2.5rem;
         clear: both;
         font-size: 30px;
         box-sizing: border-box;
@@ -634,7 +636,8 @@ body {
     /* Where running score is displayed*/
     #score {
         position: relative;
-        top: 2rem;
+        top: 5rem;
+        bottom: 2.5rem;
         clear: both;
         font-size: 30px;
         box-sizing: border-box;
