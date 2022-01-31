@@ -460,4 +460,218 @@ body {
         border-radius: 10vmin;
         padding: 10px;
     }
+
+
+@media screen and (max-width: 736px) {
+
+    /* Quiz Area which contains question display, answer-box div and feedback div  */
+    #quiz-area {
+        margin-top: 2px;
+        box-sizing: border-box;
+        border-radius: 10vmin;
+        width: 85%;
+        height: 40vh;
+        max-height: 450px;
+        max-width: 850px;
+        margin-left: auto;
+        margin-right: auto;
+        padding-bottom: 4%;
+    }
+        
+    /* Where questions will appear */
+    #options-box {
+        height: 180px;
+        width: 90%;
+        margin: auto;
+        font-weight: 600;
+        padding-top: 1.5rem;
+        font-size: 15px;
+        white-space: nowrap;
+        }
+        
+        /* Question display */
+        #question {
+            text-align: center;
+            font-weight: bolder;
+            font-size: 25px;
+        }
+        
+        /* the radio buttons that need to be selected to register an answer */
+        .answer-option {
+            height: 10%;
+            width: 5%;
+        }
+        
+        /* Feedback display */
+        #feedback {
+            margin-left: -5%;
+            position: relative;
+            font-weight: bolder;
+            font-size: 25px;
+        }
+    
+        /* -------------- SCORE DISPLAY, ICON DISPLAY AND SCORE TRACKER AREA ----------------- */
+        #results-area {
+            border-radius: 10vmin;
+            width: 85%;
+            height: 15vh;
+            max-width: 830px;
+            margin: 1.5% 1.5% 1.5% 8%;
+            padding: 1%;
+        }
+        
+        /* icons to change colour according to suser input matched against answer key in array */
+        #correct {
+            margin: 0 auto;
+            padding: 1% 8%;
+            font-size: 70px;
+        }
+        
+        #incorrect {
+            margin: 0 auto;
+            padding: 1% 8%;
+            font-size: 70px;
+        }
+        
+        /* area for buttons, next and restart */
+        #button-div {
+            margin: 1%;
+        }
+        
+        /* Next Question and Restart buttons */
+        #next-button {
+            position: relative;
+            top: -3.25rem;
+            display: block;
+            border-radius: 2px;
+            padding: 15px 32px 15px 32px;
+        }
+        
+        #restart-button {
+            position: relative;
+            top: 4.5rem;
+            bottom: 2.5rem;
+            display: block;
+            clear: both;
+            border-radius: 2px;
+            padding: 15px 32px 15px 32px;
+        }
+        
+        /* Where running score is displayed*/
+        #score {
+            position: relative;
+            display: block;
+            top: 10.5rem;
+            clear: both;
+            box-sizing: border-box;
+            border-radius: 10vmin;
+            padding: 10px;
+        }
+    }
+    @media screen and (max-width: 684px) {
+
+        /* Quiz Area which contains question display, answer-box div and feedback div  */
+        #quiz-area {
+            margin-top: 2px;
+            box-sizing: border-box;
+            border-radius: 10vmin;
+            width: 85%;
+            height: 40vh;
+            max-height: 450px;
+            max-width: 850px;
+            margin-left: auto;
+            margin-right: auto;
+            padding-bottom: 4%;
+        }
+            
+        /* Where questions will appear */
+        #options-box {
+            height: 180px;
+            width: 90%;
+            margin: auto;
+            font-weight: 600;
+            padding-top: 1.5rem;
+            font-size: 15px;
+            white-space: nowrap;
+            }
+            
+            /* Question display */
+            #question {
+                text-align: center;
+                font-weight: bolder;
+                font-size: 25px;
+            }
+            
+            /* the radio buttons that need to be selected to register an answer */
+            .answer-option {
+                height: 10%;
+                width: 5%;
+            }
+            
+            /* Feedback display */
+            #feedback {
+                margin-left: -5%;
+                position: relative;
+                font-weight: bolder;
+                font-size: 25px;
+            }
+        
+            /* -------------- SCORE DISPLAY, ICON DISPLAY AND SCORE TRACKER AREA ----------------- */
+            #results-area {
+                border-radius: 10vmin;
+                width: 85%;
+                height: 15vh;
+                max-width: 830px;
+                margin: 1.5% 1.5% 1.5% 8%;
+                padding: 1%;
+            }
+            
+            /* icons to change colour according to suser input matched against answer key in array */
+            #correct {
+                margin: 0 auto;
+                padding: 1% 8%;
+                font-size: 70px;
+            }
+            
+            #incorrect {
+                margin: 0 auto;
+                padding: 1% 8%;
+                font-size: 70px;
+            }
+            
+            /* area for buttons, next and restart */
+            #button-div {
+                margin: 1%;
+            }
+            
+            /* Next Question and Restart buttons */
+            #next-button {
+                position: relative;
+                top: -3.25rem;
+                display: block;
+                border-radius: 2px;
+                padding: 15px 32px 15px 32px;
+            }
+            
+            #restart-button {
+                position: relative;
+                top: 4.5rem;
+                bottom: 2.5rem;
+                display: block;
+                clear: both;
+                border-radius: 2px;
+                padding: 15px 32px 15px 32px;
+            }
+            
+            /* Where running score is displayed*/
+            #score {
+                position: relative;
+                display: block;
+                top: 10.5rem;
+                clear: both;
+                box-sizing: border-box;
+                border-radius: 10vmin;
+                padding: 10px;
+            }
+        }
 }
