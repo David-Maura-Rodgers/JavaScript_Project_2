@@ -125,16 +125,17 @@ body {
 
 /* Where running score is displayed*/
 #score {
-    position: absolute;
-    font-family: "Raleway", sans-serif;
-    font-weight: bolder;
+    position: relative;
+    align-content: center;
+    margin-left: 25%;
+    margin-right: 25%;
+    margin-bottom: 7%;
     font-size: 30px;
-    background:#E6ECF0;
     box-sizing: border-box;
     border: rgb(199, 100, 43) solid 5px;
+    background:#E6ECF0;
     border-radius: 10vmin;
     padding: 10px;
-    margin-top: 18px;
 }
 
 
@@ -237,9 +238,10 @@ body {
 /* Where running score is displayed*/
     #score {
         position: relative;
-        display: block;
-        top: 5.5rem;
-        clear: both;
+        align-content: center;
+        margin-left: 25%;
+        margin-right: 25%;
+        margin-bottom: 7%;
         box-sizing: border-box;
         border-radius: 10vmin;
         padding: 10px;
@@ -345,13 +347,13 @@ body {
     /* Where running score is displayed*/
     #score {
         position: relative;
-        display: block;
-        top: 9.25rem;
-        clear: both;
+        align-content: center;
+        margin-left: 25%;
+        margin-right: 25%;
+        margin-bottom: 7%;
         box-sizing: border-box;
         border-radius: 10vmin;
         padding: 10px;
-    }
 }
 
 /* For small screen sizes 850px and down */ /* ------------ CHECK IF NEEDS TO BE DELETED ----------- */
@@ -453,9 +455,10 @@ body {
     /* Where running score is displayed*/
     #score {
         position: relative;
-        display: block;
-        top: 10.5rem;
-        clear: both;
+        align-content: center;
+        margin-left: 25%;
+        margin-right: 25%;
+        margin-bottom: 7%;
         box-sizing: border-box;
         border-radius: 10vmin;
         padding: 10px;
@@ -560,12 +563,14 @@ body {
         /* Where running score is displayed*/
         #score {
             position: relative;
-            display: block;
-            top: 10.5rem;
-            clear: both;
+            align-content: center;
+            margin-left: 25%;
+            margin-right: 25%;
+            margin-bottom: 7%;
             box-sizing: border-box;
             border-radius: 10vmin;
             padding: 10px;
+            
         }
     }
     @media screen and (max-width: 684px) {
@@ -666,12 +671,14 @@ body {
             /* Where running score is displayed*/
             #score {
                 position: relative;
-                display: block;
-                top: 10.5rem;
-                clear: both;
+                align-content: center;
+                margin-left: 25%;
+                margin-right: 25%;
+                margin-bottom: 7%;
                 box-sizing: border-box;
                 border-radius: 10vmin;
                 padding: 10px;
             }
         }
+}
 }
