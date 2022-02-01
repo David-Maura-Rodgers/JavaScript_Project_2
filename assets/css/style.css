@@ -33,7 +33,7 @@ body {
     margin-right: auto;
 }
 
-/* Where questions will appear */
+/* Where questions and answers will appear */
 #options-box {
     height: 200px;
     width: 95%;
@@ -86,14 +86,14 @@ body {
 
 /* icons to change colour according to suser input matched against answer key in array */
 #correct {
-    margin: 0 auto;
-    padding: 1% 8%;
+  
+    margin: 0.25% 10%;
     font-size: 70px;
 }
 
 #incorrect {
-    margin: 0 auto;
-    padding: 1% 8%;
+   
+    margin: 0.25% 10%;
     font-size: 70px;
 }
 
@@ -142,7 +142,7 @@ body {
 /* -------------- MEDIA QUERIES----------------- */
 
 /* Media query to add styles for tablets and screen size of threshold 1200px */
-@media screen and (max-width: 1450px) {
+@media screen and (max-width: 1200px) {
 
     /* Quiz Area which contains question display, answer-box div and feedback div  */
     #quiz-area {
@@ -157,7 +157,7 @@ body {
         margin-right: auto;
     }
 
-    /* Where questions will appear */
+    /* Where questions and answers will appear */
     #options-box {
         height: 180px;
         width: 90%;
@@ -204,14 +204,14 @@ body {
 /* icons to change colour according to user input matched against answer key in array */ 
 /* NEED TO COME BACK TO THIS!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!*/
     #correct {
-        margin: 0 auto;
-        padding: 1% 8%;
+        
+        margin: 0.25% 10%;
         font-size: 70px;
     }
 
 #incorrect {
-        margin: 0 auto;
-        padding: 1% 8%;
+    
+        margin: 0.25% 10%;
         font-size: 70px;
     }
 
@@ -263,7 +263,7 @@ body {
         padding-bottom: 4%;
     }
     
-    /* Where questions will appear */
+    /* Where questions and answers will appear */
     #options-box {
         height: 180px;
         width: 90%;
@@ -309,14 +309,14 @@ body {
     
     /* icons to change colour according to suser input matched against answer key in array */
     #correct {
-        margin: 0 auto;
-        padding: 1% 8%;
+        
+        margin: 0.25% 10%;
         font-size: 70px;
     }
     
     #incorrect {
-        margin: 0 auto;
-        padding: 1% 8%;
+       
+        margin: 0.25% 10%;
         font-size: 70px;
     }
     
@@ -373,14 +373,14 @@ body {
         padding-bottom: 4%;
     }
     
-    /* Where questions will appear */
+    /* Where questions and answers will appear */
     #options-box {
         height: 180px;
         width: 90%;
         margin: auto;
         font-weight: 600;
         padding-top: 1.5rem;
-        font-size: 15px;
+        font-size: 25px;
         white-space: nowrap;
     }
     
@@ -417,14 +417,14 @@ body {
     
     /* icons to change colour according to suser input matched against answer key in array */
     #correct {
-        margin: 0 auto;
-        padding: 1% 8%;
+        
+        margin: 0.25% 10%;
         font-size: 70px;
     }
     
     #incorrect {
-        margin: 0 auto;
-        padding: 1% 8%;
+        
+        margin: 0.25% 10%;
         font-size: 70px;
     }
     
@@ -465,113 +465,6 @@ body {
     }
 
 
-@media screen and (max-width: 736px) {
-
-    /* Quiz Area which contains question display, answer-box div and feedback div  */
-    #quiz-area {
-        margin-top: 2px;
-        box-sizing: border-box;
-        border-radius: 10vmin;
-        width: 85%;
-        height: 40vh;
-        max-height: 450px;
-        max-width: 850px;
-        margin-left: auto;
-        margin-right: auto;
-        padding-bottom: 4%;
-    }
-        
-    /* Where questions will appear */
-    #options-box {
-        height: 180px;
-        width: 90%;
-        margin: auto;
-        font-weight: 600;
-        padding-top: 1.5rem;
-        font-size: 15px;
-        white-space: nowrap;
-        }
-        
-        /* Question display */
-        #question {
-            text-align: center;
-            font-weight: bolder;
-            font-size: 25px;
-        }
-        
-        /* the radio buttons that need to be selected to register an answer */
-        .answer-option {
-            height: 10%;
-            width: 5%;
-        }
-        
-        /* Feedback display */
-        #feedback {
-            margin-left: -5%;
-            position: relative;
-            font-weight: bolder;
-            font-size: 25px;
-        }
-    
-        /* -------------- SCORE DISPLAY, ICON DISPLAY AND SCORE TRACKER AREA ----------------- */
-        #results-area {
-            border-radius: 10vmin;
-            width: 85%;
-            height: 15vh;
-            max-width: 830px;
-            margin: 1.5% 1.5% 1.5% 8%;
-            padding: 1%;
-        }
-        
-        /* icons to change colour according to suser input matched against answer key in array */
-        #correct {
-            margin: 0 auto;
-            padding: 1% 8%;
-            font-size: 70px;
-        }
-        
-        #incorrect {
-            margin: 0 auto;
-            padding: 1% 8%;
-            font-size: 70px;
-        }
-        
-        /* area for buttons, next and restart */
-        #button-div {
-            margin: 1%;
-        }
-        
-        /* Next Question and Restart buttons */
-        #next-button {
-            position: relative;
-            top: -3.25rem;
-            display: block;
-            border-radius: 2px;
-            padding: 15px 32px 15px 32px;
-        }
-        
-        #restart-button {
-            position: relative;
-            top: 4.5rem;
-            bottom: 2.5rem;
-            display: block;
-            clear: both;
-            border-radius: 2px;
-            padding: 15px 32px 15px 32px;
-        }
-        
-        /* Where running score is displayed*/
-        #score {
-            position: relative;
-            align-content: center;
-            margin-left: 25%;
-            margin-right: 25%;
-            margin-bottom: 7%;
-            box-sizing: border-box;
-            border-radius: 10vmin;
-            padding: 10px;
-            
-        }
     }
     @media screen and (max-width: 684px) {
 
@@ -589,7 +482,7 @@ body {
             padding-bottom: 4%;
         }
             
-        /* Where questions will appear */
+        /* Where questions and answers will appear */
         #options-box {
             height: 180px;
             width: 90%;
@@ -618,7 +511,7 @@ body {
                 margin-left: -5%;
                 position: relative;
                 font-weight: bolder;
-                font-size: 25px;
+                font-size: 15px;
             }
         
             /* -------------- SCORE DISPLAY, ICON DISPLAY AND SCORE TRACKER AREA ----------------- */
@@ -633,15 +526,15 @@ body {
             
             /* icons to change colour according to suser input matched against answer key in array */
             #correct {
-                margin: 0 auto;
-                padding: 1% 8%;
-                font-size: 70px;
+                
+                margin: 0.25% 10%;
+                font-size: 40px;
             }
             
             #incorrect {
-                margin: 0 auto;
-                padding: 1% 8%;
-                font-size: 70px;
+                
+                margin: 0.25% 10%;
+                font-size: 40px;
             }
             
             /* area for buttons, next and restart */
@@ -680,5 +573,113 @@ body {
                 padding: 10px;
             }
         }
-}
-}
+
+        /* -----------FOR GALAXY FOLD -------------- */
+        @media screen and (max-width: 280px) {
+
+            /* Quiz Area which contains question display, answer-box div and feedback div  */
+            #quiz-area {
+                margin-top: 2px;
+                box-sizing: border-box;
+                border-radius: 10vmin;
+                width: 85%;
+                height: 40vh;
+                max-height: 450px;
+                max-width: 850px;
+                margin-left: auto;
+                margin-right: auto;
+                padding-bottom: 4%;
+            }
+                
+            /* Where questions and answers will appear */
+            #options-box {
+                height: 180px;
+                width: 90%;
+                margin: auto;
+                font-weight: 600;
+                padding-top: 1.5rem;
+                font-size: 10px;
+                white-space: nowrap;
+                }
+                
+                /* Question display */
+                #question {
+                    text-align: center;
+                    font-weight: bolder;
+                    font-size: 18px;
+                }
+                
+                /* the radio buttons that need to be selected to register an answer */
+                .answer-option {
+                    height: 10%;
+                    width: 5%;
+                }
+                
+                /* Feedback display */
+                #feedback {
+                    margin-left: -5%;
+                    position: relative;
+                    font-weight: bolder;
+                    font-size: 13px;
+                }
+            
+                /* -------------- ICON DISPLAY AND SCORE ----------------- */
+                #results-area {
+                    border-radius: 10vmin;
+                    width: 85%;
+                    height: 15vh;
+                    max-width: 830px;
+                    margin: 1.5% 1.5% 1.5% 8%;
+                    padding: 1%;
+                }
+
+                /* icons to change colour according to suser input matched against answer key in array */
+                #correct {
+                   
+                    margin: 0.25% 10%;
+                    font-size: 40px;
+                }
+                
+                #incorrect {
+                   
+                    margin: 0.25% 10%;
+                    font-size: 40px;
+                }
+
+                /* area for buttons, next and restart */
+                #button-div {
+                    margin: 1%;
+                }
+
+                /* Next Question and Restart buttons */
+                #next-button {
+                    position: relative;
+                    top: -3.25rem;
+                    display: block;
+                    border-radius: 2px;
+                    padding: 15px 32px 15px 32px;
+                }
+                
+                #restart-button {
+                    position: relative;
+                    top: 4.5rem;
+                    bottom: 2.5rem;
+                    display: block;
+                    clear: both;
+                    border-radius: 2px;
+                    padding: 15px 32px 15px 32px;
+                }
+                
+                /* Where running score is displayed*/
+                #score {
+                    position: relative;
+                    align-content: center;
+                    margin-left: 25%;
+                    margin-right: 25%;
+                    margin-bottom: 7%;
+                    box-sizing: border-box;
+                    border-radius: 10vmin;
+                    padding: 10px;
+            }
+        }
+    }
