@@ -86,14 +86,14 @@ body {
 
 /* icons to change colour according to suser input matched against answer key in array */
 #correct {
-  
-    margin: 0.25% 10%;
+    
+    margin: 2px 70px 2px 2px;
     font-size: 70px;
 }
 
 #incorrect {
    
-    margin: 0.25% 10%;
+    margin: 2px 2px 2px 70px;
     font-size: 70px;
 }
 
@@ -203,17 +203,17 @@ body {
 
 /* icons to change colour according to user input matched against answer key in array */ 
 /* NEED TO COME BACK TO THIS!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!*/
-    #correct {
-        
-        margin: 0.25% 10%;
-        font-size: 70px;
-    }
+#correct {
+    
+    margin: 2px 70px 2px 2px;
+    font-size: 70px;
+}
 
 #incorrect {
-    
-        margin: 0.25% 10%;
-        font-size: 70px;
-    }
+   
+    margin: 2px 2px 2px 70px;
+    font-size: 70px;
+}
 
 /* area for buttons, next and restart */
     #button-div {
@@ -309,14 +309,14 @@ body {
     
     /* icons to change colour according to suser input matched against answer key in array */
     #correct {
-        
-        margin: 0.25% 10%;
+    
+        margin: 20px 50px 2px 2px;
         font-size: 70px;
     }
     
     #incorrect {
        
-        margin: 0.25% 10%;
+        margin: 20px 2px 2px 50px;
         font-size: 70px;
     }
     
@@ -417,15 +417,15 @@ body {
     
     /* icons to change colour according to suser input matched against answer key in array */
     #correct {
-        
-        margin: 0.25% 10%;
-        font-size: 70px;
+    
+        margin: 20px 30px 2px 2px;
+        font-size: 40px;
     }
     
     #incorrect {
-        
-        margin: 0.25% 10%;
-        font-size: 70px;
+       
+        margin: 20px 2px 2px 30px;
+        font-size: 40px;
     }
     
     /* area for buttons, next and restart */
@@ -526,14 +526,14 @@ body {
             
             /* icons to change colour according to suser input matched against answer key in array */
             #correct {
-                
-                margin: 0.25% 10%;
+    
+                margin: 20px 20px 2px 2px;
                 font-size: 40px;
             }
             
             #incorrect {
-                
-                margin: 0.25% 10%;
+               
+                margin: 20px 2px 2px 20px;
                 font-size: 40px;
             }
             
@@ -635,14 +635,14 @@ body {
 
                 /* icons to change colour according to suser input matched against answer key in array */
                 #correct {
-                   
-                    margin: 0.25% 10%;
+    
+                    margin: 20px 20px 2px 2px;
                     font-size: 40px;
                 }
                 
                 #incorrect {
                    
-                    margin: 0.25% 10%;
+                    margin: 20px 2px 2px 20px;
                     font-size: 40px;
                 }
 
