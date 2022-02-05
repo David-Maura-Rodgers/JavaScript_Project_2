@@ -64,6 +64,7 @@ let correct = 0;
 let totalQuestions = 8;
 let currentQuestion = 0;
 
+
 /** Function: checkAnswer
      This refers to the value of the radio button. It will read in the value
      of each of these and feedback to user if they are correct or incorrect
@@ -89,7 +90,6 @@ function checkAnswer(event) {
       currentQuestion++;
     }
   }
-
   // checks for last question in array and displays total score in feedback area to user
   if (currentQuestion === totalQuestions) {
     feedback.innerHTML =  '</strong>' + '</br>' + 'Quiz complete!' + ' ' + 'Your total score: ' + correct + '/' + totalQuestions;
