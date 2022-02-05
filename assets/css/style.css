@@ -15,6 +15,16 @@ body {
     margin-bottom: 20px;
 }
 
+#start-button {
+    margin: 0 auto;
+    border-radius: 2px;
+    padding: 15px 32px 15px 32px;
+    font-size: 100%;
+    background-color: rgb(199, 100, 43);
+    font-size: large;
+    font-weight: bold;
+}
+
 /* -------------- QUESTION DISPLAY AND ANSWER OPTIONS AREA ----------------- */
 
 /* Quiz Area which contains question display, options box div and feedback div  */
@@ -39,7 +49,7 @@ body {
 }
 
 /* Where answer options will be displayed */
-#options-box {
+#answer-select {
     height: 200px;
     width: 95%;
     margin-left: 5%;
@@ -145,12 +155,12 @@ body {
     box-sizing: border-box;
     width: 85%;
     height: 45vh;
-    
+
     margin-left: auto;
     margin-right: auto;
     }
 
-    #options-box {
+    #answer-select {
     height: 180px;
     width: 90%;
     margin: auto;
@@ -255,7 +265,7 @@ body {
     font-size: 25px;
     }
 
-    #options-box {
+    #answer-select {
     height: 180px;
     width: 90%;
     margin: auto;
@@ -354,7 +364,7 @@ body {
     font-size: 16px;
     }  
 
-    #options-box {
+    #answer-select {
     height: 180px;
     width: 90%;
     margin: auto;
@@ -434,7 +444,7 @@ body {
 
 @media screen and (max-width: 320px) {
 
-    #options-box {
+    #answer-select {
     margin-left: 2.5px;
     font-size: 13px;
     }
