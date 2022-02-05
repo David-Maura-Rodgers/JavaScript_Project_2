@@ -306,13 +306,13 @@ body {
     
     /* icons to change colour according to suser input matched against answer key in array */
     #correct {
-    margin: 20px 40px 2px 2px;
+    margin: 15px 70px 2px 2px;
     font-size: 50px;
     overflow: hidden;
     }
     
     #incorrect {   
-    margin: 20px 2px 2px 40px;
+    margin: 15px 2px 2px 70px;
     font-size: 50px;
     overflow: hidden;
     }
@@ -378,7 +378,6 @@ body {
     margin: auto;
     font-weight: 600;
     padding-top: 1.5rem;
-    margin-left: 2.5px;
     font-size: 14px;
     white-space: nowrap;
     }
@@ -416,13 +415,13 @@ body {
 
     /* icons to change colour according to suser input matched against answer key in array */
     #correct {
-    margin: 20px 40px 2px 2px;
+    margin: 20px 30px 2px 2px;
     font-size: 50px;
     overflow: hidden;
     }
                 
     #incorrect {
-    margin: 20px 2px 2px 40px;
+    margin: 20px 2px 2px 30px;
     font-size: 50px;
     overflow: hidden;
     }
@@ -465,9 +464,21 @@ body {
 }
 
 @media screen and (max-width: 320px) {
-    
+
     #options-box {
     margin-left: 2.5px;
     font-size: 13.5px;
+    }
+
+    #correct {
+    margin: 20px 25px 2px 2px;
+    font-size: 50px;
+    overflow: hidden;
+    }
+                    
+    #incorrect {
+    margin: 20px 2px 2px 25px;
+    font-size: 50px;
+    overflow: hidden;
     }
 }
