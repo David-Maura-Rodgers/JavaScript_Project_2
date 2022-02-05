@@ -379,7 +379,7 @@ body {
     font-weight: 600;
     padding-top: 1.5rem;
     margin-left: 2.5px;
-    font-size: 13.5px;
+    font-size: 14px;
     white-space: nowrap;
     }
                 
@@ -461,5 +461,13 @@ body {
     box-sizing: border-box;
     border-radius: 10vmin;
     padding: 10px;
+    }
+}
+
+@media screen and (max-width: 320px) {
+    
+    #options-box {
+    margin-left: 2.5px;
+    font-size: 13.5px;
     }
 }
