@@ -26,8 +26,7 @@ body {
     border-radius: 10vmin;
     width: 85%;
     height: 40vh;
-    max-height: 450px;
-    max-width: 1270px;
+    
     margin-left: auto;
     margin-right: auto;
 }
@@ -145,9 +144,8 @@ body {
     border-radius: 10vmin;
     box-sizing: border-box;
     width: 85%;
-    height: 45vh;
-    max-height: 450px;
-    max-width: 1200px;
+    height: 40vh;
+    
     margin-left: auto;
     margin-right: auto;
     }
@@ -186,8 +184,8 @@ body {
     #icon-area {
     border-radius: 10vmin;
     width: 75%;
-    height: 15vh;
-    max-width: 830px;
+    height: 20vh;
+   
     box-sizing: border-box;
     margin-left: auto;
     margin-right: auto;
@@ -245,8 +243,7 @@ body {
     border-radius: 10vmin;
     width: 85%;
     height: 40vh;
-    max-height: 450px;
-    max-width: 850px;
+    
     margin-left: auto;
     margin-right: auto;
     padding-bottom: 4%;
@@ -283,8 +280,8 @@ body {
     #icon-area {
     border-radius: 10vmin;
     width: 85%;
-    height: 15vh;
-    max-width: 830px;
+    height: 20vh;
+   
     box-sizing: border-box;
     margin: 1.5% 1.5% 1.5% 8%;
     padding: 1%;
@@ -344,9 +341,8 @@ body {
     box-sizing: border-box;
     border-radius: 10vmin;
     width: 85%;
-    height: 40vh;
-    max-height: 450px;
-    max-width: 850px;
+    height: 35vh;
+    
     margin-left: auto;
     margin-right: auto;
     padding-bottom: 4%;
@@ -383,8 +379,8 @@ body {
     #icon-area {
     border-radius: 10vmin;
     width: 85%;
-    height: 15vh;
-    max-width: 830px;
+    height: 20vh;
+    
     box-sizing: border-box;
     margin: 1.5% 1.5% 1.5% 8%;
     padding: 1%;
@@ -446,8 +442,7 @@ body {
     #icon-area {
     border-radius: 10vmin;
     width: 85%;
-    height: 15vh;
-    max-width: 830px;
+    height: 20vh;
     box-sizing: border-box;
     margin: 1.5% 1.5% 1.5% 8%;
     padding: 1%;
