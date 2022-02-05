@@ -354,7 +354,7 @@ body {
 }
 
 /* -----------FOR GALAXY FOLD -------------- */
-@media screen and (max-width: 280px) {
+@media screen and (max-width: 500px) {
 
     /* Quiz Area which contains question display, answer-box div and feedback div  */
     #quiz-area {
