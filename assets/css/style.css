@@ -378,7 +378,8 @@ body {
     margin: auto;
     font-weight: 600;
     padding-top: 1.5rem;
-    font-size: 14px;
+    margin-left: 2.5px;
+    font-size: 13.5px;
     white-space: nowrap;
     }
                 
@@ -386,7 +387,7 @@ body {
     #question {
     text-align: center;
     font-weight: bolder;
-    font-size: 18px;
+    font-size: 16px;
     }
                 
     /* the radio buttons that need to be selected to register an answer */
@@ -400,7 +401,7 @@ body {
     margin-left: -5%;
     position: relative;
     font-weight: bolder;
-    font-size: 13px;
+    font-size: 14px;
     }
             
     /* -------------- ICON DISPLAY AND SCORE ----------------- */
