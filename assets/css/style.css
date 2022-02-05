@@ -1,11 +1,10 @@
-/* Global style */
+/* -------------- BODY, HEADINGS AND PSUDEO CLASSED FOR START, NEXT Q. AND RESTART BUTTONS ----------------- */
 body {
     background-color: #b7cad1;
     font-family: "Raleway", sans-serif;
     text-align: center;
 }
 
-/* Heading */
 #heading {
     background-color: rgba(243, 201, 149, 0.993);
     border: #E6ECF0 dotted 8px;
@@ -15,15 +14,41 @@ body {
     margin-bottom: 20px;
 }
 
+h3 {
+    margin-top: 40px;
+}
+
 #start-button {
     margin: 0 auto;
-    border-radius: 2px;
     padding: 15px 32px 15px 32px;
-    font-size: 100%;
-    background-color: rgb(199, 100, 43);
-    font-size: large;
+    margin-top: 25px;
+    font-size: 190px;
+    font-size: 160%;
+    text-decoration: none;
+    color: black;
+    background-color: rgb(199, 100, 43);;
     font-weight: bold;
+    font-family: "Raleway", sans-serif;
 }
+
+#start-button:hover {
+    background-color: rgba(243, 201, 149, 0.993); 
+    border-color: solid black 10px;
+    border-radius: 10px;  
+}
+
+#next-button:hover {
+    background-color: #E6ECF0;
+    border-color: solid black 10px;
+    border-radius: 10px;
+}
+
+#restart-button:hover {
+    background-color: #E6ECF0;
+    border-color: solid black 10px;
+    border-radius: 10px;
+}
+
 
 /* -------------- QUESTION DISPLAY AND ANSWER OPTIONS AREA ----------------- */
 
