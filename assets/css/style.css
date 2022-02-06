@@ -61,7 +61,6 @@ h3 {
     border-radius: 10vmin;
     width: 85%;
     height: 40vh;
-    
     margin-left: auto;
     margin-right: auto;
 }
@@ -168,7 +167,6 @@ h3 {
     padding: 10px;
 }
 
-
 /* -------------- MEDIA QUERIES----------------- */
 
 /* Media query to add styles for tablets and screen size of threshold 1200px */
@@ -180,7 +178,6 @@ h3 {
     box-sizing: border-box;
     width: 85%;
     height: 45vh;
-
     margin-left: auto;
     margin-right: auto;
     }
@@ -278,7 +275,6 @@ h3 {
     border-radius: 10vmin;
     width: 85%;
     height: 40vh;
-    
     margin-left: auto;
     margin-right: auto;
     padding-bottom: 4%;
@@ -316,7 +312,6 @@ h3 {
     border-radius: 10vmin;
     width: 85%;
     height: 20vh;
-   
     box-sizing: border-box;
     margin: 1.5% 1.5% 1.5% 8%;
     padding: 1%;
@@ -377,7 +372,6 @@ h3 {
     border-radius: 10vmin;
     width: 85%;
     height: 35vh;
-    
     margin-left: auto;
     margin-right: auto;
     padding-bottom: 4%;
@@ -468,6 +462,14 @@ h3 {
 }
 
 @media screen and (max-width: 320px) {
+
+    #start-button {
+    margin: 0 auto;
+    padding: 15px 32px 15px 32px;
+    margin-top: 20px;
+    font-size: 140px;
+    font-size: 100%;
+    }
 
     #answer-select {
     margin-left: 2.5px;

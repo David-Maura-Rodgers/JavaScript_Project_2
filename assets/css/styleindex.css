@@ -1,0 +1,137 @@
+/* -------------- BODY, HEADINGS AND PSUDEO CLASSED FOR START, NEXT Q. AND RESTART BUTTONS ----------------- */
+body {
+    background-color: #b7cad1;
+    font-family: "Raleway", sans-serif;
+    text-align: center;
+}
+
+#heading {
+    background-color: rgba(243, 201, 149, 0.993);
+    border: #E6ECF0 dotted 8px;
+    text-align: center;
+    font-size: 1.0rem;
+    padding: 1.0rem;
+    margin-bottom: 20px;
+}
+
+h3 {
+    margin-top: 40px;
+}
+
+#start-button {
+    margin: 0 auto;
+    padding: 15px 32px 15px 32px;
+    margin-top: 25px;
+    font-size: 190px;
+    font-size: 160%;
+    text-decoration: none;
+    color: black;
+    background-color: rgb(199, 100, 43);;
+    font-weight: bold;
+    font-family: "Raleway", sans-serif;
+}
+
+#start-button:hover {
+    background-color: rgba(243, 201, 149, 0.993); 
+    border-color: solid black 10px;
+    border-radius: 10px;  
+}
+
+/* -------------- QUESTION DISPLAY AND ANSWER OPTIONS AREA ----------------- */
+
+/* Quiz Area which contains question display, options box div and feedback div  */
+#quiz-area {
+    margin-top: 20px;
+    background-color: #E6ECF0;
+    box-sizing: border-box;
+    border: rgb(199, 100, 43) solid 5px;
+    border-radius: 10vmin;
+    width: 85%;
+    height: 40vh;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* -------------- MEDIA QUERIES----------------- */
+
+/* Media query to add styles for tablets and screen size of threshold 1200px */
+@media screen and (max-width: 1200px) {
+
+    #quiz-area {
+    margin-top: 2px;
+    border-radius: 10vmin;
+    box-sizing: border-box;
+    width: 85%;
+    height: 45vh;
+    margin-left: auto;
+    margin-right: auto;
+    }
+
+}
+
+/* For small screen sizes 850px and down */
+@media screen and (max-width: 850px) {
+
+    #quiz-area {
+    margin-top: 2px;
+    box-sizing: border-box;
+    border-radius: 10vmin;
+    width: 85%;
+    height: 40vh;
+    margin-left: auto;
+    margin-right: auto;
+    padding-bottom: 4%;
+    }
+}
+
+/* -----------FOR GALAXY FOLD -------------- */
+@media screen and (max-width: 500px) {
+
+    #quiz-area {
+    margin-top: 2px;
+    box-sizing: border-box;
+    border-radius: 10vmin;
+    width: 85%;
+    height: 40vh;
+    margin-left: auto;
+    margin-right: auto;
+    padding-bottom: 4%;
+    }
+    
+    h3 {
+        margin-top: 40px;
+    }
+    
+    #start-button {
+        margin: 0 auto;
+        margin-top: 25px;
+        font-size: 140px;
+        font-size: 110%;
+    }
+}
+
+@media screen and (max-width: 320px) {
+
+    #quiz-area {
+    margin-top: 2px;
+    box-sizing: border-box;
+    border-radius: 10vmin;
+    width: 85%;
+    height: 40vh;
+    margin-left: auto;
+    margin-right: auto;
+    padding-bottom: 4%;
+    }
+        
+    h3 {
+    margin-top: 40px;
+    }
+
+    #start-button {
+    margin: 0 auto;
+    padding: 15px 32px 15px 32px;
+    margin-top: 20px;
+    font-size: 140px;
+    font-size: 100%;
+    }
+}
