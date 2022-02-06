@@ -60,7 +60,7 @@ h3 {
     border: rgb(199, 100, 43) solid 5px;
     border-radius: 10vmin;
     width: 85%;
-    height: 40vh;
+    height: 42vh;
     margin-left: auto;
     margin-right: auto;
 }
@@ -90,7 +90,7 @@ h3 {
     width: 20%;
 }
 
-/* Feedback display: will let user know if they got correct or incorrect answer */
+/* Feedback display : "Correct!" or "Incorrect" and Total Score */
 #feedback {
     margin-left: -10%;
     position: relative;
@@ -152,7 +152,7 @@ h3 {
     font-weight: bold;
 }
 
-/* Where running score is displayed*/
+/* Where running score is displayed */
 #score {
     position: relative;
     align-content: center;
@@ -160,6 +160,7 @@ h3 {
     margin-right: 25%;
     margin-bottom: 7%;
     font-size: 30px;
+    font-weight: bold;
     box-sizing: border-box;
     border: rgb(199, 100, 43) solid 5px;
     background:#E6ECF0;
@@ -170,14 +171,105 @@ h3 {
 /* -------------- MEDIA QUERIES----------------- */
 
 /* Media query to add styles for tablets and screen size of threshold 1200px */
-@media screen and (max-width: 1200px) {
+@media screen and (max-width: 1440px) {
 
     #quiz-area {
     margin-top: 2px;
     border-radius: 10vmin;
     box-sizing: border-box;
     width: 85%;
-    height: 45vh;
+    height: 42vh;
+    margin-left: auto;
+    margin-right: auto;
+    }
+
+    #answer-select {
+    height: 180px;
+    width: 90%;
+    margin: auto;
+    padding-top: 3rem;
+    text-align: center;
+    font-weight: 600;
+    font-size: 30px;
+    white-space: nowrap;
+    }
+    
+    #question {
+    text-align: center;
+    font-weight: bolder;
+    font-size: 35px;
+    }
+
+    .answer-option {
+    height: 15%;
+    width: 15%;
+    }
+
+    #feedback {
+    margin: auto;
+    margin-top: 55px;
+    position: relative;
+    }
+
+    #icon-area {
+    border-radius: 10vmin;
+    width: 75%;
+    height: 15vh;
+    box-sizing: border-box;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 1%;
+    }
+
+    #correct {
+    margin: 5px 70px 2px 2px;
+    font-size: 90px;
+    }
+
+    #incorrect {
+    margin: 5px 2px 2px 70px;
+    font-size: 90px;
+    }
+
+    #button-div {
+    margin: 1%;
+    }
+
+    #next-button {
+    position: relative;
+    top: 0.5rem;
+    border-radius: 2px;
+    padding: 15px 32px 15px 32px;
+    }
+
+    #restart-button {
+    position: relative;
+    top: 0.5rem;
+    border-radius: 2px;
+    padding: 15px 32px 15px 32px;
+    }
+
+    #score {
+    position: relative;
+    align-content: center;
+    margin-left: 25%;
+    margin-right: 25%;
+    margin-bottom: 7%;
+    box-sizing: border-box;
+    border-radius: 10vmin;
+    padding: 15px;
+    }
+}
+
+/* Media query to add styles for tablets and screen size of threshold 1200px */
+@media screen and (max-width: 1024px) {
+
+    #quiz-area {
+    margin-top: 2px;
+    border-radius: 10vmin;
+    box-sizing: border-box;
+    width: 85%;
+    height: 55vh;
     margin-left: auto;
     margin-right: auto;
     }
@@ -199,24 +291,21 @@ h3 {
     font-size: 35px;
     }
 
-    /* the radio buttons that need to be selected to register an answer */
     .answer-option {
     height: 15%;
     width: 15%;
     }
 
-    /* Feedback display : "Correct!" or "Incorrect" */
     #feedback {
     margin: auto;
-    padding-bottom: 5px;
-    padding-top: 25px;
+    margin-top: 55px;
     position: relative;
     }
 
     #icon-area {
     border-radius: 10vmin;
     width: 75%;
-    height: 20vh;
+    height: 18vh;
     box-sizing: border-box;
     margin-left: auto;
     margin-right: auto;
@@ -224,13 +313,13 @@ h3 {
     }
 
     #correct {
-    margin: 38px 70px 2px 2px;
-    font-size: 70px;
+    margin: 20px 70px 2px 2px;
+    font-size: 60px;
     }
 
     #incorrect {
-    margin: 38px 2px 2px 70px;
-    font-size: 70px;
+    margin: 20px 2px 2px 70px;
+    font-size: 60px;
     }
 
     #button-div {
@@ -264,14 +353,14 @@ h3 {
 }
 
 /* For small screen sizes 850px and down */
-@media screen and (max-width: 850px) {
+@media screen and (max-width: 992px) {
 
     #quiz-area {
     margin-top: 2px;
     box-sizing: border-box;
     border-radius: 10vmin;
     width: 85%;
-    height: 40vh;
+    height: 45vh;
     margin-left: auto;
     margin-right: auto;
     padding-bottom: 4%;
@@ -285,7 +374,7 @@ h3 {
 
     #answer-select {
     height: 180px;
-    width: 90%;
+    width: 100%;
     margin: auto;
     font-weight: 600;
     padding-top: 1.5rem;
@@ -308,20 +397,20 @@ h3 {
     #icon-area {
     border-radius: 10vmin;
     width: 85%;
-    height: 20vh;
+    height: 15vh;
     box-sizing: border-box;
     margin: 1.5% 1.5% 1.5% 8%;
     padding: 1%;
     }
     
     #correct {
-    margin: 30px 70px 2px 2px;
-    font-size: 50px;
+    margin: 8px 70px 2px 2px;
+    font-size: 60px;
     }
     
     #incorrect {   
-    margin: 30px 2px 2px 70px;
-    font-size: 50px;
+    margin: 8px 2px 2px 70px;
+    font-size: 60px;
     }
     
     #button-div {
@@ -358,15 +447,14 @@ h3 {
     }
 }
 
-/* -----------FOR GALAXY FOLD -------------- */
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 576px) {
 
     #quiz-area {
     margin-top: 2px;
     box-sizing: border-box;
     border-radius: 10vmin;
     width: 85%;
-    height: 35vh;
+    height: 34vh;
     margin-left: auto;
     margin-right: auto;
     padding-bottom: 4%;
@@ -384,7 +472,7 @@ h3 {
     margin: auto;
     font-weight: 600;
     padding-top: 1.5rem;
-    font-size: 14px;
+    font-size: 16px;
     white-space: nowrap;
     }
                           
@@ -394,10 +482,10 @@ h3 {
     }
                 
     #feedback {
-    margin-left: -5%;
+    margin-left: -2%;
     position: relative;
     font-weight: bolder;
-    font-size: 14px;
+    font-size: 18px;
     }
             
     #icon-area {
@@ -411,13 +499,13 @@ h3 {
     }
 
     #correct {
-    margin: 32px 32px 2px 2px;
-    font-size: 50px;
+    margin: 30px 32px 2px 2px;
+    font-size: 60px;
     }
                 
     #incorrect {
-    margin: 32px 2px 2px 32px;
-    font-size: 50px;
+    margin: 30px 2px 2px 32px;
+    font-size: 60px;
     }
 
     #button-div {
@@ -454,23 +542,29 @@ h3 {
     }
 }
 
-@media screen and (max-width: 320px) {
+@media screen and (max-width: 375px) {
 
-    #start-button {
-    margin: 0 auto;
-    padding: 15px 32px 15px 32px;
-    margin-top: 20px;
-    font-size: 140px;
-    font-size: 100%;
+    #quiz-area {
+    margin-top: 2px;
+    box-sizing: border-box;
+    border-radius: 10vmin;
+    width: 85%;
+    height: 40vh;
+    margin-left: auto;
+    margin-right: auto;
+    padding-bottom: 4%;
     }
-
+    
     #answer-select {
-    margin-left: 2.5px;
-    font-size: 13px;
+    font-size: 14px;
+    width: 60%;
+    margin: auto;
+    margin-left: 1px;    
     }
 
+    /* ----------- NEED HELP WITH THIS !!!!!!!!!!!!!! ------------ */
     #feedback {
-    margin-left: 6%;
+    margin-left: 2%;
     position: relative;
     font-weight: bolder;
     font-size: 14px;
@@ -487,11 +581,11 @@ h3 {
 
     #correct {
     margin: 35px 25px 2px 2px;
-    font-size: 50px;
+    font-size: 55px;
     }
                     
     #incorrect {
     margin: 35px 2px 2px 25px;
-    font-size: 50px;
+    font-size: 55px;
     }
 }
