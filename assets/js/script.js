@@ -1,3 +1,4 @@
+// Where all my questions are stored
 const questionArr = [
   {
     question: "Q.1: What is the capital of Ireland?",
