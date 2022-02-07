@@ -146,8 +146,13 @@ function nextQuestion() {
       opt3.checked = false;
       opt4.checked = false;
   }
-  else  {
-      alert('Please select your answer to continue');
+  else if 
+    (currentQuestion = questionIndex) {
+      document.getElementById('next-button').style.visibility = "hidden"
+      alert('Click the restart button to try the quiz again');
+  }
+  else {
+    alert('Please select your answer to continue');
   }
 }
 
