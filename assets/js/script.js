@@ -94,6 +94,7 @@ function checkAnswer(event) {
   // checks for last question in array and displays total score in feedback area to user
   if (currentQuestion === totalQuestions) {
     feedback.innerHTML =  '</strong>' + '</br>' + 'Quiz complete!' + ' ' + 'Your total score: ' + correct + '/' + totalQuestions;
+    document.getElementById('feedback').style.color = "purple";
   }
  
   scoreTracker.innerHTML = 'Score: ' + correct + '/' + totalQuestions;
