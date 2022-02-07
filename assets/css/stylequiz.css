@@ -223,12 +223,12 @@ h3 {
 
     #correct {
     margin: 5px 70px 2px 2px;
-    font-size: 90px;
+    font-size: 70px;
     }
 
     #incorrect {
     margin: 5px 2px 2px 70px;
-    font-size: 90px;
+    font-size: 70px;
     }
 
     #button-div {
