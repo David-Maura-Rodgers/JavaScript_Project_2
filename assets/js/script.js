@@ -147,7 +147,8 @@ function nextQuestion() {
       opt4.checked = false;
   }
   else if 
-    (currentQuestion = questionIndex) {
+    (currentQuestion === questionIndex) {
+      // https://www.w3schools.com/jsref/prop_style_visibility.asp
       document.getElementById('next-button').style.visibility = "hidden"
       alert('Click the restart button to try the quiz again');
   }
