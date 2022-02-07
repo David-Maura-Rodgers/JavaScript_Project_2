@@ -1,4 +1,4 @@
-// Where all my questions are stored
+// Array where questions are stored
 const questionArr = [
   {
     question: "Q.1: What is the capital of Ireland?",
@@ -64,6 +64,7 @@ let answerIndex = 0;
 let correct = 0;
 let totalQuestions = 8;
 let currentQuestion = 0;
+let lastQuestion = questionArr[questionArr.length - 1]
 
 
 /** Function: checkAnswer
@@ -91,7 +92,6 @@ function checkAnswer(event) {
       currentQuestion++;
     }
   }
-  
   // checks for last question in array and displays total score in feedback area to user
   if (currentQuestion === totalQuestions) {
     feedback.innerHTML =  '</strong>' + '</br>' + 'Quiz complete!' + ' ' + 'Your total score: ' + correct + '/' + totalQuestions;
@@ -109,39 +109,28 @@ for (i = 0; i < answerOption.length; i++) {
 
 // Displays all questions/alternatives:
 question.innerHTML = questionArr[questionIndex].question;
-opt1.previousElementSibling.innerText = questionArr[answerIndex].options[0]
-opt2.previousElementSibling.innerText = questionArr[answerIndex].options[1]
-opt3.previousElementSibling.innerText = questionArr[answerIndex].options[2]
-opt4.previousElementSibling.innerText = questionArr[answerIndex].options[3]
+opt1.previousElementSibling.innerText = questionArr[answerIndex].options[0];
+opt2.previousElementSibling.innerText = questionArr[answerIndex].options[1];
+opt3.previousElementSibling.innerText = questionArr[answerIndex].options[2];
+opt4.previousElementSibling.innerText = questionArr[answerIndex].options[3];
 
 
 // Listener for on click events to disable radio button once user selects an answer
 let ind;
-for (ind = 0; i < answerOption.length; ind++) {
+for (ind = 0; ind < answerOption.length; ind++) {
     answerOption[ind].addEventListener("click", disable);
 }
-
 
 /** Function: disable
      Listener for on click events to disable radio button once user selects an answer
 */
-
 function disable(event) {
-  if (this.value === questionArr[questionIndex].answer) {
-    document.getElementById('opt1').disabled = true;
-    document.getElementById('opt2').disabled = true;
-    document.getElementById('opt3').disabled = true;
-    document.getElementById('opt4').disabled = true;
-  }
-  else if (this.value !== questionArr[questionIndex].answer) {
-    document.getElementById('opt1').disabled = false;
-    document.getElementById('opt2').disabled = false;
-    document.getElementById('opt3').disabled = false;
-    document.getElementById('opt4').disabled = false;
-    }
+  document.getElementById('opt1').disabled = true;
+  document.getElementById('opt2').disabled = true;
+  document.getElementById('opt3').disabled = true;
+  document.getElementById('opt4').disabled = true;
 }
-
-
+  
 // Adding a listener for on click events for the next question
 nextButton.addEventListener('click', nextQuestion);
 
@@ -150,46 +139,49 @@ nextButton.addEventListener('click', nextQuestion);
  */
 function nextQuestion() {
   if (currentQuestion > questionIndex) {
-      questionIndex++;
-      answerIndex++;
-      question.innerHTML = questionArr[questionIndex].question;
+    questionIndex++;
+    answerIndex++;
+    question.innerHTML = questionArr[questionIndex].question;
 
-      // Here I'm assigning the option names to the radio button
-      opt1.previousElementSibling.innerText = questionArr[answerIndex].options[0];
-      opt2.previousElementSibling.innerText = questionArr[answerIndex].options[1];
-      opt3.previousElementSibling.innerText = questionArr[answerIndex].options[2];
-      opt4.previousElementSibling.innerText = questionArr[answerIndex].options[3];
+    // Here I'm assigning the option names to the radio button
+    opt1.previousElementSibling.innerText = questionArr[answerIndex].options[0];
+    opt2.previousElementSibling.innerText = questionArr[answerIndex].options[1];
+    opt3.previousElementSibling.innerText = questionArr[answerIndex].options[2];
+    opt4.previousElementSibling.innerText = questionArr[answerIndex].options[3];
 
-      // Here I'm assigning the option names to the answer values for the next question
-      opt1.value = questionArr[answerIndex].options[0];
-      opt2.value = questionArr[answerIndex].options[1];
-      opt3.value = questionArr[answerIndex].options[2];
-      opt4.value = questionArr[answerIndex].options[3];
+    // Here I'm assigning the option names to the answer values for the next question
+    opt1.value = questionArr[answerIndex].options[0];
+    opt2.value = questionArr[answerIndex].options[1];
+    opt3.value = questionArr[answerIndex].options[2];
+    opt4.value = questionArr[answerIndex].options[3];
 
-      // Resetting all the elements for the next question
-      correctIcon.style.backgroundColor = "transparent";
-      incorrectIcon.style.backgroundColor = "transparent";
+    // Resetting all the elements for the next question
+    correctIcon.style.backgroundColor = "transparent";
+    incorrectIcon.style.backgroundColor = "transparent";
       
-      feedback.textContent = "";
+    feedback.textContent = "";
 
-      opt1.checked = false;
-      opt2.checked = false;
-      opt3.checked = false;
-      opt4.checked = false;
-  }
-  else if 
-    (currentQuestion === questionIndex) {
-      // https://www.w3schools.com/jsref/prop_style_visibility.asp
-      document.getElementById('next-button').style.visibility = "hidden"
-      alert('Click the restart button to try the quiz again');
+    opt1.checked = false;
+    opt2.checked = false;
+    opt3.checked = false;
+    opt4.checked = false;
   }
   else {
     alert('Please select your answer to continue');
+  }     
+}
+
+// Hides next button at the end of the quiz
+nextButton.addEventListener ('click', hideNext);
+function hideNext() {
+  if (questionIndex === questionIndex[7]) {
+  document.getElementById('next-button').style.visibility = "hidden";    // https://www.w3schools.com/jsref/prop_style_visibility.asp
+  alert('Click the restart button to try the quiz again');
   }
 }
 
-// Reloads/resets the entire quiz when button is clicked:
+// Reloads/resets the entire quiz when button is clicked
 restartButton.addEventListener('click', restartQuiz);
 function restartQuiz(){
-    location.reload();
+  location.reload();
 }
