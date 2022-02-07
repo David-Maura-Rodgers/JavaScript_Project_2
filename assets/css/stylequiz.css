@@ -33,19 +33,19 @@ h3 {
 
 #start-button:hover {
     background-color: rgba(243, 201, 149, 0.993); 
-    border-color:black 10px;
+    border-color:black;
     border-radius: 10px;  
 }
 
 #next-button:hover {
     background-color: #E6ECF0;
-    border-color: black 10px;
+    border-color: black;
     border-radius: 10px;
 }
 
 #restart-button:hover {
     background-color: #E6ECF0;
-    border-color: black 10px;
+    border-color: black;
     border-radius: 10px;
 }
 
