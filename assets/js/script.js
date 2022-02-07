@@ -90,6 +90,7 @@ function checkAnswer(event) {
       currentQuestion++;
     }
   }
+  
   // checks for last question in array and displays total score in feedback area to user
   if (currentQuestion === totalQuestions) {
     feedback.innerHTML =  '</strong>' + '</br>' + 'Quiz complete!' + ' ' + 'Your total score: ' + correct + '/' + totalQuestions;
@@ -110,6 +111,34 @@ opt1.previousElementSibling.innerText = questionArr[answerIndex].options[0]
 opt2.previousElementSibling.innerText = questionArr[answerIndex].options[1]
 opt3.previousElementSibling.innerText = questionArr[answerIndex].options[2]
 opt4.previousElementSibling.innerText = questionArr[answerIndex].options[3]
+
+
+// Listener for on click events to disable radio button once user selects an answer
+let ind;
+for (ind = 0; i < answerOption.length; ind++) {
+    answerOption[ind].addEventListener("click", disable);
+}
+
+
+/** Function: disable
+     Listener for on click events to disable radio button once user selects an answer
+*/
+
+function disable(event) {
+  if (this.value === questionArr[questionIndex].answer) {
+    document.getElementById('opt1').disabled = true;
+    document.getElementById('opt2').disabled = true;
+    document.getElementById('opt3').disabled = true;
+    document.getElementById('opt4').disabled = true;
+  }
+  else if (this.value !== questionArr[questionIndex].answer) {
+    document.getElementById('opt1').disabled = false;
+    document.getElementById('opt2').disabled = false;
+    document.getElementById('opt3').disabled = false;
+    document.getElementById('opt4').disabled = false;
+    }
+}
+
 
 // Adding a listener for on click events for the next question
 nextButton.addEventListener('click', nextQuestion);
