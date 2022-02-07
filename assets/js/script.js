@@ -124,16 +124,16 @@ function nextQuestion() {
       question.innerHTML = questionArr[questionIndex].question;
 
       // Here I'm assigning the option names to the radio button
-      opt1.previousElementSibling.innerText = questionArr[answerIndex].options[0]
-      opt2.previousElementSibling.innerText = questionArr[answerIndex].options[1]
-      opt3.previousElementSibling.innerText = questionArr[answerIndex].options[2]
-      opt4.previousElementSibling.innerText = questionArr[answerIndex].options[3]
+      opt1.previousElementSibling.innerText = questionArr[answerIndex].options[0];
+      opt2.previousElementSibling.innerText = questionArr[answerIndex].options[1];
+      opt3.previousElementSibling.innerText = questionArr[answerIndex].options[2];
+      opt4.previousElementSibling.innerText = questionArr[answerIndex].options[3];
 
       // Here I'm assigning the option names to the answer values for the next question
-      opt1.value = questionArr[answerIndex].options[0]
-      opt2.value = questionArr[answerIndex].options[1]
-      opt3.value = questionArr[answerIndex].options[2]
-      opt4.value = questionArr[answerIndex].options[3]
+      opt1.value = questionArr[answerIndex].options[0];
+      opt2.value = questionArr[answerIndex].options[1];
+      opt3.value = questionArr[answerIndex].options[2];
+      opt4.value = questionArr[answerIndex].options[3];
 
       // Resetting all the elements for the next question
       correctIcon.style.backgroundColor = "transparent";
