@@ -52,7 +52,7 @@ let correctIcon = document.getElementById('correct');
 let incorrectIcon = document.getElementById('incorrect');
 let scoreTracker = document.getElementById('score');
 
-let availableQuestions = [];
+// let availableQuestions = [];
 
 // Radio buttons
 let opt1 = document.getElementById('opt1');
@@ -66,7 +66,7 @@ let answerIndex = 0;
 let correct = 0;
 const totalQuestions = 8;
 let currentQuestion = 0;
-let lastQuestion = questionArr.at(-1);
+// let lastQuestion = questionArr.at(-1);
 
 
 /** Function: checkAnswer
