@@ -134,6 +134,7 @@ h3 {
 /* Next Question and Restart buttons */
 #next-button {
     margin: 0 auto;
+    margin-bottom: -18px;
     border-radius: 2px;
     padding: 15px 32px 15px 32px;
     font-size: 100%;
@@ -144,6 +145,7 @@ h3 {
 
 #restart-button {
     margin: 0 auto;
+    margin-bottom: -18px;
     border-radius: 2px;
     padding: 15px 32px 15px 32px;
     font-size: 100%;
@@ -237,14 +239,14 @@ h3 {
 
     #next-button {
     position: relative;
-    top: 0.5rem;
+    top: -0.10rem;
     border-radius: 2px;
     padding: 15px 32px 15px 32px;
     }
 
     #restart-button {
     position: relative;
-    top: 0.5rem;
+    top: -0.10rem;
     border-radius: 2px;
     padding: 15px 32px 15px 32px;
     }
@@ -328,14 +330,14 @@ h3 {
 
     #next-button {
     position: relative;
-    top: 0.5rem;
+    top: .10rem;
     border-radius: 2px;
     padding: 15px 32px 15px 32px;
     }
 
     #restart-button {
     position: relative;
-    top: 0.5rem;
+    top: .10rem;
     border-radius: 2px;
     padding: 15px 32px 15px 32px;
     }
@@ -419,18 +421,14 @@ h3 {
     
     #next-button {
     position: relative;
-    top: -3.25rem;
-    display: block;
+    top: .05rem;
     border-radius: 2px;
     padding: 15px 32px 15px 32px;
     }
     
     #restart-button {
     position: relative;
-    top: 4.5rem;
-    bottom: 2.5rem;
-    display: block;
-    clear: both;
+    top: .05rem;
     border-radius: 2px;
     padding: 15px 32px 15px 32px;
     }
@@ -492,7 +490,6 @@ h3 {
     border-radius: 10vmin;
     width: 85%;
     height: 20vh;
-    
     box-sizing: border-box;
     margin: 1.5% 1.5% 1.5% 8%;
     padding: 1%;
@@ -514,18 +511,14 @@ h3 {
 
     #next-button {
     position: relative;
-    top: -3.25rem;
-    display: block;
+    top: .10rem;
     border-radius: 2px;
     padding: 15px 32px 15px 32px;
     }
 
     #restart-button {
     position: relative;
-    top: 4.5rem;
-    bottom: 2.5rem;
-    display: block;
-    clear: both;
+    top: .10rem;
     border-radius: 2px;
     padding: 15px 32px 15px 32px;
     }
@@ -587,5 +580,25 @@ h3 {
     #incorrect {
     margin: 35px 2px 2px 25px;
     font-size: 55px;
+    }
+
+    #next-button {
+    position: relative;
+    
+    top: .50rem;
+    border-radius: 2px;
+    padding: 5px 2px 5px 2px;
+    font-size: small;
+    size: 20%;
+    }
+    
+    #restart-button {
+    position: relative;
+    
+    top: .50rem;
+    border-radius: 2px;
+    padding: 5px 2px 5px 2px;
+    font-size: small;
+    size: 20%;
     }
 }
