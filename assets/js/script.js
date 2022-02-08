@@ -140,7 +140,6 @@ nextButton.addEventListener('click', nextQuestion);
    This function reacts to a click on the next question button
  */
 function nextQuestion() {
-  console.log(questionIndex)
   if (currentQuestion > questionIndex) {
     questionIndex++;
     answerIndex++;
