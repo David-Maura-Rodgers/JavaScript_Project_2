@@ -584,7 +584,6 @@ h3 {
 
     #next-button {
     position: relative;
-    
     top: .50rem;
     border-radius: 2px;
     padding: 5px 2px 5px 2px;
@@ -594,11 +593,20 @@ h3 {
     
     #restart-button {
     position: relative;
-    
     top: .50rem;
     border-radius: 2px;
     padding: 5px 2px 5px 2px;
     font-size: small;
     size: 20%;
+    }
+
+    #score {
+    position: relative;
+    align-content: center;
+    margin-left: 25%;
+    margin-right: 25%;
+    box-sizing: border-box;
+    border-radius: 5vmin;
+    padding: 2.5px;
     }
 }
