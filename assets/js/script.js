@@ -52,6 +52,8 @@ let correctIcon = document.getElementById('correct');
 let incorrectIcon = document.getElementById('incorrect');
 let scoreTracker = document.getElementById('score');
 
+let availableQuestions = [];
+
 // Radio buttons
 let opt1 = document.getElementById('opt1');
 let opt2 = document.getElementById('opt2');
@@ -62,9 +64,9 @@ let opt4 = document.getElementById('opt4');
 let questionIndex = 0;
 let answerIndex = 0;
 let correct = 0;
-let totalQuestions = 8;
+const totalQuestions = 8;
 let currentQuestion = 0;
-let lastQuestion = questionArr[questionArr.length - 1];
+let lastQuestion = questionArr.at(-1);
 
 
 /** Function: checkAnswer
@@ -172,32 +174,21 @@ function nextQuestion() {
     document.getElementById('opt3').disabled = false;
     document.getElementById('opt4').disabled = false;
   }
-  else if (currentQuestion === questionIndex[7]) {
-    console.log(currentQuestion)
-    console.log(questionIndex)
-    document.getElementById('next-button').style.visibility = "hidden";    
-    alert('Click the restart button to try the quiz again');
-    }
+
+  else if (availableQuestions.length === 0 || questionIndex >= totalQuestions) {
+    //go to the end page
+    // return window.location.assign('/end.html')
+    document.getElementById('next-button').style.visibility = "hidden"; 
+  }
   else {
     alert('Please select your answer to continue');
   }
 }
-
-
-// Hides next button at the end of the quiz
-// nextButton.addEventListener ('click', hideNext);
-// function hideNext() {
-  // if (questionIndex === questionIndex[7]) {
-  // document.getElementById('next-button').style.visibility = "hidden";    
-  // alert('Click the restart button to try the quiz again');
-  // }
-// }
 
 // Reloads/resets the entire quiz when button is clicked
 restartButton.addEventListener('click', restartQuiz);
 function restartQuiz(){
   location.reload();
 }
-
 
 // https://www.w3schools.com/jsref/prop_style_visibility.asp

@@ -12,11 +12,11 @@ Below is a list of features that I have on this site which I will detail individ
 
 ### Each Feature Explained
 
-- __Navigation Bar__
+- __Question Display__
 
   - The Nav Menu bar is located on all pages and allows for seamless flow for the user to access all the content on the site
 
-![nav-menu](https://user-images.githubusercontent.com/91907661/145723593-3abdadbc-c308-4ef7-9d8e-6ed93b71f8ff.png)
+<!-- ![nav-menu](https://user-images.githubusercontent.com/91907661/145723593-3abdadbc-c308-4ef7-9d8e-6ed93b71f8ff.png) -->
 
 - __Social Media and Back to Top__
 
