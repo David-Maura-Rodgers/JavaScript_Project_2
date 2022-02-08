@@ -64,7 +64,7 @@ let answerIndex = 0;
 let correct = 0;
 let totalQuestions = 8;
 let currentQuestion = 0;
-let lastQuestion = questionArr[questionArr.length - 1]
+let lastQuestion = questionArr[questionArr.length - 1];
 
 
 /** Function: checkAnswer
@@ -161,10 +161,10 @@ function nextQuestion() {
       
     feedback.textContent = "";
 
-    opt1.checked = false;
-    opt2.checked = false;
-    opt3.checked = false;
-    opt4.checked = false;
+    document.getElementById('opt1').checked = false;
+    document.getElementById('opt2').checked = false;
+    document.getElementById('opt3').checked = false;
+    document.getElementById('opt4').checked = false;
 
     document.getElementById('opt1').disabled = false;
     document.getElementById('opt2').disabled = false;
@@ -180,7 +180,7 @@ function nextQuestion() {
 nextButton.addEventListener ('click', hideNext);
 function hideNext() {
   if (questionIndex === questionIndex[7]) {
-  document.getElementById('next-button').style.visibility = "hidden";    // https://www.w3schools.com/jsref/prop_style_visibility.asp
+  document.getElementById('next-button').style.visibility = "hidden";    
   alert('Click the restart button to try the quiz again');
   }
 }
@@ -190,3 +190,6 @@ restartButton.addEventListener('click', restartQuiz);
 function restartQuiz(){
   location.reload();
 }
+
+
+// https://www.w3schools.com/jsref/prop_style_visibility.asp

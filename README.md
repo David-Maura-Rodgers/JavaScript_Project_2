@@ -1,108 +1,176 @@
-![CI logo](https://codeinstitute.s3.amazonaws.com/fullstack/ci_logo_small.png)
+# General Knowledge Quiz
 
-Welcome David-Maura-Rodgers,
+My General Knowledge Quiz site has a simple and clear design so that user won't feel unsure as how to navigate and run the quiz. 
 
-This is the Code Institute student template for Gitpod. We have preinstalled all of the tools you need to get started. It's perfectly ok to use this template as the basis for your project submissions.
+<!-- ![home-page](https://user-images.githubusercontent.com/91907661/147686839-8534ed06-a51b-471b-ae05-44b2d51e8a31.png) -->
 
-You can safely delete this README.md file, or change it for your own project. Please do read it at least once, though! It contains some important information about Gitpod and the extensions we use. Some of this information has been updated since the video content was created. The last update to this file was: **September 1, 2021**
+## Features 
 
-## Gitpod Reminders
+Below is a list of features that I have on this site which I will detail individually - there is a nav menu for each page, and there are five pages in total - Home, Sleep, Exercise, Mindfulness and a Suggestions page. The home page has an aside which also loads up a YouTube video for each section. Within the Sleep, Exercise and Mindfulness pages, there is an iframe, table and list items which link to various external sources. There is a form for the Suggestions page to record data entered by users of the site. There is also a footer which links the user to social media pages and a link which brings users back to the top of the page if they have scrolled down to the bottom.
 
-To run a frontend (HTML, CSS, Javascript only) application in Gitpod, in the terminal, type:
+### Each Feature Explained
 
-`python3 -m http.server`
+- __Navigation Bar__
 
-A blue button should appear to click: _Make Public_,
+  - The Nav Menu bar is located on all pages and allows for seamless flow for the user to access all the content on the site
 
-Another blue button should appear to click: _Open Browser_.
+![nav-menu](https://user-images.githubusercontent.com/91907661/145723593-3abdadbc-c308-4ef7-9d8e-6ed93b71f8ff.png)
 
-To run a backend Python file, type `python3 app.py`, if your Python file is named `app.py` of course.
+- __Social Media and Back to Top__
 
-A blue button should appear to click: _Make Public_,
+  - There are links to the website Social Media pages as located in the footer. These open in a new tab.
+  - There is also a back to top link which can be clicked to return to Nav menu bar at any time
 
-Another blue button should appear to click: _Open Browser_.
+![back-socialmedia](https://user-images.githubusercontent.com/91907661/145724575-6b2e2cb9-8736-4a44-a0da-33ec5b712fbd.png)
 
-In Gitpod you have superuser security privileges by default. Therefore you do not need to use the `sudo` (superuser do) command in the bash terminal in any of the lessons.
+- __Title Links__
 
-To log into the Heroku toolbelt CLI:
+  - You can click on the the Mind and Body Maintenance title and and it will take you to the home page at any time, you can also click on the title for Ideas for healthy minds and bodies, and this will take you directly to the Suggestions Page, these title links appear on all pages.
 
-1. Log in to your Heroku account and go to *Account Settings* in the menu under your avatar.
-2. Scroll down to the *API Key* and click *Reveal*
-3. Copy the key
-4. In Gitpod, from the terminal, run `heroku_config`
-5. Paste in your API key when asked
+![title-links](https://user-images.githubusercontent.com/91907661/145724081-9e58f592-7c15-4f93-a281-ba0bf4365b33.png)
 
-You can now use the `heroku` CLI program - try running `heroku apps` to confirm it works. This API key is unique and private to you so do not share it. If you accidentally make it public then you can create a new one with _Regenerate API Key_.
+- __Home Page Content__
 
-------
+  - The content on the home page includes some introduction info and links within each section to take you directly to the page they relate to
+  - There is also a video that loads up automatically that you can choose to unmute. Each video gives a good insight into what the correlating page is about
 
-## Release History
+![home-page-content](https://user-images.githubusercontent.com/91907661/147687864-c196493a-aca0-4dee-8c2d-6225e774ae05.png)
 
-We continually tweak and adjust this template to help give you the best experience. Here is the version history:
+- __Sleep, Exercise and Mindfulness Pages__
 
-**September 1 2021:** Remove `PGHOSTADDR` environment variable.
+  - Each section will follow the same layout. Below, the Sleep page of the site is shown as an example 
+  - Below the short paragraph at the top of page (not included in screenshot), an iframe will load in addition to a table of sources sectioned off in different categories: Source, Video and Article - these table cells can be clicked and the user is taken to a new tab containing the information source
+  - There is also a list of more detailed studies and journals for a more in depth study which also links to new tabs
+  - This section can also be updated by way of newly suggested content from myself or other users on the Suggestions page 
 
-**July 19 2021:** Remove `font_fix` script now that the terminal font issue is fixed.
+![sleep-exercise-mindfulness-content](https://user-images.githubusercontent.com/91907661/145724847-c3522d11-7450-41c9-ba89-ba32611bdaec.png)
 
-**July 2 2021:** Remove extensions that are not available in Open VSX.
+- __Suggestions Page__
 
-**June 30 2021:** Combined the P4 and P5 templates into one file, added the uptime script. See the FAQ at the end of this file.
+  - This page will allow the user to enter some basic info on the form - drop down for age group, text input for name and email address. There will be some radio button questions in there as well. All in all, it takes no time to complete and all these questions are required to be able to submit the form
+  - There is a text box area for the user to enter suggestions and additional content for the site, which I can implement and give credit to the person suggesting it, if they want me to do so.
 
-**June 10 2021:** Added: `font_fix` script and alias to fix the Terminal font issue
+![suggestions-form](https://user-images.githubusercontent.com/91907661/145725027-bcb0b194-2261-4241-b489-1f37b94047a6.png)  
 
-**May 10 2021:** Added `heroku_config` script to allow Heroku API key to be stored as an environment variable.
+- __Suggestions Page Validation__
+ - There is validation as shown below to ensure that the user is entering all the required data, be it text: text and email format, and a requirement for the radio button options to also be clicked to submit the data on the form. An error message is displayed to the user 'Please fill out this field'.
 
-**April 7 2021:** Upgraded the template for VS Code instead of Theia.
+![suggestions-validation](https://user-images.githubusercontent.com/91907661/147268935-7a029374-4aea-4c2f-ad31-58739c534a2a.png)
 
-**October 21 2020:** Versions of the HTMLHint, Prettier, Bootstrap4 CDN and Auto Close extensions updated. The Python extension needs to stay the same version for now.
 
-**October 08 2020:** Additional large Gitpod files (`core.mongo*` and `core.python*`) are now hidden in the Explorer, and have been added to the `.gitignore` by default.
+## Testing and Lighthouse
 
-**September 22 2020:** Gitpod occasionally creates large `core.Microsoft` files. These are now hidden in the Explorer. A `.gitignore` file has been created to make sure these files will not be committed, along with other common files.
+![lighthouse](https://user-images.githubusercontent.com/91907661/146009134-118f8408-eefe-43b9-83e8-c9c7e1adab0d.png)
 
-**April 16 2020:** The template now automatically installs MySQL instead of relying on the Gitpod MySQL image. The message about a Python linter not being installed has been dealt with, and the set-up files are now hidden in the Gitpod file explorer.
+I have included the following errors and warnings I received from Validation testing and how and if they needed fixing:
 
-**April 13 2020:** Added the _Prettier_ code beautifier extension instead of the code formatter built-in to Gitpod.
+- __Errors__
+- The frameborder attribute on the iframe element is obsolete. Use CSS instead.
+  - I have removed the obsolete attribute from all instances of this element 
+- Bad value assets/images/woman meditating 2.jpg for attribute src on element img: Illegal character in path segment: space is not allowed.  
+  - This has now been changed to the proper format  
+  
+- __Warnings__
+- The name attribute is obsolete (for the back to top function). Consider putting an id attribute on the nearest container instead.
+  - Removed name as suggested and feature still works
+- Section lacks heading. Consider using h2-h6 elements to add identifying headings to all sections.
+  - I have used flex with CCS on my section which contains the image, paragraph, aside and Youtube Video. A header for these sections didn't fit with my plan for layout
+- Value Error : padding-left Too many values or values are not recognized: 0 10px 0 10px
+  - Have changed to 0 10px and removed obsolete values  
+  
+### Validator Testing 
 
-**February 2020:** The initialisation files now _do not_ auto-delete. They will remain in your project. You can safely ignore them. They just make sure that your workspace is configured correctly each time you open it. It will also prevent the Gitpod configuration popup from appearing.
+- HTML
+  - No errors were returned when passing through the official [W3C validator](https://validator.w3.org/nu/?doc=https%3A%2F%2Fdavid-maura-rodgers.github.io%2FDavid.Rodgers-html-css-Port.Proj.%2F)
+- CSS
+  - No errors were found when passing through the official [(Jigsaw) validator](https://jigsaw.w3.org/css-validator/validator?uri=https%3A%2F%2Fdavid-maura-rodgers.github.io%2FDavid.Rodgers-html-css-Port.Proj.%2F&profile=css3svg&usermedium=all&warning=1&vextwarning=&lang=en)
 
-**December 2019:** Added Eventyret's Bootstrap 4 extension. Type `!bscdn` in a HTML file to add the Bootstrap boilerplate. Check out the <a href="https://github.com/Eventyret/vscode-bcdn" target="_blank">README.md file at the official repo</a> for more options.
+### Unfixed Bugs
 
-------
+A very small, but noticeable difference in the size of the sleeping woman image and the 2 images below (two people exercising and woman meditating) This is likely due to the content being ina a flex layout. I have tried everything I know, looked at resources online and there seems to be no error or difference in the html or CSS controlling them.
 
-## FAQ about the uptime script
+I then had to create the code below, which takes the first image and it's container to be unique - I changed the width of the viewport to 36 as opposed to 30 for the two images below it. Not ideal, but it does fix the issue.
 
-**Why have you added this script?**
+#circle-images-sleep {
+    position: relative;
+    width: 36vw;
+    height: 22vw;
+    overflow: hidden;
+    margin-left: 30px;
+}
 
-It will help us to calculate how many running workspaces there are at any one time, which greatly helps us with cost and capacity planning. It will help us decide on the future direction of our cloud-based IDE strategy.
+#sleep-circle {
+    height: 300px;
+    width: 300px; 
+    border-radius: 50%;
+    border: navy solid 5px;
+    width: 90%;
+    height: 60%;
+    object-fit: cover;
+}
 
-**How will this affect me?**
+## Deployment
 
-For everyday usage of Gitpod, it doesn’t have any effect at all. The script only captures the following data:
+- The site was deployed to GitHub pages. The steps to deploy are as follows: 
+  - In the GitHub repository, navigate to the Settings tab 
+  - From the source section drop-down menu, select the Master Branch
+  - Once the master branch has been selected, the page will be automatically refreshed with a detailed ribbon display to indicate the successful deployment. 
 
-- An ID that is randomly generated each time the workspace is started.
-- The current date and time
-- The workspace status of “started” or “running”, which is sent every 5 minutes.
+The live link can be found here - https://david-maura-rodgers.github.io/David.Rodgers-html-css-Port.Proj./
 
-It is not possible for us or anyone else to trace the random ID back to an individual, and no personal data is being captured. It will not slow down the workspace or affect your work.
+### Credits for all Content 
 
-**So….?**
+- __HTML Code__
+  - For back to top page link: https://www.computerhope.com/issues/ch001475.htm
+  - Fonts come from: https://fontawesome.com/
+  - For links in table cells: https://stackoverflow.com/questions/10070232/how-to-make-a-cell-of-table-hyperlink
+  - To ensure that all radio buttons are required before table is submitted: https://stackoverflow.com/questions/49798482/why-can-i-check-multiple-radio-buttons/49798515
 
-We want to tell you this so that we are being completely transparent about the data we collect and what we do with it.
+- __CSS Code__
+  - For skew function on Submit button: https://developer.mozilla.org/en-US/docs/Web/CSS/transform-function/skew()
+  - For blended colors on nav menu and form: https://blog.logrocket.com/advanced-effects-with-css-background-blend-modes-4b750198522a/
+  - To ensure that loaded videos loaded on page to a set height: https://css-tricks.com/fluid-width-video
 
-**Can I opt out?**
+- __Info and Sources (links to articles, videos and journals)__
+  - https://www.ft.com/content/e6ccdcac-133d-11e9-a581-4ff78404524e
+  - https://sleepmatters.ie/
+  - https://www.foundmyfitness.com/
+  - https://www.materprivate.ie/dublin/centre-services/all-services/sleep-disorders-clinic/
+  - https://www.youtube.com/watch?v=TUdYMpitk8Y
+  - https://www.youtube.com/watch?v=oZ-Ng0RXHLc
+  - https://www.youtube.com/watch?v=qvNLNl7oJnM
+  
+  - https://www.hybridcalisthenics.com/
+  - https://scoobysworkshop.com/
+  - https://www.healthline.com/
+  - https://www2.hse.ie/wellbeing/exercising-indoors/indoor-exercises-for-older-people.html
+  - https://www.youtube.com/watch?v=U1oARCOjzKM
+  - https://www.youtube.com/watch?v=5eV33roibqc
+  - https://www.youtube.com/watch?v=8CE4ijWlQ18
 
-Yes, you can. Since no personally identifiable information is being captured, we'd appreciate it if you let the script run; however if you are unhappy with the idea, simply run the following commands from the terminal window after creating the workspace, and this will remove the uptime script:
+  - https://www.youtube.com/watch?v=TUdYMpitk8Y
+  - https://www.youtube.com/watch?v=zsXDIk5ur2U
+  - https://www.youtube.com/watch?v=Ko51JVPUtAI&t=39s
+  - https://self-compassion.org/
+  - https://jackkornfield.com/
+  - https://alastaircampbell.org/blog/category/mental-health-2/ 
 
-```
-pkill uptime.sh
-rm .vscode/uptime.sh
-```
+  - https://www.mayo.edu/research/clinical-trials/diseases-conditions/sleep-disorders/
+  - https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6281147/
+  - https://www.sleepmedres.org/journal/view.php?number=175
+  - https://www.sleepmedres.org/journal/view.php?number=176
+  - https://www.ncbi.nlm.nih.gov/pmc/articles/PMC1402378/
+  - https://www.bmj.com/content/371/bmj.m3485
+  - https://med.stanford.edu/news/all-news/2020/05/stanford-medicine-study-details-molecular-effects-of-exercise.html
+  - https://www.frontiersin.org/articles/10.3389/fmed.2019.00236/full
+  - https://www.ncbi.nlm.nih.gov/pmc/articles/PMC1828319/
+  - https://www.ncbi.nlm.nih.gov/pmc/articles/PMC2395346/
+  - https://www.jmir.org/2020/7/e18723/
+  - https://alastaircampbell.org/blog/category/mental-health-2/
 
-**Anything more?**
-
-Yes! We'd strongly encourage you to look at the source code of the `uptime.sh` file so that you know what it's doing. As future software developers, it will be great practice to see how these shell scripts work.
-
----
-
-Happy coding!
+### Media
+- The photos and videos used on the home, sleep, exercise, mindfulness are from This Open Source site: https://pixabay.com/
+- The YouTube Videos that load on Home page are as listed below:
+  - https://www.youtube.com/watch?v=KGfdR7TSJo4&t=1s
+  - https://www.youtube.com/watch?v=WDz4PRXlrVg&t=26s
+  - https://www.youtube.com/watch?v=mOo1x8S2Dxc&t=39s
