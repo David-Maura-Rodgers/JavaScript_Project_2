@@ -165,6 +165,11 @@ function nextQuestion() {
     opt2.checked = false;
     opt3.checked = false;
     opt4.checked = false;
+
+    document.getElementById('opt1').disabled = false;
+    document.getElementById('opt2').disabled = false;
+    document.getElementById('opt3').disabled = false;
+    document.getElementById('opt4').disabled = false;
   }
   else {
     alert('Please select your answer to continue');
