@@ -306,7 +306,7 @@ h3 {
 
     #icon-area {
     border-radius: 10vmin;
-    width: 75%;
+    width: 65%;
     height: 18vh;
     box-sizing: border-box;
     margin-left: auto;
@@ -398,10 +398,10 @@ h3 {
 
     #icon-area {
     border-radius: 10vmin;
-    width: 85%;
+    width: 65%;
+    margin-left: 18%;
     height: 15vh;
     box-sizing: border-box;
-    margin: 1.5% 1.5% 1.5% 8%;
     padding: 1%;
     }
     
@@ -488,10 +488,10 @@ h3 {
             
     #icon-area {
     border-radius: 10vmin;
-    width: 85%;
+    width: 65%;
     height: 20vh;
+    margin-left: 17%;
     box-sizing: border-box;
-    margin: 1.5% 1.5% 1.5% 8%;
     padding: 1%;
     }
 
@@ -591,10 +591,10 @@ h3 {
 
     #icon-area {
     border-radius: 10vmin;
-    width: 85%;
+    width: 65%;
     height: 16vh;
+    margin-left: 18%;
     box-sizing: border-box;
-    margin: 1.5% 1.5% 1.5% 8%;
     padding: 1%;
     }
 
