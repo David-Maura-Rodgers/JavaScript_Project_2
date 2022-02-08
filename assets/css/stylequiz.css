@@ -557,7 +557,6 @@ h3 {
     margin-left: 1px;    
     }
 
-    /* ----------- NEED HELP WITH THIS !!!!!!!!!!!!!! ------------ */
     #feedback {
     margin-left: 2%;
     position: relative;
@@ -577,7 +576,7 @@ h3 {
     margin: auto;
     font-weight: 600;
     padding-top: 0.05rem;
-    padding-bottom: -1rem;
+    padding-bottom: 0.10rem;
     font-size: 12px;
     white-space: nowrap;
     }
