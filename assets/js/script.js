@@ -174,12 +174,6 @@ function nextQuestion() {
     document.getElementById('opt3').disabled = false;
     document.getElementById('opt4').disabled = false;
   }
-
-  // else if (availableQuestions.length === 0 || questionIndex >= totalQuestions) {
-    //go to the end page
-    // return window.location.assign('/end.html')
-    // document.getElementById('next-button').style.visibility = "hidden"; 
-  // }
   else {
     alert('Please select your answer to continue');
   }
@@ -192,13 +186,13 @@ function restartQuiz(){
 }
 
 nextButton.addEventListener ('click', hideNext);
-  function hideNext() {
-   if (questionIndex >= totalQuestions) {
-    // go to the end page
-    // return window.location.assign('/end.html')
-    document.getElementById('next-button').style.visibility = "hidden";    
-    alert('Click the restart button to try the quiz again');
-    }
+function hideNext() {
+  if (questionIndex >= totalQuestions) {
+  // go to the end page
+  // return window.location.assign('/end.html')
+  document.getElementById('next-button').style.visibility = "hidden";    
+  alert('Click the restart button to try the quiz again');
   }
+}
 
 // https://www.w3schools.com/jsref/prop_style_visibility.asp
