@@ -1,12 +1,14 @@
 # General Knowledge Quiz
 
-My General Knowledge Quiz site has a simple and clear design so that user won't feel unsure as how to navigate and run the quiz. 
+My General Knowledge Quiz site has a simple and clear design so that the user won't feel unsure as how to navigate and run the quiz. The user will first be taken to the home page where they are greeted with a welcome message and a button they can click to be taken quiz page.
+
+The first question in the question array will be displayed on this page. The questions will change dynamically when the user has selected a radio button that corresponds with the answer they wish to choose. They will then click on Next Question button to get the next question in the array. This process repeats until they reach the reach the end of the quiz. They can then click the Restart Button to try the quiz again.
 
 <!-- ![home-page](https://user-images.githubusercontent.com/91907661/147686839-8534ed06-a51b-471b-ae05-44b2d51e8a31.png) -->
 
 ## Features 
 
-Below is a list of features that I have on this site which I will detail individually - there is a nav menu for each page, and there are five pages in total - Home, Sleep, Exercise, Mindfulness and a Suggestions page. The home page has an aside which also loads up a YouTube video for each section. Within the Sleep, Exercise and Mindfulness pages, there is an iframe, table and list items which link to various external sources. There is a form for the Suggestions page to record data entered by users of the site. There is also a footer which links the user to social media pages and a link which brings users back to the top of the page if they have scrolled down to the bottom.
+Below is a list of features that I have on this site which I will detail individually. There is a welcome page with a Start quiz Button that will take the user to main quiz page. On this quiz page, there is a quiz area which contains a question display area and 4 radio buttons that the user can select from to register an answer. And below this, but still within the smae containg div, the user will receive feed back on their answers. There is a another div below which contains dynamic icons in response to user input. And finally two buttons: Next Question and Restart Quiz along with a score tracker at the bottom.
 
 ### Each Feature Explained
 

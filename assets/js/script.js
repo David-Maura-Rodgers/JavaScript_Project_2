@@ -138,6 +138,7 @@ nextButton.addEventListener('click', nextQuestion);
    This function reacts to a click on the next question button
  */
 function nextQuestion() {
+  console.log(questionIndex)
   if (currentQuestion > questionIndex) {
     questionIndex++;
     answerIndex++;
@@ -171,19 +172,26 @@ function nextQuestion() {
     document.getElementById('opt3').disabled = false;
     document.getElementById('opt4').disabled = false;
   }
+  else if (currentQuestion === questionIndex[7]) {
+    console.log(currentQuestion)
+    console.log(questionIndex)
+    document.getElementById('next-button').style.visibility = "hidden";    
+    alert('Click the restart button to try the quiz again');
+    }
   else {
     alert('Please select your answer to continue');
-  }     
-}
-
-// Hides next button at the end of the quiz
-nextButton.addEventListener ('click', hideNext);
-function hideNext() {
-  if (questionIndex === questionIndex[7]) {
-  document.getElementById('next-button').style.visibility = "hidden";    
-  alert('Click the restart button to try the quiz again');
   }
 }
+
+
+// Hides next button at the end of the quiz
+// nextButton.addEventListener ('click', hideNext);
+// function hideNext() {
+  // if (questionIndex === questionIndex[7]) {
+  // document.getElementById('next-button').style.visibility = "hidden";    
+  // alert('Click the restart button to try the quiz again');
+  // }
+// }
 
 // Reloads/resets the entire quiz when button is clicked
 restartButton.addEventListener('click', restartQuiz);
