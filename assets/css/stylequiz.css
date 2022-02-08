@@ -542,7 +542,7 @@ h3 {
     box-sizing: border-box;
     border-radius: 10vmin;
     width: 85%;
-    height: 40vh;
+    height: 30vh;
     margin-left: auto;
     margin-right: auto;
     padding-bottom: 4%;
@@ -563,23 +563,47 @@ h3 {
     font-size: 14px;
     }
 
+    #question {
+    text-align: center;
+    font-weight: bolder;
+    font-size: 14px;
+    }  
+    
+    #answer-select {
+    height: 180px;
+    width: 90%;
+    margin: auto;
+    font-weight: 600;
+    padding-top: 0.05rem;
+    padding-bottom: -1rem;
+    font-size: 12px;
+    white-space: nowrap;
+    }
+                                            
+    #feedback {
+    margin-left: -2%;
+    position: relative;
+    font-weight: bolder;
+    font-size: 14px;
+    }
+
     #icon-area {
     border-radius: 10vmin;
     width: 85%;
-    height: 20vh;
+    height: 16vh;
     box-sizing: border-box;
     margin: 1.5% 1.5% 1.5% 8%;
     padding: 1%;
     }
 
     #correct {
-    margin: 35px 25px 2px 2px;
-    font-size: 55px;
+    margin: 25px 25px 2px 2px;
+    font-size: 50px;
     }
                     
     #incorrect {
-    margin: 35px 2px 2px 25px;
-    font-size: 55px;
+    margin: 25px 2px 2px 25px;
+    font-size: 50px;
     }
 
     #next-button {
