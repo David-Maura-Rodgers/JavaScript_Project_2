@@ -42,7 +42,7 @@ const questionArr = [
   }
 ];
 
-// Get and set variables
+// Get and set variables for the dynamic elements of the site
 let question = document.getElementById('question');
 let answerOption = document.getElementsByClassName('answer-option');
 let feedback = document.getElementById('feedback');
@@ -52,21 +52,18 @@ let correctIcon = document.getElementById('correct');
 let incorrectIcon = document.getElementById('incorrect');
 let scoreTracker = document.getElementById('score');
 
-// let availableQuestions = [];
-
-// Radio buttons
+// Get and set Radio buttons for answer options
 let opt1 = document.getElementById('opt1');
 let opt2 = document.getElementById('opt2');
 let opt3 = document.getElementById('opt3');
 let opt4 = document.getElementById('opt4');
 
-// Scoring System
+// Variable for question tracking and Scoring System
 let questionIndex = 0;
 let answerIndex = 0;
 let correct = 0;
 const totalQuestions = 8;
 let currentQuestion = 0;
-// let lastQuestion = questionArr.at(-1);
 
 
 /** Function: checkAnswer
@@ -75,7 +72,7 @@ let currentQuestion = 0;
 */
 
 function checkAnswer(event) {
-  // Check for running score after each question (both else if below)
+  // Check for answer and update running score after each question: either correct or incorrect
   if (this.value === questionArr[questionIndex].answer) {
     correctIcon.style.backgroundColor = "green";
     feedback.innerHTML = 'Correct!';
@@ -99,32 +96,31 @@ function checkAnswer(event) {
     feedback.innerHTML =  '</strong>' + '</br>' + 'Quiz complete!' + ' ' + 'Your total score: ' + correct + '/' + totalQuestions;
     document.getElementById('feedback').style.color = "purple";
   }
- 
+  
   scoreTracker.innerHTML = 'Score: ' + correct + '/' + totalQuestions;
 }
 
-// Listener for on click events to call check answer function
+// Listener for radio button on click event to call check answer function
 let i;
 for (i = 0; i < answerOption.length; i++) {
     answerOption[i].addEventListener("click", checkAnswer);
 }
 
-// Displays all questions/alternatives:
+// Displays all questions in array and also displays each set of correspodning answers:
 question.innerHTML = questionArr[questionIndex].question;
 opt1.previousElementSibling.innerText = questionArr[answerIndex].options[0];
 opt2.previousElementSibling.innerText = questionArr[answerIndex].options[1];
 opt3.previousElementSibling.innerText = questionArr[answerIndex].options[2];
 opt4.previousElementSibling.innerText = questionArr[answerIndex].options[3];
 
-
-// Listener for on click events to disable radio button once user selects an answer
+// Listener for on click event to disable radio button once user selects an answer
 let ind;
 for (ind = 0; ind < answerOption.length; ind++) {
     answerOption[ind].addEventListener("click", disable);
 }
 
 /** Function: disable
-     Listener for on click events to disable radio button once user selects an answer
+    Once user clicks a radio button to register an answer, all other radio buttons are disabled
 */
 function disable(event) {
   document.getElementById('opt1').disabled = true;
@@ -133,11 +129,12 @@ function disable(event) {
   document.getElementById('opt4').disabled = true;
 }
   
-// Adding a listener for on click events for the next question
+// Listener for Next Button click events for the next question to be displayed 
 nextButton.addEventListener('click', nextQuestion);
 
 /** Function: nextQuestion
-   This function reacts to a click on the next question button
+   This function reacts to a click on the next question button which will display each question
+   and increment both indexes in order to reach the last question in the array
  */
 function nextQuestion() {
   if (currentQuestion > questionIndex) {
@@ -145,7 +142,7 @@ function nextQuestion() {
     answerIndex++;
     question.innerHTML = questionArr[questionIndex].question;
 
-    // Here I'm assigning the option names to the radio button
+    // Here I'm assigning the option names to the radio buttons
     opt1.previousElementSibling.innerText = questionArr[answerIndex].options[0];
     opt2.previousElementSibling.innerText = questionArr[answerIndex].options[1];
     opt3.previousElementSibling.innerText = questionArr[answerIndex].options[2];
@@ -178,20 +175,17 @@ function nextQuestion() {
   }
 }
 
-// Reloads/resets the entire quiz when button is clicked
+// Resets the entire quiz when button is clicked
 restartButton.addEventListener('click', restartQuiz);
-function restartQuiz(){
+function restartQuiz() {
   location.reload();
 }
 
+// Listener to hide the Next Button when last question in the array is reached
 nextButton.addEventListener ('click', hideNext);
 function hideNext() {
   if (questionIndex >= totalQuestions) {
-  // go to the end page
-  // return window.location.assign('/end.html')
-  document.getElementById('next-button').style.visibility = "hidden";    
+  document.getElementById('next-button').style.visibility = "hidden"; //   
   alert('Click the restart button to try the quiz again');
   }
 }
-
-// https://www.w3schools.com/jsref/prop_style_visibility.asp
