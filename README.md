@@ -1,8 +1,8 @@
 # General Knowledge Quiz
 
-My General Knowledge Quiz site has a simple and clear design so that the user won't feel unsure as how to navigate and run the quiz. The user will first be taken to the home page where they are greeted with a welcome message and a button they can click to be taken quiz page.
+My General Knowledge Quiz site has a simple and clear design so that the user won't feel unsure as how to navigate and run the quiz. The user will first be taken to the home page where they are greeted with a welcome message and a button they can click to be taken to the quiz page.
 
-The first question in the question array will be displayed on this page. The questions will change dynamically when the user has selected a radio button that corresponds with the answer they wish to choose. They will then click on Next Question button to get the next question in the array. This process repeats until they reach the reach the end of the quiz. They can then click the Restart Button to try the quiz again.
+The first question in the question array will be displayed on this page. The questions will change dynamically when the user has selected a radio button that corresponds with the answer they wish to choose. They will then click on the Next Question button to get the next question in the array. This process repeats until they reach the reach the end of the quiz. They can then click the Restart Button to try the quiz again.
 
 ![home-page](https://user-images.githubusercontent.com/91907661/153229405-2847ed4c-6dd9-4df4-9d40-bc63d1004829.png)
 
@@ -11,9 +11,9 @@ The first question in the question array will be displayed on this page. The que
 
 ## Features 
 
-Below is a list of features that I have on this site which I will detail individually. There is a welcome page with a Start quiz Button that will take the user to main quiz page. On this quiz page, there is a quiz area which contains a question display area and 4 radio buttons that the user can select from to register an answer. And below this, but still within the same containing div, the user will receive feed back on their answers. 
+Below is a list of features that I have on this site which I will detail individually. There is a welcome page with a Start quiz Button that will take the user to the main quiz page. On this quiz page, there is a quiz area which contains a question display area and 4 radio buttons that the user can select from to register an answer. And below this, but still within the same containing div, the user will receive feedback on their answers. 
 
-There is a another div below which contains dynamic icons in response to user input. And finally two buttons: Next Question and Restart Quiz along with a score tracker at the bottom. 
+There is another div below which contains dynamic icons in response to user input. And finally two buttons: Next Question and Restart Quiz along with a score tracker at the bottom. 
 
 I have also added a favicon for the site.
 
@@ -36,7 +36,7 @@ I have also added a favicon for the site.
 
 - __Feedback: rolling and at quiz end__
 
-  - The feedback display will display "Correct!" or "Incorrect! The correct answer . . ." each time the user chooses an answer. This always corresponds to either the correct or incorrect answer is.
+  - The feedback display will display "Correct!" or "Incorrect! The correct answer . . ." each time the user chooses an answer. This always corresponds to either the correct or incorrect answer.
   - When the user reaches the last question in the array, the feedback text will turn purple and let them know their final score and that the quiz has ended
 
 ![icons-incorrect](https://user-images.githubusercontent.com/91907661/153233169-5979b88d-fb64-4af9-bb5c-97dd2ce2011d.png)
@@ -47,7 +47,7 @@ I have also added a favicon for the site.
 - __Icons (Correct and Incorrect)__
 
   - There are two icons which respond to the user input and responds to the checkAnswer function to supply visual feedback 
-  - Both sreenshots below show both icon responses
+  - Both screenshots below show both icon responses
 
 ![icons](https://user-images.githubusercontent.com/91907661/153232612-d5155d79-d03a-4d56-bc7c-90bc3d4a093a.png)
 
@@ -60,7 +60,7 @@ I have also added a favicon for the site.
   - The Next Question and Restart Quiz are displayed as below and will navigate the quiz accordingly
   - When the user hovers over either button, the button responds dynamically as shown below and reverts back when user moves cursor away from the button
   - If the user clicks on the next button after the last question - they will receive an alert
-  - Once the user clicks OK on the alert, the next button will dissapear and the user can click the Restart Button
+  - Once the user clicks OK on the alert, the next button will disappear and the user can click the Restart Button
   - (The Restart Button can be activated at any time)
   - The score tracker is below the buttons and displays a running total as evidenced below and in previous screenshots
 
@@ -117,9 +117,9 @@ Please see below for lighthouse report:
 - Font Awesome:
   - As mentioned previously above, I get warnings about vendor extensions with my use of Font Awesome, but nothing that seems to me critical or impedes the functionality of the site for the user
 
-- However, I have put a lot of work into responsivness for this site and have had quite a few challenges, many of which are resolved now. My comments on this are as below:
+- However, I have put a lot of work into responsiveness  for this site and have had quite a few challenges, many of which are resolved now. My comments on this are as below:
   - I have had to take the no repeat attribute off the background img for the 1024 px media query as the image would not cover the entire screen as hoped.
-  - The icons withing the icon area div are generally well centered withing its containing div, however on some screens, it can look a bit off kilter. With enough time in the future, I would hope to have this 100%. 
+  - The icons within the icon area div are generally well centered within its containing div, however on some screens, it can look a bit off kilter. With enough time in the future, I would hope to have this 100%. 
   - I have added media queries for 5 breakpoints (1440px, 1240px, 992px, 576px, 375px) to ensure as much integrity as possible. Screenshots evidence the below:
 
   ![1440px](https://user-images.githubusercontent.com/91907661/153282167-9ad76422-ee8f-45af-b5e4-42be52e16138.png)
@@ -147,56 +147,17 @@ The live link can be found here - https://david-maura-rodgers.github.io/JavaScri
 
 - __HTML Code__
   - For Start Button on index page: https://stackoverflow.com/questions/2906582/how-to-create-an-html-button-that-acts-like-a-link
-  - Fonts come from: https://fontawesome.com/
+  - Icons come from: https://fontawesome.com/
   - Favicon comes from : https://favicon.io/
-  - For links in table cells: https://stackoverflow.com/questions/10070232/how-to-make-a-cell-of-table-hyperlink
-  - To ensure that all radio buttons are required before table is submitted: https://stackoverflow.com/questions/49798482/why-can-i-check-multiple-radio-buttons/49798515
 
 - __CSS Code__
-  - For skew function on Submit button: https://developer.mozilla.org/en-US/docs/Web/CSS/transform-function/skew()
-  - For blended colors on nav menu and form: https://blog.logrocket.com/advanced-effects-with-css-background-blend-modes-4b750198522a/
-  - To ensure that loaded videos loaded on page to a set height: https://css-tricks.com/fluid-width-video
+  - None
 
-- __Info and Sources (links to articles, videos and journals)__
-  - https://www.ft.com/content/e6ccdcac-133d-11e9-a581-4ff78404524e
-  - https://sleepmatters.ie/
-  - https://www.foundmyfitness.com/
-  - https://www.materprivate.ie/dublin/centre-services/all-services/sleep-disorders-clinic/
-  - https://www.youtube.com/watch?v=TUdYMpitk8Y
-  - https://www.youtube.com/watch?v=oZ-Ng0RXHLc
-  - https://www.youtube.com/watch?v=qvNLNl7oJnM
-  
-  - https://www.hybridcalisthenics.com/
-  - https://scoobysworkshop.com/
-  - https://www.healthline.com/
-  - https://www2.hse.ie/wellbeing/exercising-indoors/indoor-exercises-for-older-people.html
-  - https://www.youtube.com/watch?v=U1oARCOjzKM
-  - https://www.youtube.com/watch?v=5eV33roibqc
-  - https://www.youtube.com/watch?v=8CE4ijWlQ18
-
-  - https://www.youtube.com/watch?v=TUdYMpitk8Y
-  - https://www.youtube.com/watch?v=zsXDIk5ur2U
-  - https://www.youtube.com/watch?v=Ko51JVPUtAI&t=39s
-  - https://self-compassion.org/
-  - https://jackkornfield.com/
-  - https://alastaircampbell.org/blog/category/mental-health-2/ 
-
-  - https://www.mayo.edu/research/clinical-trials/diseases-conditions/sleep-disorders/
-  - https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6281147/
-  - https://www.sleepmedres.org/journal/view.php?number=175
-  - https://www.sleepmedres.org/journal/view.php?number=176
-  - https://www.ncbi.nlm.nih.gov/pmc/articles/PMC1402378/
-  - https://www.bmj.com/content/371/bmj.m3485
-  - https://med.stanford.edu/news/all-news/2020/05/stanford-medicine-study-details-molecular-effects-of-exercise.html
-  - https://www.frontiersin.org/articles/10.3389/fmed.2019.00236/full
-  - https://www.ncbi.nlm.nih.gov/pmc/articles/PMC1828319/
-  - https://www.ncbi.nlm.nih.gov/pmc/articles/PMC2395346/
-  - https://www.jmir.org/2020/7/e18723/
-  - https://alastaircampbell.org/blog/category/mental-health-2/
+- __JavaScript Code__
+  - I looked online at W3 Schools and MDN to get a better understanding of JavaScript concepts when writing the script.
+  - I had a look at stack Overflow on numerous occasions, and though I did try several snippets of code in my project, I never ended up using 
+  any of it as it never worked as I needed it to for what I was doing
+  - I did however, receive a lot of help in the mentor sessions and guidance on similar projects to get started, along with quite a few online tutor sessions to help me through the logic of what I was trying to achieve with my script
 
 ### Media
-- The photos and videos used on the home, sleep, exercise, mindfulness are from This Open Source site: https://pixabay.com/
-- The YouTube Videos that load on Home page are as listed below:
-  - https://www.youtube.com/watch?v=KGfdR7TSJo4&t=1s
-  - https://www.youtube.com/watch?v=WDz4PRXlrVg&t=26s
-  - https://www.youtube.com/watch?v=mOo1x8S2Dxc&t=39s
+- The background image is from This Open Source site: https://pixabay.com/illustrations/question-mark-pile-questions-symbol-2492009/

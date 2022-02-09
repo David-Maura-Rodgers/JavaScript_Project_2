@@ -559,27 +559,13 @@ h3 {
     margin-right: auto;
     padding-bottom: 4%;
     }
-    
-    #answer-select {
-    font-size: 14px;
-    width: 60%;
-    margin: auto;
-    margin-left: 1px;    
-    }
-
-    #feedback {
-    margin-left: 2%;
-    position: relative;
-    font-weight: bolder;
-    font-size: 14px;
-    }
 
     #question {
     text-align: center;
     font-weight: bolder;
     font-size: 14px;
     }  
-    
+        
     #answer-select {
     height: 180px;
     width: 90%;
@@ -589,6 +575,13 @@ h3 {
     padding-bottom: 0.10rem;
     font-size: 12px;
     white-space: nowrap;
+    }
+    
+    #answer-select {
+    font-size: 14px;
+    width: 60%;
+    margin: auto;
+    margin-left: 1px;    
     }
                                             
     #feedback {
