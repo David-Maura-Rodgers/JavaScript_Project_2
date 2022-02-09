@@ -67,7 +67,7 @@ I have also added a favicon for the site.
 
 Please see below for lighthouse report:
 
-![lighthouse](https://user-images.githubusercontent.com/91907661/153240879-5e9e2a87-5121-4231-82a6-05da5c1842fa.png)
+![lighthouse](https://user-images.githubusercontent.com/91907661/153294721-0dd819f0-32a3-47a5-9244-932f02c5eb99.png)
 
   
 ### Validator Testing (HTML, CSS, JavaScript)
