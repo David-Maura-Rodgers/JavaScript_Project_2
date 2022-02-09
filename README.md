@@ -111,14 +111,14 @@ Please see below for lighthouse report:
 
 
 - __Notes__
-- ????????????????????????????????????????????????
+- None
   
 
 ### Unfixed Bugs
 
-A very small, but noticeable difference in the size of the sleeping woman image and the 2 images below (two people exercising and woman meditating) This is likely due to the content being ina a flex layout. I have tried everything I know, looked at resources online and there seems to be no error or difference in the html or CSS controlling them.
+- There doesn't appear to be any bugs with the functionality of the quiz in itself. I have tested it several times, as can be expecting during the time I was developing the script.
 
-I then had to create the code below, which takes the first image and it's container to be unique - I changed the width of the viewport to 36 as opposed to 30 for the two images below it. Not ideal, but it does fix the issue.
+- However, 
 
 
 ## Deployment

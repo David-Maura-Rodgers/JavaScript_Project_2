@@ -182,9 +182,15 @@ h3 {
     border-radius: 10vmin;
     box-sizing: border-box;
     width: 85%;
-    height: 42vh;
+    height: 46vh;
     margin-left: auto;
     margin-right: auto;
+    }
+
+    #question {
+    text-align: center;
+    font-weight: bolder;
+    font-size: 35px;
     }
 
     #answer-select {
@@ -194,14 +200,8 @@ h3 {
     padding-top: 3rem;
     text-align: center;
     font-weight: 600;
-    font-size: 30px;
+    font-size: 25px;
     white-space: nowrap;
-    }
-    
-    #question {
-    text-align: center;
-    font-weight: bolder;
-    font-size: 35px;
     }
 
     .answer-option {
@@ -213,6 +213,7 @@ h3 {
     margin: auto;
     margin-top: 55px;
     position: relative;
+    font-size: 25px;
     }
 
     #icon-area {
@@ -267,6 +268,14 @@ h3 {
 
 @media screen and (max-width: 1024px) {
 
+    body {
+    background: url('../media/question-mark.jpg') center;
+    background-size: cover;
+    height: 100vh;
+    padding: 0%;
+    object-fit: cover;
+    }
+
     #quiz-area {
     margin-top: 2px;
     border-radius: 10vmin;
@@ -276,6 +285,12 @@ h3 {
     margin-left: auto;
     margin-right: auto;
     }
+    
+    #question {
+    text-align: center;
+    font-weight: bolder;
+    font-size: 32px;
+    }
 
     #answer-select {
     height: 180px;
@@ -284,16 +299,10 @@ h3 {
     padding-top: 2rem;
     text-align: center;
     font-weight: 600;
-    font-size: 25px;
+    font-size: 20px;
     white-space: nowrap;
     }
     
-    #question {
-    text-align: center;
-    font-weight: bolder;
-    font-size: 35px;
-    }
-
     .answer-option {
     height: 15%;
     width: 15%;
@@ -303,6 +312,7 @@ h3 {
     margin: auto;
     margin-top: 55px;
     position: relative;
+    font-size: 25px;
     }
 
     #icon-area {
