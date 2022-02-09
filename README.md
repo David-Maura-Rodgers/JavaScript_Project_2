@@ -140,13 +140,15 @@ Please see below for lighthouse report:
   - From the source section drop-down menu, select the Master Branch
   - Once the master branch has been selected, the page will be automatically refreshed with a detailed ribbon display to indicate the successful deployment. 
 
-The live link can be found here - https://david-maura-rodgers.github.io/David.Rodgers-html-css-Port.Proj./
+The live link can be found here - https://david-maura-rodgers.github.io/JavaScript_Project_2/ 
+
 
 ### Credits for all Content 
 
 - __HTML Code__
-  - For back to top page link: https://www.computerhope.com/issues/ch001475.htm
+  - For Start Button on index page: https://stackoverflow.com/questions/2906582/how-to-create-an-html-button-that-acts-like-a-link
   - Fonts come from: https://fontawesome.com/
+  - Favicon comes from : https://favicon.io/
   - For links in table cells: https://stackoverflow.com/questions/10070232/how-to-make-a-cell-of-table-hyperlink
   - To ensure that all radio buttons are required before table is submitted: https://stackoverflow.com/questions/49798482/why-can-i-check-multiple-radio-buttons/49798515
 
