@@ -63,7 +63,7 @@ h3 {
     border: rgb(199, 100, 43) solid 5px;
     border-radius: 10vmin;
     width: 85%;
-    height: 42vh;
+    height: 100px; /* 42vh */
     margin-left: auto;
     margin-right: auto;
 }
@@ -175,7 +175,6 @@ h3 {
 
 /* -------------- MEDIA QUERIES----------------- */
 
-/* Media query to add styles for tablets and screen size of threshold 1200px */
 @media screen and (max-width: 1440px) {
 
     #quiz-area {
@@ -266,7 +265,6 @@ h3 {
     }
 }
 
-/* Media query to add styles for tablets and screen size of threshold 1200px */
 @media screen and (max-width: 1024px) {
 
     #quiz-area {
@@ -357,7 +355,6 @@ h3 {
     }
 }
 
-/* For small screen sizes 850px and down */
 @media screen and (max-width: 992px) {
 
     #quiz-area {

@@ -73,27 +73,46 @@ I have also added a favicon for the site.
 
 ## Lighthouse Score
 
-Please see below for lighthouse report and relevant notes
+Please see below for lighthouse report:
 
 ![lighthouse](https://user-images.githubusercontent.com/91907661/153240879-5e9e2a87-5121-4231-82a6-05da5c1842fa.png)
 
   
 ### Validator Testing (HTML, CSS, JavaScript)
 
-- HTML
-  - No errors were returned when passing through the official [W3C validator](https://validator.w3.org/nu/?doc=https%3A%2F%2Fdavid-maura-rodgers.github.io%2FDavid.Rodgers-html-css-Port.Proj.%2F)
-- CSS
-  - No errors were found when passing through the official [(Jigsaw) validator](https://jigsaw.w3.org/css-validator/validator?uri=https%3A%2F%2Fdavid-maura-rodgers.github.io%2FDavid.Rodgers-html-css-Port.Proj.%2F&profile=css3svg&usermedium=all&warning=1&vextwarning=&lang=en)
+- HTML (index page)
+  - No errors were returned when passing through the official [W3C validator](https://validator.w3.org/nu/?showsource=yes&doc=https%3A%2F%2Fdavid-maura-rodgers.github.io%2FJavaScript_Project_2%2F)
+- HTML (quiz page)
+  - No errors were returned when passing through the official [W3C validator](https://validator.w3.org/nu/?showsource=yes&doc=https%3A%2F%2Fdavid-maura-rodgers.github.io%2FJavaScript_Project_2%2Fquiz.html%3F)
+
+- CSS (index page)
+  - No errors were found when passing through the official [(Jigsaw) validator](https://jigsaw.w3.org/css-validator/validator?uri=https%3A%2F%2Fdavid-maura-rodgers.github.io%2FJavaScript_Project_2%2F&profile=css3svg&usermedium=all&warning=1&vextwarning=&lang=en)
+- CSS (quiz page)
+  - No errors were found when passing through the official [(Jigsaw) validator](https://jigsaw.w3.org/css-validator/validator?uri=https%3A%2F%2Fdavid-maura-rodgers.github.io%2FJavaScript_Project_2%2Fquiz.html%3F&profile=css3svg&usermedium=all&warning=1&vextwarning=&lang=en)
+
+- JavaScript
+  - No errors were found using JSHint validator [(JShint) validator](https://jshint.com/)
+  Screenshot is shown below: 
+
+  ![jshint](https://user-images.githubusercontent.com/91907661/153269134-e6066486-774f-4757-a1bb-2f08d898d7a1.png)
+
+
+- __Warnings__
+  - I received the below from both pages when doing the CSS validator check. They just seem to be toolkit warnings for the font I am suing from Font Awesome (this doesn't affect the site anyway and I have sans serif as back up font in any case):
+  - moz-osx-font-smoothing is a vendor extension
+	- webkit-font-smoothing is a vendor extension
+	- ms-filter is a vendor extension
+	- ms-filter is a vendor extension
+	- ms-filter is a vendor extension
+	- ms-filter is a vendor extension
+	- ms-filter is a vendor extension
+	- The property clip is deprecated
+	- The property clip is deprecated
 
 
 - __Notes__
-- The frameborder attribute on the iframe element is obsolete. Use CSS instead.
-  - I have removed the obsolete attribute from all instances of this element 
-- Bad value assets/images/woman meditating 2.jpg for attribute src on element img: Illegal character in path segment: space is not allowed.  
-  - This has now been changed to the proper format  
+- ????????????????????????????????????????????????
   
-- __Warnings__
-
 
 ### Unfixed Bugs
 
