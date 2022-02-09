@@ -4,14 +4,14 @@ My General Knowledge Quiz site has a simple and clear design so that the user wo
 
 The first question in the question array will be displayed on this page. The questions will change dynamically when the user has selected a radio button that corresponds with the answer they wish to choose. They will then click on the Next Question button to get the next question in the array. This process repeats until they reach the reach the end of the quiz. They can then click the Restart Button to try the quiz again.
 
-![home-page](https://user-images.githubusercontent.com/91907661/153229405-2847ed4c-6dd9-4df4-9d40-bc63d1004829.png)
+![home-page](https://user-images.githubusercontent.com/91907661/153290742-48f5e3aa-489c-417a-9db4-06869f676cc4.png)
 
-![quiz-page](https://user-images.githubusercontent.com/91907661/153229560-b0364ecc-f4d3-40f4-89cf-2a9b14f65386.png)
+![quiz-page](https://user-images.githubusercontent.com/91907661/153291017-5b302647-6f0c-47a5-bab5-9aa5b179b20e.png)
 
 
 ## Features 
 
-Below is a list of features that I have on this site which I will detail individually. There is a welcome page with a Start quiz Button that will take the user to the main quiz page. On this quiz page, there is a quiz area which contains a question display area and 4 radio buttons that the user can select from to register an answer. And below this, but still within the same containing div, the user will receive feedback on their answers. 
+Below is a list of features that I have on this site which I will detail individually. There is a welcome page with a Start quiz Button that will take the user to the main quiz page. On this quiz page, there is a quiz area which contains a question display area and four radio buttons that the user can select from to register an answer. And below this, but still within the same containing div, the user will receive feedback on their answers. 
 
 There is another div below which contains dynamic icons in response to user input. And finally two buttons: Next Question and Restart Quiz along with a score tracker at the bottom. 
 
@@ -23,7 +23,7 @@ I have also added a favicon for the site.
 
   - The question display will dynamically display every question the the array as the user progress with the quiz
 
-![question-display](https://user-images.githubusercontent.com/91907661/153230124-c07a24f9-1ba8-4d3f-ad85-822b7b87f3c4.png)
+![question-display](https://user-images.githubusercontent.com/91907661/153291336-e0cd84b7-e701-4b47-8d9b-89fe8de6a1b7.png)
 
 
 - __Radio Buttons for Answer Selection__
@@ -31,27 +31,21 @@ I have also added a favicon for the site.
   - There are four radio buttons from which the user can click to register an answer
   - Once they select an answer all other radio buttons are disabled
 
-![radio-buttons](https://user-images.githubusercontent.com/91907661/153231223-4a24307d-f58b-4335-b540-13bf26d0acff.png)
+![radio-buttons](https://user-images.githubusercontent.com/91907661/153291667-c2943dac-587a-4988-b819-f9f7ee53a9f1.png)
 
 
 - __Feedback: rolling and at quiz end__
 
   - The feedback display will display "Correct!" or "Incorrect! The correct answer . . ." each time the user chooses an answer. This always corresponds to either the correct or incorrect answer.
   - When the user reaches the last question in the array, the feedback text will turn purple and let them know their final score and that the quiz has ended
-
-![icons-incorrect](https://user-images.githubusercontent.com/91907661/153233169-5979b88d-fb64-4af9-bb5c-97dd2ce2011d.png)
-
-![feedback-end](https://user-images.githubusercontent.com/91907661/153234582-7a66278d-dcde-40ee-9ecb-99de9e7995fb.png)
-
-
 - __Icons (Correct and Incorrect)__
 
   - There are two icons which respond to the user input and responds to the checkAnswer function to supply visual feedback 
   - Both screenshots below show both icon responses
 
-![icons](https://user-images.githubusercontent.com/91907661/153232612-d5155d79-d03a-4d56-bc7c-90bc3d4a093a.png)
+![icons](https://user-images.githubusercontent.com/91907661/153291941-cf3e1321-7764-451b-b716-f9096a6b6485.png)
 
-![icons-incorrect](https://user-images.githubusercontent.com/91907661/153233169-5979b88d-fb64-4af9-bb5c-97dd2ce2011d.png)
+![feedback-end](https://user-images.githubusercontent.com/91907661/153292342-1a7bd361-41eb-4c54-b0c9-12ac0982bd69.png)
 
 
 - __Buttons: Next Question & Restart Quiz__
@@ -64,11 +58,9 @@ I have also added a favicon for the site.
   - (The Restart Button can be activated at any time)
   - The score tracker is below the buttons and displays a running total as evidenced below and in previous screenshots
 
-![button-psuedo](https://user-images.githubusercontent.com/91907661/153236206-0df1e363-3f26-4892-a0d7-32f846c07b72.png)
+![next-alert](https://user-images.githubusercontent.com/91907661/153292940-ff36ffe3-18ee-448b-b380-085ada9853ac.png)
 
-![next-alert](https://user-images.githubusercontent.com/91907661/153237796-018157b5-eb92-4432-96e0-7efe1042281f.png)
-
-![next-hide](https://user-images.githubusercontent.com/91907661/153238859-5478b547-7766-40f7-8ef5-19c028ade634.png)
+![next-hide](https://user-images.githubusercontent.com/91907661/153293260-7de11d90-c73f-4de2-be46-7683e6255505.png)
 
 
 ## Lighthouse Score
