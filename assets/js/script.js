@@ -185,7 +185,7 @@ function restartQuiz() {
 nextButton.addEventListener ('click', hideNext);
 function hideNext() {
   if (questionIndex >= totalQuestions) {
-  document.getElementById('next-button').style.visibility = "hidden"; //   
+  document.getElementById('next-button').style.visibility = "hidden"; 
   alert('Quiz Complete! Click the restart button to try the quiz again');
   }
 }
