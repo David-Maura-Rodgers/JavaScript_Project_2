@@ -3,6 +3,10 @@ body {
     background-color: #b7cad1;
     font-family: "Raleway", sans-serif;
     text-align: center;
+    background: url('../media/question-mark.jpg') no-repeat center top;
+    background-size: cover;
+    height: 100vh;
+    padding: 0%;
 }
 
 #heading {

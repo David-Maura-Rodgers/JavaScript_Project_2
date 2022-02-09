@@ -55,55 +55,45 @@ I have also added a favicon for the site.
 
 
 - __Buttons: Next Question & Restart Quiz__
+- __Score Tracker__
 
   - The Next Question and Restart Quiz are displayed as below and will navigate the quiz accordingly
   - When the user hovers over either button, the button responds dynamically as shown below and reverts back when user moves cursor away from the button
-  - 
+  - If the user clicks on the next button after the last question - they will receive an alert
+  - Once the user clicks OK on the alert, the next button will dissapear and the user can click the Restart Button
+  - (The Restart Button can be activated at any time)
+  - The score tracker is below the buttons and displays a running total as evidenced below and in previous screenshots
 
 ![button-psuedo](https://user-images.githubusercontent.com/91907661/153236206-0df1e363-3f26-4892-a0d7-32f846c07b72.png)
 
 ![next-alert](https://user-images.githubusercontent.com/91907661/153237796-018157b5-eb92-4432-96e0-7efe1042281f.png)
 
-
-- __Suggestions Page__
-
-  - This page will allow the user to enter some basic info on the form - drop down for age group, text input for name and email address. There will be some radio button questions in there as well. All in all, it takes no time to complete and all these questions are required to be able to submit the form
-  - There is a text box area for the user to enter suggestions and additional content for the site, which I can implement and give credit to the person suggesting it, if they want me to do so.
-
-![suggestions-form](https://user-images.githubusercontent.com/91907661/145725027-bcb0b194-2261-4241-b489-1f37b94047a6.png)  
-
-- __Suggestions Page Validation__
- - There is validation as shown below to ensure that the user is entering all the required data, be it text: text and email format, and a requirement for the radio button options to also be clicked to submit the data on the form. An error message is displayed to the user 'Please fill out this field'.
-
-![suggestions-validation](https://user-images.githubusercontent.com/91907661/147268935-7a029374-4aea-4c2f-ad31-58739c534a2a.png)
+![next-hide](https://user-images.githubusercontent.com/91907661/153238859-5478b547-7766-40f7-8ef5-19c028ade634.png)
 
 
-## Testing and Lighthouse
+## Lighthouse Score
 
-![lighthouse](https://user-images.githubusercontent.com/91907661/146009134-118f8408-eefe-43b9-83e8-c9c7e1adab0d.png)
+Please see below for lighthouse report and relevant notes
 
-I have included the following errors and warnings I received from Validation testing and how and if they needed fixing:
+![lighthouse](https://user-images.githubusercontent.com/91907661/153240879-5e9e2a87-5121-4231-82a6-05da5c1842fa.png)
 
-- __Errors__
+  
+### Validator Testing (HTML, CSS, JavaScript)
+
+- HTML
+  - No errors were returned when passing through the official [W3C validator](https://validator.w3.org/nu/?doc=https%3A%2F%2Fdavid-maura-rodgers.github.io%2FDavid.Rodgers-html-css-Port.Proj.%2F)
+- CSS
+  - No errors were found when passing through the official [(Jigsaw) validator](https://jigsaw.w3.org/css-validator/validator?uri=https%3A%2F%2Fdavid-maura-rodgers.github.io%2FDavid.Rodgers-html-css-Port.Proj.%2F&profile=css3svg&usermedium=all&warning=1&vextwarning=&lang=en)
+
+
+- __Notes__
 - The frameborder attribute on the iframe element is obsolete. Use CSS instead.
   - I have removed the obsolete attribute from all instances of this element 
 - Bad value assets/images/woman meditating 2.jpg for attribute src on element img: Illegal character in path segment: space is not allowed.  
   - This has now been changed to the proper format  
   
 - __Warnings__
-- The name attribute is obsolete (for the back to top function). Consider putting an id attribute on the nearest container instead.
-  - Removed name as suggested and feature still works
-- Section lacks heading. Consider using h2-h6 elements to add identifying headings to all sections.
-  - I have used flex with CCS on my section which contains the image, paragraph, aside and Youtube Video. A header for these sections didn't fit with my plan for layout
-- Value Error : padding-left Too many values or values are not recognized: 0 10px 0 10px
-  - Have changed to 0 10px and removed obsolete values  
-  
-### Validator Testing 
 
-- HTML
-  - No errors were returned when passing through the official [W3C validator](https://validator.w3.org/nu/?doc=https%3A%2F%2Fdavid-maura-rodgers.github.io%2FDavid.Rodgers-html-css-Port.Proj.%2F)
-- CSS
-  - No errors were found when passing through the official [(Jigsaw) validator](https://jigsaw.w3.org/css-validator/validator?uri=https%3A%2F%2Fdavid-maura-rodgers.github.io%2FDavid.Rodgers-html-css-Port.Proj.%2F&profile=css3svg&usermedium=all&warning=1&vextwarning=&lang=en)
 
 ### Unfixed Bugs
 
@@ -111,23 +101,6 @@ A very small, but noticeable difference in the size of the sleeping woman image 
 
 I then had to create the code below, which takes the first image and it's container to be unique - I changed the width of the viewport to 36 as opposed to 30 for the two images below it. Not ideal, but it does fix the issue.
 
-#circle-images-sleep {
-    position: relative;
-    width: 36vw;
-    height: 22vw;
-    overflow: hidden;
-    margin-left: 30px;
-}
-
-#sleep-circle {
-    height: 300px;
-    width: 300px; 
-    border-radius: 50%;
-    border: navy solid 5px;
-    width: 90%;
-    height: 60%;
-    object-fit: cover;
-}
 
 ## Deployment
 
