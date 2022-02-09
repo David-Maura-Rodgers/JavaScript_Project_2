@@ -4,48 +4,66 @@ My General Knowledge Quiz site has a simple and clear design so that the user wo
 
 The first question in the question array will be displayed on this page. The questions will change dynamically when the user has selected a radio button that corresponds with the answer they wish to choose. They will then click on Next Question button to get the next question in the array. This process repeats until they reach the reach the end of the quiz. They can then click the Restart Button to try the quiz again.
 
-<!-- ![home-page](https://user-images.githubusercontent.com/91907661/147686839-8534ed06-a51b-471b-ae05-44b2d51e8a31.png) -->
+![home-page](https://user-images.githubusercontent.com/91907661/153229405-2847ed4c-6dd9-4df4-9d40-bc63d1004829.png)
+
+![quiz-page](https://user-images.githubusercontent.com/91907661/153229560-b0364ecc-f4d3-40f4-89cf-2a9b14f65386.png)
+
 
 ## Features 
 
-Below is a list of features that I have on this site which I will detail individually. There is a welcome page with a Start quiz Button that will take the user to main quiz page. On this quiz page, there is a quiz area which contains a question display area and 4 radio buttons that the user can select from to register an answer. And below this, but still within the smae containg div, the user will receive feed back on their answers. There is a another div below which contains dynamic icons in response to user input. And finally two buttons: Next Question and Restart Quiz along with a score tracker at the bottom.
+Below is a list of features that I have on this site which I will detail individually. There is a welcome page with a Start quiz Button that will take the user to main quiz page. On this quiz page, there is a quiz area which contains a question display area and 4 radio buttons that the user can select from to register an answer. And below this, but still within the same containing div, the user will receive feed back on their answers. 
+
+There is a another div below which contains dynamic icons in response to user input. And finally two buttons: Next Question and Restart Quiz along with a score tracker at the bottom. 
+
+I have also added a favicon for the site.
 
 ### Each Feature Explained
 
 - __Question Display__
 
-  - The Nav Menu bar is located on all pages and allows for seamless flow for the user to access all the content on the site
+  - The question display will dynamically display every question the the array as the user progress with the quiz
 
-<!-- ![nav-menu](https://user-images.githubusercontent.com/91907661/145723593-3abdadbc-c308-4ef7-9d8e-6ed93b71f8ff.png) -->
+![question-display](https://user-images.githubusercontent.com/91907661/153230124-c07a24f9-1ba8-4d3f-ad85-822b7b87f3c4.png)
 
-- __Social Media and Back to Top__
 
-  - There are links to the website Social Media pages as located in the footer. These open in a new tab.
-  - There is also a back to top link which can be clicked to return to Nav menu bar at any time
+- __Radio Buttons for Answer Selection__
 
-![back-socialmedia](https://user-images.githubusercontent.com/91907661/145724575-6b2e2cb9-8736-4a44-a0da-33ec5b712fbd.png)
+  - There are four radio buttons from which the user can click to register an answer
+  - Once they select an answer all other radio buttons are disabled
 
-- __Title Links__
+![radio-buttons](https://user-images.githubusercontent.com/91907661/153231223-4a24307d-f58b-4335-b540-13bf26d0acff.png)
 
-  - You can click on the the Mind and Body Maintenance title and and it will take you to the home page at any time, you can also click on the title for Ideas for healthy minds and bodies, and this will take you directly to the Suggestions Page, these title links appear on all pages.
 
-![title-links](https://user-images.githubusercontent.com/91907661/145724081-9e58f592-7c15-4f93-a281-ba0bf4365b33.png)
+- __Feedback: rolling and at quiz end__
 
-- __Home Page Content__
+  - The feedback display will display "Correct!" or "Incorrect! The correct answer . . ." each time the user chooses an answer. This always corresponds to either the correct or incorrect answer is.
+  - When the user reaches the last question in the array, the feedback text will turn purple and let them know their final score and that the quiz has ended
 
-  - The content on the home page includes some introduction info and links within each section to take you directly to the page they relate to
-  - There is also a video that loads up automatically that you can choose to unmute. Each video gives a good insight into what the correlating page is about
+![icons-incorrect](https://user-images.githubusercontent.com/91907661/153233169-5979b88d-fb64-4af9-bb5c-97dd2ce2011d.png)
 
-![home-page-content](https://user-images.githubusercontent.com/91907661/147687864-c196493a-aca0-4dee-8c2d-6225e774ae05.png)
+![feedback-end](https://user-images.githubusercontent.com/91907661/153234582-7a66278d-dcde-40ee-9ecb-99de9e7995fb.png)
 
-- __Sleep, Exercise and Mindfulness Pages__
 
-  - Each section will follow the same layout. Below, the Sleep page of the site is shown as an example 
-  - Below the short paragraph at the top of page (not included in screenshot), an iframe will load in addition to a table of sources sectioned off in different categories: Source, Video and Article - these table cells can be clicked and the user is taken to a new tab containing the information source
-  - There is also a list of more detailed studies and journals for a more in depth study which also links to new tabs
-  - This section can also be updated by way of newly suggested content from myself or other users on the Suggestions page 
+- __Icons (Correct and Incorrect)__
 
-![sleep-exercise-mindfulness-content](https://user-images.githubusercontent.com/91907661/145724847-c3522d11-7450-41c9-ba89-ba32611bdaec.png)
+  - There are two icons which respond to the user input and responds to the checkAnswer function to supply visual feedback 
+  - Both sreenshots below show both icon responses
+
+![icons](https://user-images.githubusercontent.com/91907661/153232612-d5155d79-d03a-4d56-bc7c-90bc3d4a093a.png)
+
+![icons-incorrect](https://user-images.githubusercontent.com/91907661/153233169-5979b88d-fb64-4af9-bb5c-97dd2ce2011d.png)
+
+
+- __Buttons: Next Question & Restart Quiz__
+
+  - The Next Question and Restart Quiz are displayed as below and will navigate the quiz accordingly
+  - When the user hovers over either button, the button responds dynamically as shown below and reverts back when user moves cursor away from the button
+  - 
+
+![button-psuedo](https://user-images.githubusercontent.com/91907661/153236206-0df1e363-3f26-4892-a0d7-32f846c07b72.png)
+
+![next-alert](https://user-images.githubusercontent.com/91907661/153237796-018157b5-eb92-4432-96e0-7efe1042281f.png)
+
 
 - __Suggestions Page__
 
