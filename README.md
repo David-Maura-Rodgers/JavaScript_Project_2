@@ -110,15 +110,27 @@ Please see below for lighthouse report:
 	- The property clip is deprecated
 
 
-- __Notes__
-- None
-  
+### Unfixed Bugs or Other Quirks
 
-### Unfixed Bugs
+- There doesn't appear to be any bugs with the functionality of the quiz in of itself. I have tested it several times, as can be expected during the time I was developing the script. All seems to work fine and all functions called upon appear to work with no problems.
 
-- There doesn't appear to be any bugs with the functionality of the quiz in itself. I have tested it several times, as can be expecting during the time I was developing the script.
+- Font Awesome:
+  - As mentioned previously above, I get warnings about vendor extensions with my use of Font Awesome, but nothing that seems to me critical or impedes the functionality of the site for the user
 
-- However, 
+- However, I have put a lot of work into responsivness for this site and have had quite a few challenges, many of which are resolved now. My comments on this are as below:
+  - I have had to take the no repeat attribute off the background img for the 1024 px media query as the image would not cover the entire screen as hoped.
+  - The icons withing the icon area div are generally well centered withing its containing div, however on some screens, it can look a bit off kilter. With enough time in the future, I would hope to have this 100%. 
+  - I have added media queries for 5 breakpoints (1440px, 1240px, 992px, 576px, 375px) to ensure as much integrity as possible. Screenshots evidence the below:
+
+  ![1440px](https://user-images.githubusercontent.com/91907661/153282167-9ad76422-ee8f-45af-b5e4-42be52e16138.png)
+
+  ![1024px](https://user-images.githubusercontent.com/91907661/153282524-a803ea18-33d9-4d71-a6d5-43983ab6e003.png)
+
+  ![768px](https://user-images.githubusercontent.com/91907661/153282682-e034dc17-4bb4-4c98-9f70-b59c024e1c08.png)
+
+  ![425px](https://user-images.githubusercontent.com/91907661/153282823-49ac5e73-b45b-454c-86cc-2ecf1f435f6e.png)
+
+  ![320px](https://user-images.githubusercontent.com/91907661/153282999-3b5d889e-ce26-4289-b353-ef37541c3afc.png)
 
 
 ## Deployment
