@@ -20,17 +20,18 @@
         <h1>General Knowledge Quiz</h1>
     </div>
 
+    <!-- Quiz Area which contains question display, answer select div and feedback div -->
     <div id="quiz-area">
         <p id="question"></p>
     
         <div id="answer-select">
-            <label for="opt1"> content </label>
+            <label for="opt1"></label>
             <input class="answer-option" type="radio" name="option1" id="opt1" value="Cork">
-            <label for="opt2"> content</label>
+            <label for="opt2"></label>
             <input class="answer-option" type="radio" name="option2" id="opt2" value="Dublin">
-            <label for="opt3"> content </label>
+            <label for="opt3"></label>
             <input class="answer-option" type="radio" name="option3" id="opt3" value="Galway">
-            <label for="opt4"> content </label>
+            <label for="opt4"></label>
             <input class="answer-option" type="radio" name="option4" id="opt4" value="Sligo">
             
             <div id="feedback-div">
@@ -39,20 +40,22 @@
         </div>
     </div> 
 
-        <!-- AREA WHERE ICONS AREA: Will go green for correct answer and red for incorrect  -->
-        <div id="icon-area">
-            <i class="fas fa-check-circle" id="correct"></i>
-            <i class="fas fa-times-circle" id="incorrect"></i>
-        </div>
+    <!-- Area where icons are. Background color changes to green for correct answer and red for incorrect -->
+    <div id="icon-area">
+        <i class="fas fa-check-circle" id="correct"></i>
+        <i class="fas fa-times-circle" id="incorrect"></i>
+    </div>
 
-        <div id="button-div">
-            <button id="restart-button">Restart Quiz</button>
-            <button id="next-button">Next Question</button>
-        </div> 
+    <!-- Area that contains both buttons for quiz navigation -->
+    <div id="button-div">
+        <button id="restart-button">Restart Quiz</button>
+        <button id="next-button">Next Question</button>
+    </div> 
 
-        <div id="score-div">
-            <p id="score">Score:</p>
-        </div>
+    <!-- Running score is displayed here -->
+    <div id="score-div">
+        <p id="score">Score:</p>
+    </div>
     
     <script src="assets/js/script.js"></script>
 </body>

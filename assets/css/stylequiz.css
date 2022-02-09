@@ -1,4 +1,4 @@
-/* -------------- BODY, HEADINGS AND PSUDEO CLASSED FOR START, NEXT Q. AND RESTART BUTTONS ----------------- */
+/* -------------- BODY, HEADINGS AND PSEUDO CLASSES FOR START, NEXT QUESTION AND RESTART BUTTONS ----------------- */
 body {
     background-color: #b7cad1;
     font-family: "Raleway", sans-serif;
@@ -49,10 +49,9 @@ h3 {
     border-radius: 10px;
 }
 
-
 /* -------------- QUESTION DISPLAY AND ANSWER OPTIONS AREA ----------------- */
 
-/* Quiz Area which contains question display, options box div and feedback div  */
+/* Quiz Area which contains question display, answer select div and feedback div */
 #quiz-area {
     margin-top: 20px;
     background-color: #E6ECF0;
