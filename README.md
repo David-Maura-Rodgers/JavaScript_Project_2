@@ -2,7 +2,7 @@
 
 My General Knowledge Quiz site has a simple and clear design so that the user won't feel unsure as how to navigate and run the quiz. The user will first be taken to the home page where they are greeted with a welcome message and a button they can click to be taken to the quiz page.
 
-The first question in the question array will be displayed on this page. The questions will change dynamically when the user has selected a radio button that corresponds with the answer they wish to choose. They will then click on the Next Question button to get the next question in the array. This process repeats until they reach the reach the end of the quiz. They can then click the Restart Button to try the quiz again.
+The first question in the question array will be displayed on this page. The questions will change dynamically when the user has selected a radio button that corresponds with the answer they wish to choose. They will then click on the Next Question button to get the next question in the array. This process repeats until they reach the end of the quiz. They can then click the Restart Button to try the quiz again.
 
 ![home-page](https://user-images.githubusercontent.com/91907661/153290742-48f5e3aa-489c-417a-9db4-06869f676cc4.png)
 
@@ -11,7 +11,7 @@ The first question in the question array will be displayed on this page. The que
 
 ## Features 
 
-Below is a list of features that I have on this site which I will detail individually. There is a welcome page with a Start quiz Button that will take the user to the main quiz page. On this quiz page, there is a quiz area which contains a question display area and four radio buttons that the user can select from to register an answer. And below this, but still within the same containing div, the user will receive feedback on their answers. 
+Below is a list of features that I have on this site which I will detail individually. There is a welcome page with a Start Quiz Button that will take the user to the main quiz page. On this quiz page, there is a quiz area which contains a question display area and four radio buttons that the user can select from to register an answer. And below this, but still within the same containing div, the user will receive feedback on their answers. 
 
 There is another div below which contains dynamic icons in response to user input. And finally two buttons: Next Question and Restart Quiz along with a score tracker at the bottom. 
 
@@ -21,7 +21,7 @@ I have also added a favicon for the site.
 
 - __Question Display__
 
-  - The question display will dynamically display every question the the array as the user progress with the quiz
+  - The question display will dynamically display every question in the array as the user progress with the quiz
 
 ![question-display](https://user-images.githubusercontent.com/91907661/153291336-e0cd84b7-e701-4b47-8d9b-89fe8de6a1b7.png)
 
@@ -52,7 +52,8 @@ I have also added a favicon for the site.
 - __Score Tracker__
 
   - The Next Question and Restart Quiz are displayed as below and will navigate the quiz accordingly
-  - When the user hovers over either button, the button responds dynamically as shown below and reverts back when user moves cursor away from the button
+  - When the user hovers over either button, the button responds dynamically as shown below and reverts back when the user 
+  moves cursor away from the button
   - If the user clicks on the next button after the last question - they will receive an alert
   - Once the user clicks OK on the alert, the next button will disappear and the user can click the Restart Button
   - (The Restart Button can be activated at any time)
@@ -90,7 +91,7 @@ Please see below for lighthouse report:
 
 
 - __Warnings__
-  - I received the below from both pages when doing the CSS validator check. They just seem to be toolkit warnings for the font I am suing from Font Awesome (this doesn't affect the site anyway and I have sans serif as back up font in any case):
+  - I received the below from both pages when doing the CSS validator check. They just seem to be toolkit warnings for the icons I am using from Font Awesome (this doesn't affect the user's experience of the site in anyway):
   - moz-osx-font-smoothing is a vendor extension
 	- webkit-font-smoothing is a vendor extension
 	- ms-filter is a vendor extension
@@ -107,7 +108,7 @@ Please see below for lighthouse report:
 - There doesn't appear to be any bugs with the functionality of the quiz in of itself. I have tested it several times, as can be expected during the time I was developing the script. All seems to work fine and all functions called upon appear to work with no problems.
 
 - Font Awesome:
-  - As mentioned previously above, I get warnings about vendor extensions with my use of Font Awesome, but nothing that seems to me critical or impedes the functionality of the site for the user
+  - As mentioned previously above, I get warnings about vendor extensions with my use of Font Awesome, but nothing that seems to be critical or impedes the functionality of the site for the user.
 
 - However, I have put a lot of work into responsiveness  for this site and have had quite a few challenges, many of which are resolved now. My comments on this are as below:
   - I have had to take the no repeat attribute off the background img for the 1024 px media query as the image would not cover the entire screen as hoped.
@@ -147,9 +148,8 @@ The live link can be found here - https://david-maura-rodgers.github.io/JavaScri
 
 - __JavaScript Code__
   - I looked online at W3 Schools and MDN to get a better understanding of JavaScript concepts when writing the script.
-  - I had a look at stack Overflow on numerous occasions, and though I did try several snippets of code in my project, I never ended up using 
-  any of it as it never worked as I needed it to for what I was doing
+  - I had a look at Stack Overflow on numerous occasions, and though I did try several snippets of code in my project, I never ended up using any of it as it never worked as I needed it to for what I was doing
   - I did however, receive a lot of help in the mentor sessions and guidance on similar projects to get started, along with quite a few online tutor sessions to help me through the logic of what I was trying to achieve with my script
 
 ### Media
-- The background image is from This Open Source site: https://pixabay.com/illustrations/question-mark-pile-questions-symbol-2492009/
+- The background image is from this Open Source site: https://pixabay.com/illustrations/question-mark-pile-questions-symbol-2492009/

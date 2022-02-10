@@ -106,7 +106,7 @@ for (i = 0; i < answerOption.length; i++) {
     answerOption[i].addEventListener("click", checkAnswer);
 }
 
-// Displays all questions in array and also displays each set of correspodning answers:
+// Displays all questions in array and also displays each set of corresponding answers:
 question.innerHTML = questionArr[questionIndex].question;
 opt1.previousElementSibling.innerText = questionArr[answerIndex].options[0];
 opt2.previousElementSibling.innerText = questionArr[answerIndex].options[1];
@@ -133,7 +133,7 @@ function disable(event) {
 nextButton.addEventListener('click', nextQuestion);
 
 /** Function: nextQuestion
-   This function reacts to a click on the next question button which will display each question
+   This function reacts to a click on the Next Question button which will display each question
    and increment both indexes in order to reach the last question in the array
  */
 function nextQuestion() {
