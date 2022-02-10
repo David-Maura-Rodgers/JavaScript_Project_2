@@ -149,7 +149,7 @@ The live link can be found here - https://david-maura-rodgers.github.io/JavaScri
 - __JavaScript Code__
   - I looked online at W3 Schools and MDN to get a better understanding of JavaScript concepts when writing the script.
   - I had a look at Stack Overflow on numerous occasions, and though I did try several snippets of code in my project, I never ended up using any of it as it never worked as I needed it to for what I was doing
-  - I did however, receive a lot of help in the mentor sessions and guidance on similar projects to get started, along with quite a few online tutor sessions to help me through the logic of what I was trying to achieve with my script. My mentor decided that I should look at https://github.com/Jonathanrange/Rock-Metal-Quiz. The ideas in the project helped me get started in building my own project.
+  - I did however, receive a lot of help in the mentor sessions and guidance on similar projects to get started, along with quite a few online tutor sessions to help me through the logic of what I was trying to achieve with my script. My mentor decided that I should look at https://github.com/Jonathanrange/Rock-Metal-Quiz. The ideas in this project helped me get started in building my own project.
 
 ### Media
 - The background image is from this Open Source site: https://pixabay.com/illustrations/question-mark-pile-questions-symbol-2492009/
